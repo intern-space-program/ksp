@@ -10,10 +10,10 @@ From the command line, run `$ git clone https://github.com/intern-space-program/
 ### Install the Python Packages
 Two options are given to install dependencies: installation via requirements.txt, and installation via pipenv. There are no current plans to support Anaconda installations, since the kRPC mod for Kerbal Space Program is not hosted on Anaconda.
 
-#### Install via requirements.txt
+#### Option 1: Install via requirements.txt
 From the command line, run `$ pip install requirements.txt` from the `ksp` directory.
 
-#### Install the Pipenv Environment
+#### Option 2: Install the Pipenv Environment
 From the `ksp` directory, run:
 `$ pip install pipenv`
 `$ pipenv install`
