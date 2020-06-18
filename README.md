@@ -7,12 +7,17 @@ First, ensure Python 3.8.3, the latest version of pip, and git are installed on 
 ### Clone the Repo
 From the command line, run `$ git clone https://github.com/intern-space-program/ksp.git` to create a ksp directory with the contents of the repo.
 
-### Install the Pipenv Environment
+### Install the Python Packages
+Two options are given to install dependencies: installation via requirements.txt, and installation via pipenv. There are no current plans to support Anaconda installations, since the kRPC mod for Kerbal Space Program is not hosted on Anaconda.
+
+#### Install via requirements.txt
+From the command line, run `$ pip install requirements.txt` from the `ksp` directory.
+
+#### Install the Pipenv Environment
 From the `ksp` directory, run:
 `$ pip install pipenv`
 `$ pipenv install`
 
 This will install all of the correct versions of the packages we will be using.
 
-### Run Python
 To run python using the pipenv environment for the project, run `$ pipenv run python` from the command line.
