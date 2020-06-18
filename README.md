@@ -21,3 +21,6 @@ From the `ksp` directory, run:
 This will install all of the correct versions of the packages we will be using.
 
 To run python using the pipenv environment for the project, run `$ pipenv run python` from the command line.
+
+## Gitignore Info
+The .gitignore file was generated using [gitignore.io](https://www.toptal.com/developers/gitignore)
