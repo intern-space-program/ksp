@@ -45,5 +45,14 @@ The conventional teams are as follows (could change depending on the project bei
 
 **Test:** Write higher-level tests for your system. Rather than check that each function individually works, check that the entire callstack works as expected when called from start to finish. These tests should have clearly defined inputs, outputs, and effects. For example, if you wrote a script that initiates a trans-lunar injection burn, ensure that the script properly recognizes the burn parameters as the inputs, executes the burn as an effect, and outputs success or error codes.
 
+## Code Standards
+This project will be almost entirely developed in python 3.8. As such, all software should follow PEP8 style standards (if you are unfamiliar with these, PyCharm is a popular IDE that automatically highlights when code does not meet PEP8, and gives descriptions why).
+
+Software should be developed with the KISS principle: "Keep It Simple, Stupid." If your code is getting complex, chances are good that you should go back to the Design, or even the Define, step before you continue programming. Good commenting helps, but well-written code with good commenting is way better.
+
+Pull Requests will act as "Code Reviews." You shouldn't approve your own Pull Requests, and you should get someone from another team to approve them. It can be difficult to understand large Pull Requests, so it's best to keep them small (think along the lines of closing one issue at a time, not implementing your entire feature set at once). It helps a lot of you get really granular with your team's issues, make a branch for each issue, and make a Pull Request for each branch.
+
+If you use any unconventional tricks for performance in your algorithms, be sure to cite why, and draw attention to this during design reviews and in Pull Requests.
+
 ## Gitignore Info
 The .gitignore file was generated using [gitignore.io](https://www.toptal.com/developers/gitignore)
