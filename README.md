@@ -41,7 +41,7 @@ The conventional teams are as follows (could change depending on the project bei
 
 **Design:** Begin high-level design work on your team's projects. Make extensive use of GitHub issues to assign tasks to team members. Set up milestones and due dates. This is the phase in which you should define all your equations and algorithms. Hold a design review with other teams to get feedback on your design.
 
-**Develop:** Use the issues created during the design process to guide your software development. For each function you write, develop unit tests that check for nominal behavior under nominal inputs, and safe, expected behavior for unexpected inputs (e.g. make sure your function isn't going to ever divide by zero and crash).
+**Develop:** Use the issues created during the design process to guide your software development. For each function you write, develop unit tests that check for nominal behavior under nominal inputs, and safe, expected behavior for unexpected inputs (e.g. make sure your function isn't going to ever divide by zero and crash). Unit tests should be written using PyTest, and once approved, added to the Continuous Integration pipeline via GitHub's Actions feature.
 
 **Test:** Write higher-level tests for your system. Rather than check that each function individually works, check that the entire callstack works as expected when called from start to finish. These tests should have clearly defined inputs, outputs, and effects. For example, if you wrote a script that initiates a trans-lunar injection burn, ensure that the script properly recognizes the burn parameters as the inputs, executes the burn as an effect, and outputs success or error codes.
 
