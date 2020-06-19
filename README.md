@@ -22,5 +22,10 @@ This will install all of the correct versions of the packages we will be using.
 
 To run python using the pipenv environment for the project, run `$ pipenv run python` from the command line.
 
+## Permissions
+By default, all members of this project have the ability to write directly to the repo. You are entrusted to not push any code, unit tests, or integration tests without approval from at least two people other than yourself in a Pull Request.
+
+You may push vehicle craft files, documentation, updated comments, README updates, gitignore updates, and similar non-software-changing updates without a Pull Request.
+
 ## Gitignore Info
 The .gitignore file was generated using [gitignore.io](https://www.toptal.com/developers/gitignore)
