@@ -27,5 +27,14 @@ By default, all members of this project have the ability to write directly to th
 
 You may push vehicle craft files, documentation, updated comments, README updates, gitignore updates, and similar non-software-changing updates without a Pull Request.
 
+## Teams
+The conventional teams are as follows (could change depending on the project being tackled):
+- Admin: Handles logistics, facilitates inter-group communication, ensures quality standards within the repo, leads group meetings.
+- Vehicle Design: Designs the various vehicles to be used during the project.
+- Orbital Mechanics: Does all the orbital mechanics calculations for the project.
+- Ascent/Entry: Does ascent & entry calculations for the project.
+- RPOD: Handles multi-vehicle rendezvous, proximity operations, and docking procedures.
+- Landing: Designs the landing control system for any propulsively landed vehicles.
+
 ## Gitignore Info
 The .gitignore file was generated using [gitignore.io](https://www.toptal.com/developers/gitignore)
