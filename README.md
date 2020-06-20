@@ -54,5 +54,44 @@ Pull Requests will act as "Code Reviews." You shouldn't approve your own Pull Re
 
 If you use any unconventional tricks for performance in your algorithms, be sure to cite why, and draw attention to this during design reviews and in Pull Requests.
 
+## Technical References
+
+### Launch and Entry Vehicle Design Presentations
+Launch and Entry Vehicle Design [slides](https://github.com/intern-space-program/ref/Course-Slides/Launch-Entry-Design) are available for reference. These presentations include launch, entry, and orbit state equations, heuristics for approximating physical quantities, delta-v calculations, and more. Access is only provided to __Intern Space Program__ members.
+
+### Planar Launch State Equations
+The following [Jupyter Notebook](https://gist.github.com/cadojo/31b76538ed1452ec7450ccf9ff1f948f) summarizes state equations for an ascending launch vehicle. These equations are valid as long as the launch vehicle stays in one plane. The notebook also has Python code that propagates the launch. The resultant plots aren't correct, but the equations and Python example might still be a helpful reference. 
+
+## Git Tips & Tricks
+
+### Git Config & Aliases
+
+#### More Useful `git log`
+
+The following [aliases](https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298) print out decorated commit history that many find easier to read than `git log`. There are tons of examples of aliases that produce (arguably) more useful `git log` outputs, but these are provided here for reference. Of course, find what works best for you.
+
+```
+# Source: https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298
+[alias]
+    lg = lg1
+    lg1 = lg1-specific --all
+    lg2 = lg2-specific --all
+    lg3 = lg3-specific --all
+
+    lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+    lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+    lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
+```
+
+### Configuring commit author and email
+
+There are many ways to make sure that the proper name and email are associated with your commits. If you use the same name and email for all your projects, you can run the following [commands](https://stackoverflow.com/a/3580841/6118741) to set them once.
+
+```
+# Source: https://stackoverflow.com/a/3580841/6118741
+git config --global user.name "Your Name"
+git config --global user.email "name@domain.example"
+``` 
+
 ## Gitignore Info
 The .gitignore file was generated using [gitignore.io](https://www.toptal.com/developers/gitignore)
