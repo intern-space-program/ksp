@@ -57,7 +57,7 @@ If you use any unconventional tricks for performance in your algorithms, be sure
 ## Technical References
 
 ### Launch and Entry Vehicle Design Presentations
-Launch and Entry Vehicle Design [slides](https://github.com/intern-space-program/ref/Course-Slides/Launch-Entry-Design) are available for reference. These presentations include launch, entry, and orbit state equations, heuristics for approximating physical quantities, delta-v calculations, and more. Access is only provided to __Intern Space Program__ members.
+Launch and Entry Vehicle Design [slides](https://github.com/intern-space-program/ref/blob/master/Course-Slides/Launch-Entry-Design) are available for reference. These presentations include launch, entry, and orbit state equations, heuristics for approximating physical quantities, delta-v calculations, and more. Access is only provided to __Intern Space Program__ members.
 
 ### Planar Launch State Equations
 The following [Jupyter Notebook](https://gist.github.com/cadojo/31b76538ed1452ec7450ccf9ff1f948f) summarizes state equations for an ascending launch vehicle. These equations are valid as long as the launch vehicle stays in one plane. The notebook also has Python code that propagates the launch. The resultant plots aren't correct, but the equations and Python example might still be a helpful reference. 
