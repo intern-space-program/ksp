@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfSettingItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SettingItem>
+    <Name>multiplier</Name>
+    <Value xsi:type="float">1.1</Value>
+  </SettingItem>
+  <SettingItem>
+    <Name>increment</Name>
+    <Value xsi:type="int">0</Value>
+  </SettingItem>
+</ArrayOfSettingItem>

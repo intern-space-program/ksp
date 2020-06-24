@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KRPC.InfernalRobotics</name>
+    </assembly>
+    <members>
+        <member name="T:KRPC.InfernalRobotics.Addon">
+             <summary>
+             kRPC InfernalRobotics addon.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.Addon.Start">
+             <summary>
+             Load the InfernalRobotics API.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.IRWrapper.IRWrapper.LogFormatted_DebugOnly(System.String,System.Object[])">
+             <summary>
+             Some Structured logging to the debug file - ONLY RUNS WHEN DLL COMPILED IN DEBUG MODE
+             </summary>
+             <param name="message">Text to be printed - can be formatted as per string.format</param>
+             <param name="strParams">Objects to feed into a string.format</param>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.IRWrapper.IRWrapper.LogFormatted(System.String,System.Object[])">
+             <summary>
+             Some Structured logging to the debug file
+             </summary>
+             <param name="message">Text to be printed - can be formatted as per string.format</param>
+             <param name="strParams">Objects to feed into a string.format</param>
+            </member>
+        <member name="T:KRPC.InfernalRobotics.InfernalRobotics">
+             <summary>
+             This service provides functionality to interact with
+             <a href="https://forum.kerbalspaceprogram.com/index.php?/topic/104535-112-magic-smoke-industries-infernal-robotics-202/">Infernal Robotics</a>.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.InfernalRobotics.Available">
+             <summary>
+             Whether Infernal Robotics is installed.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.InfernalRobotics.Ready">
+             <summary>
+             Whether Infernal Robotics API is ready.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.InfernalRobotics.ServoGroups(KRPC.SpaceCenter.Services.Vessel)">
+             <summary>
+             A list of all the servo groups in the given <paramref name="vessel" />.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.InfernalRobotics.ServoGroupWithName(KRPC.SpaceCenter.Services.Vessel,System.String)">
+             <summary>
+             Returns the servo group in the given <paramref name="vessel" /> with the given <paramref name="name" />,
+             or <c>null</c> if none exists. If multiple servo groups have the same name, only one of them is returned.
+             </summary>
+             <param name="vessel">Vessel to check.</param>
+             <param name="name">Name of servo group to find.</param>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.InfernalRobotics.ServoWithName(KRPC.SpaceCenter.Services.Vessel,System.String)">
+             <summary>
+             Returns the servo in the given <paramref name="vessel" /> with the given <paramref name="name" /> or
+             <c>null</c> if none exists. If multiple servos have the same name, only one of them is returned.
+             </summary>
+             <param name="vessel">Vessel to check.</param>
+             <param name="name">Name of the servo to find.</param>
+            </member>
+        <member name="T:KRPC.InfernalRobotics.Servo">
+             <summary>
+             Represents a servo. Obtained using
+             <see cref="P:KRPC.InfernalRobotics.ServoGroup.Servos" />,
+             <see cref="M:KRPC.InfernalRobotics.ServoGroup.ServoWithName(System.String)" />
+             or <see cref="M:KRPC.InfernalRobotics.InfernalRobotics.ServoWithName(KRPC.SpaceCenter.Services.Vessel,System.String)" />.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.Servo.Equals(KRPC.InfernalRobotics.Servo)">
+             <summary>
+             Check if servos are equivalent.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.Servo.GetHashCode">
+             <summary>
+             Hash the servo.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.Name">
+             <summary>
+             The name of the servo.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.Part">
+             <summary>
+             The part containing the servo.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.Highlight">
+             <summary>
+             Whether the servo should be highlighted in-game.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.Position">
+             <summary>
+             The position of the servo.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.MinConfigPosition">
+             <summary>
+             The minimum position of the servo, specified by the part configuration.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.MaxConfigPosition">
+             <summary>
+             The maximum position of the servo, specified by the part configuration.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.MinPosition">
+             <summary>
+             The minimum position of the servo, specified by the in-game tweak menu.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.MaxPosition">
+             <summary>
+             The maximum position of the servo, specified by the in-game tweak menu.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.ConfigSpeed">
+             <summary>
+             The speed multiplier of the servo, specified by the part configuration.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.Speed">
+             <summary>
+             The speed multiplier of the servo, specified by the in-game tweak menu.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.CurrentSpeed">
+             <summary>
+             The current speed at which the servo is moving.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.Acceleration">
+             <summary>
+             The current speed multiplier set in the UI.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.IsMoving">
+             <summary>
+             Whether the servo is moving.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.IsFreeMoving">
+             <summary>
+             Whether the servo is freely moving.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.IsLocked">
+             <summary>
+             Whether the servo is locked.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.Servo.IsAxisInverted">
+             <summary>
+             Whether the servos axis is inverted.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.Servo.MoveRight">
+             <summary>
+             Moves the servo to the right.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.Servo.MoveLeft">
+             <summary>
+             Moves the servo to the left.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.Servo.MoveCenter">
+             <summary>
+             Moves the servo to the center.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.Servo.MoveNextPreset">
+             <summary>
+             Moves the servo to the next preset.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.Servo.MovePrevPreset">
+             <summary>
+             Moves the servo to the previous preset.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.Servo.MoveTo(System.Single,System.Single)">
+             <summary>
+             Moves the servo to <paramref name="position" /> and sets the
+             speed multiplier to <paramref name="speed" />.
+             </summary>
+             <param name="position">The position to move the servo to.</param>
+             <param name="speed">Speed multiplier for the movement.</param>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.Servo.Stop">
+             <summary>
+             Stops the servo.
+             </summary>
+            </member>
+        <member name="T:KRPC.InfernalRobotics.ServoGroup">
+             <summary>
+             A group of servos, obtained by calling <see cref="M:KRPC.InfernalRobotics.InfernalRobotics.ServoGroups(KRPC.SpaceCenter.Services.Vessel)" />
+             or <see cref="M:KRPC.InfernalRobotics.InfernalRobotics.ServoGroupWithName(KRPC.SpaceCenter.Services.Vessel,System.String)" />. Represents the "Servo Groups"
+             in the InfernalRobotics UI.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.ServoGroup.Equals(KRPC.InfernalRobotics.ServoGroup)">
+             <summary>
+             Check if control groups are equivalent.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.ServoGroup.GetHashCode">
+             <summary>
+             Hash the control group.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.ServoGroup.Name">
+             <summary>
+             The name of the group.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.ServoGroup.ForwardKey">
+             <summary>
+             The key assigned to be the "forward" key for the group.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.ServoGroup.ReverseKey">
+             <summary>
+             The key assigned to be the "reverse" key for the group.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.ServoGroup.Speed">
+             <summary>
+             The speed multiplier for the group.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.ServoGroup.Expanded">
+             <summary>
+             Whether the group is expanded in the InfernalRobotics UI.
+             </summary>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.ServoGroup.Servos">
+             <summary>
+             The servos that are in the group.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.ServoGroup.ServoWithName(System.String)">
+             <summary>
+             Returns the servo with the given <paramref name="name" /> from this group,
+             or <c>null</c> if none exists.
+             </summary>
+             <param name="name">Name of servo to find.</param>
+            </member>
+        <member name="P:KRPC.InfernalRobotics.ServoGroup.Parts">
+             <summary>
+             The parts containing the servos in the group.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.ServoGroup.MoveRight">
+             <summary>
+             Moves all of the servos in the group to the right.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.ServoGroup.MoveLeft">
+             <summary>
+             Moves all of the servos in the group to the left.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.ServoGroup.MoveCenter">
+             <summary>
+             Moves all of the servos in the group to the center.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.ServoGroup.MoveNextPreset">
+             <summary>
+             Moves all of the servos in the group to the next preset.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.ServoGroup.MovePrevPreset">
+             <summary>
+             Moves all of the servos in the group to the previous preset.
+             </summary>
+            </member>
+        <member name="M:KRPC.InfernalRobotics.ServoGroup.Stop">
+             <summary>
+             Stops the servos in the group.
+             </summary>
+            </member>
+    </members>
+</doc>

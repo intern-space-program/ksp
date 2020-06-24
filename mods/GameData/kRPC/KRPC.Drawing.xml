@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KRPC.Drawing</name>
+    </assembly>
+    <members>
+        <member name="T:KRPC.Drawing.Addon">
+             <summary>
+             Addon for doing the drawing
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Addon.Awake">
+             <summary>
+             Wake the addon
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Addon.Update">
+             <summary>
+             Update the addon
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Addon.OnDestroy">
+             <summary>
+             Destroy the addon
+             </summary>
+            </member>
+        <member name="T:KRPC.Drawing.Drawable`1">
+             <summary>
+             Abstract base class for objects that can be drawn.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Drawable`1.#ctor(System.Type)">
+             <summary>
+             Create a drawable and register it with the draw addon.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Drawable`1.Update">
+             <summary>
+             Update the drawable.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Drawable`1.Destroy">
+             <summary>
+             Destroy the drawable.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Drawable`1.GameObject">
+             <summary>
+             The game object for the drawable.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Drawable`1.Renderer">
+             <summary>
+             The renderer object for the drawable.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Drawable`1.Remove">
+             <summary>
+             Remove the object.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Drawable`1.ReferenceFrame">
+             <summary>
+             Reference frame for the positions of the object.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Drawable`1.Visible">
+             <summary>
+             Whether the object is visible.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Drawable`1.Material">
+             <summary>
+             Material used to render the object.
+             Creates the material from a shader with the given name.
+             </summary>
+            </member>
+        <member name="T:KRPC.Drawing.Drawing">
+             <summary>
+             Provides functionality for drawing objects in the flight scene.
+             </summary>
+             <remarks>
+             For drawing and interacting with the user interface, see the UI service.
+             </remarks>
+            </member>
+        <member name="M:KRPC.Drawing.Drawing.AddLine(KRPC.Utils.Tuple{System.Double,System.Double,System.Double},KRPC.Utils.Tuple{System.Double,System.Double,System.Double},KRPC.SpaceCenter.Services.ReferenceFrame,System.Boolean)">
+             <summary>
+             Draw a line in the scene.
+             </summary>
+             <param name="start">Position of the start of the line.</param>
+             <param name="end">Position of the end of the line.</param>
+             <param name="referenceFrame">Reference frame that the positions are in.</param>
+             <param name="visible">Whether the line is visible.</param>
+            </member>
+        <member name="M:KRPC.Drawing.Drawing.AddDirection(KRPC.Utils.Tuple{System.Double,System.Double,System.Double},KRPC.SpaceCenter.Services.ReferenceFrame,System.Single,System.Boolean)">
+             <summary>
+             Draw a direction vector in the scene, from the center of mass of the active vessel.
+             </summary>
+             <param name="direction">Direction to draw the line in.</param>
+             <param name="referenceFrame">Reference frame that the direction is in.</param>
+             <param name="length">The length of the line.</param>
+             <param name="visible">Whether the line is visible.</param>
+            </member>
+        <member name="M:KRPC.Drawing.Drawing.AddPolygon(System.Collections.Generic.IList{KRPC.Utils.Tuple{System.Double,System.Double,System.Double}},KRPC.SpaceCenter.Services.ReferenceFrame,System.Boolean)">
+             <summary>
+             Draw a polygon in the scene, defined by a list of vertices.
+             </summary>
+             <param name="vertices">Vertices of the polygon.</param>
+             <param name="referenceFrame">Reference frame that the vertices are in.</param>
+             <param name="visible">Whether the polygon is visible.</param>
+            </member>
+        <member name="M:KRPC.Drawing.Drawing.AddText(System.String,KRPC.SpaceCenter.Services.ReferenceFrame,KRPC.Utils.Tuple{System.Double,System.Double,System.Double},KRPC.Utils.Tuple{System.Double,System.Double,System.Double,System.Double},System.Boolean)">
+             <summary>
+             Draw text in the scene.
+             </summary>
+             <param name="text">The string to draw.</param>
+             <param name="referenceFrame">Reference frame that the text position is in.</param>
+             <param name="position">Position of the text.</param>
+             <param name="rotation">Rotation of the text, as a quaternion.</param>
+             <param name="visible">Whether the text is visible.</param>
+            </member>
+        <member name="M:KRPC.Drawing.Drawing.Clear(System.Boolean)">
+             <summary>
+             Remove all objects being drawn.
+             </summary>
+             <param name="clientOnly">If true, only remove objects created by the calling client.</param>
+            </member>
+        <member name="T:KRPC.Drawing.IDrawable">
+             <summary>
+             Interface for objects that can be drawn.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.IDrawable.Update">
+             <summary>
+             Update the drawable.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.IDrawable.Destroy">
+             <summary>
+             Destroy the drawable.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.IDrawable.GameObject">
+             <summary>
+             The game object for the drawable.
+             </summary>
+            </member>
+        <member name="T:KRPC.Drawing.Line">
+             <summary>
+             A line. Created using <see cref="M:KRPC.Drawing.Drawing.AddLine(KRPC.Utils.Tuple{System.Double,System.Double,System.Double},KRPC.Utils.Tuple{System.Double,System.Double,System.Double},KRPC.SpaceCenter.Services.ReferenceFrame,System.Boolean)" />.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Line.Update">
+             <summary>
+             Update the line
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Line.Start">
+             <summary>
+             Start position of the line.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Line.End">
+             <summary>
+             End position of the line.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Line.Color">
+             <summary>
+             Set the color
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Line.Thickness">
+             <summary>
+             Set the thickness
+             </summary>
+            </member>
+        <member name="T:KRPC.Drawing.Polygon">
+             <summary>
+             A polygon. Created using <see cref="M:KRPC.Drawing.Drawing.AddPolygon(System.Collections.Generic.IList{KRPC.Utils.Tuple{System.Double,System.Double,System.Double}},KRPC.SpaceCenter.Services.ReferenceFrame,System.Boolean)" />.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Polygon.Update">
+             <summary>
+             Update the polygon.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Polygon.Destroy">
+             <summary>
+             Destroy the drawable.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Polygon.Vertices">
+             <summary>
+             Vertices for the polygon.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Polygon.Color">
+             <summary>
+             Set the color
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Polygon.Thickness">
+             <summary>
+             Set the thickness
+             </summary>
+            </member>
+        <member name="T:KRPC.Drawing.Text">
+             <summary>
+             Text. Created using <see cref="M:KRPC.Drawing.Drawing.AddText(System.String,KRPC.SpaceCenter.Services.ReferenceFrame,KRPC.Utils.Tuple{System.Double,System.Double,System.Double},KRPC.Utils.Tuple{System.Double,System.Double,System.Double,System.Double},System.Boolean)" />.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Text.Update">
+             <summary>
+             Update the text.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Text.Position">
+             <summary>
+             Position of the text.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Text.Rotation">
+             <summary>
+             Rotation of the text as a quaternion.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Text.Destroy">
+             <summary>
+             Destroy the drawable.
+             </summary>
+            </member>
+        <member name="M:KRPC.Drawing.Text.AvailableFonts">
+             <summary>
+             A list of all available fonts.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Text.Content">
+             <summary>
+             The text string
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Text.Font">
+             <summary>
+             Name of the font
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Text.Size">
+             <summary>
+             Font size.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Text.CharacterSize">
+             <summary>
+             Character size.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Text.Style">
+             <summary>
+             Font style.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Text.Alignment">
+             <summary>
+             Alignment.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Text.LineSpacing">
+             <summary>
+             Line spacing.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Text.Anchor">
+             <summary>
+             Anchor.
+             </summary>
+            </member>
+        <member name="P:KRPC.Drawing.Text.Color">
+             <summary>
+             Set the color
+             </summary>
+            </member>
+    </members>
+</doc>

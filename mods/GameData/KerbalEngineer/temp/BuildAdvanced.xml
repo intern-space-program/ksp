@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfSettingItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SettingItem>
+    <Name>visible</Name>
+    <Value xsi:type="xsd:boolean">true</Value>
+  </SettingItem>
+  <SettingItem>
+    <Name>windowPositionX</Name>
+    <Value xsi:type="xsd:float">510</Value>
+  </SettingItem>
+  <SettingItem>
+    <Name>windowPositionY</Name>
+    <Value xsi:type="xsd:float">342</Value>
+  </SettingItem>
+  <SettingItem>
+    <Name>compactMode</Name>
+    <Value xsi:type="xsd:boolean">false</Value>
+  </SettingItem>
+  <SettingItem>
+    <Name>compactCollapseRight</Name>
+    <Value xsi:type="xsd:boolean">false</Value>
+  </SettingItem>
+  <SettingItem>
+    <Name>showAllStages</Name>
+    <Value xsi:type="xsd:boolean">false</Value>
+  </SettingItem>
+  <SettingItem>
+    <Name>showAtmosphericDetails</Name>
+    <Value xsi:type="xsd:boolean">false</Value>
+  </SettingItem>
+  <SettingItem>
+    <Name>showSettings</Name>
+    <Value xsi:type="xsd:boolean">false</Value>
+  </SettingItem>
+  <SettingItem>
+    <Name>selectedBodyName</Name>
+    <Value xsi:type="xsd:string">Kerbin</Value>
+  </SettingItem>
+</ArrayOfSettingItem>

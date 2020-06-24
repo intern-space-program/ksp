@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KRPC.RemoteTech</name>
+    </assembly>
+    <members>
+        <member name="T:KRPC.RemoteTech.Addon">
+             <summary>
+             kRPC RemoteTech addon.
+             </summary>
+            </member>
+        <member name="M:KRPC.RemoteTech.Addon.Start">
+             <summary>
+             Load the RemoteTech API.
+             </summary>
+            </member>
+        <member name="T:KRPC.RemoteTech.Antenna">
+             <summary>
+             A RemoteTech antenna. Obtained by calling <see cref="P:KRPC.RemoteTech.Comms.Antennas" /> or <see cref="M:KRPC.RemoteTech.RemoteTech.Antenna(KRPC.SpaceCenter.Services.Parts.Part)" />.
+             </summary>
+            </member>
+        <member name="M:KRPC.RemoteTech.Antenna.Equals(KRPC.RemoteTech.Antenna)">
+             <summary>
+             Check that the antennas are the same.
+             </summary>
+            </member>
+        <member name="M:KRPC.RemoteTech.Antenna.GetHashCode">
+             <summary>
+             Hash the antenna.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Antenna.Part">
+             <summary>
+             Get the part containing this antenna.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Antenna.HasConnection">
+             <summary>
+             Whether the antenna has a connection.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Antenna.Target">
+             <summary>
+             The object that the antenna is targetting.
+             This property can be used to set the target to <see cref="F:KRPC.RemoteTech.Target.None" /> or <see cref="F:KRPC.RemoteTech.Target.ActiveVessel" />.
+             To set the target to a celestial body, ground station or vessel see <see cref="P:KRPC.RemoteTech.Antenna.TargetBody" />,
+             <see cref="P:KRPC.RemoteTech.Antenna.TargetGroundStation" /> and <see cref="P:KRPC.RemoteTech.Antenna.TargetVessel" />.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Antenna.TargetBody">
+             <summary>
+             The celestial body the antenna is targetting.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Antenna.TargetGroundStation">
+             <summary>
+             The ground station the antenna is targetting.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Antenna.TargetVessel">
+             <summary>
+             The vessel the antenna is targetting.
+             </summary>
+            </member>
+        <member name="T:KRPC.RemoteTech.Comms">
+             <summary>
+             Communications for a vessel.
+             </summary>
+            </member>
+        <member name="M:KRPC.RemoteTech.Comms.Equals(KRPC.RemoteTech.Comms)">
+             <summary>
+             Check that the comms are for the same vessel.
+             </summary>
+            </member>
+        <member name="M:KRPC.RemoteTech.Comms.GetHashCode">
+             <summary>
+             Hash the comms.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Comms.Vessel">
+             <summary>
+             Get the vessel.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Comms.HasLocalControl">
+             <summary>
+             Whether the vessel can be controlled locally.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Comms.HasFlightComputer">
+             <summary>
+             Whether the vessel has a flight computer on board.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Comms.HasConnection">
+             <summary>
+             Whether the vessel has any connection.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Comms.HasConnectionToGroundStation">
+             <summary>
+             Whether the vessel has a connection to a ground station.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Comms.SignalDelay">
+             <summary>
+             The shortest signal delay to the vessel, in seconds.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.Comms.SignalDelayToGroundStation">
+             <summary>
+             The signal delay between the vessel and the closest ground station, in seconds.
+             </summary>
+            </member>
+        <member name="M:KRPC.RemoteTech.Comms.SignalDelayToVessel(KRPC.SpaceCenter.Services.Vessel)">
+             <summary>
+             The signal delay between the this vessel and another vessel, in seconds.
+             </summary>
+             <param name="other"></param>
+            </member>
+        <member name="P:KRPC.RemoteTech.Comms.Antennas">
+             <summary>
+             The antennas for this vessel.
+             </summary>
+            </member>
+        <member name="T:KRPC.RemoteTech.RemoteTech">
+             <summary>
+             This service provides functionality to interact with
+             <a href="https://forum.kerbalspaceprogram.com/index.php?/topic/139167-13-remotetech-v188-2017-09-03/">RemoteTech</a>.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.RemoteTech.Available">
+             <summary>
+             Whether RemoteTech is installed.
+             </summary>
+            </member>
+        <member name="M:KRPC.RemoteTech.RemoteTech.Comms(KRPC.SpaceCenter.Services.Vessel)">
+             <summary>
+             Get a communications object, representing the communication capability of a particular vessel.
+             </summary>
+            </member>
+        <member name="M:KRPC.RemoteTech.RemoteTech.Antenna(KRPC.SpaceCenter.Services.Parts.Part)">
+             <summary>
+             Get the antenna object for a particular part.
+             </summary>
+            </member>
+        <member name="P:KRPC.RemoteTech.RemoteTech.GroundStations">
+             <summary>
+             The names of the ground stations.
+             </summary>
+            </member>
+        <member name="T:KRPC.RemoteTech.Target">
+             <summary>
+             The type of object an antenna is targetting.
+             See <see cref="P:KRPC.RemoteTech.Antenna.Target" />.
+             </summary>
+            </member>
+        <member name="F:KRPC.RemoteTech.Target.ActiveVessel">
+             <summary>
+             The active vessel.
+             </summary>
+            </member>
+        <member name="F:KRPC.RemoteTech.Target.CelestialBody">
+             <summary>
+             A celestial body.
+             </summary>
+            </member>
+        <member name="F:KRPC.RemoteTech.Target.GroundStation">
+             <summary>
+             A ground station.
+             </summary>
+            </member>
+        <member name="F:KRPC.RemoteTech.Target.Vessel">
+             <summary>
+             A specific vessel.
+             </summary>
+            </member>
+        <member name="F:KRPC.RemoteTech.Target.None">
+             <summary>
+             No target.
+             </summary>
+            </member>
+    </members>
+</doc>

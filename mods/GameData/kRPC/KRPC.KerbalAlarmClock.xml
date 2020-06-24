@@ -1,0 +1,489 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KRPC.KerbalAlarmClock</name>
+    </assembly>
+    <members>
+        <member name="T:KRPC.KerbalAlarmClock.Addon">
+             <summary>
+             kRPC KerbalAlarmClock addon.
+             </summary>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.Addon.Start">
+             <summary>
+             Load the KerbalAlarmClock API.
+             </summary>
+            </member>
+        <member name="T:KRPC.KerbalAlarmClock.Alarm">
+             <summary>
+             Represents an alarm. Obtained by calling
+             <see cref="P:KRPC.KerbalAlarmClock.KerbalAlarmClock.Alarms" />,
+             <see cref="M:KRPC.KerbalAlarmClock.KerbalAlarmClock.AlarmWithName(System.String)" /> or
+             <see cref="M:KRPC.KerbalAlarmClock.KerbalAlarmClock.AlarmsWithType(KRPC.KerbalAlarmClock.AlarmType)" />.
+             </summary>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.Alarm.Equals(KRPC.KerbalAlarmClock.Alarm)">
+             <summary>
+             Check if two alarms are equal.
+             </summary>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.Alarm.GetHashCode">
+             <summary>
+             Hash the alarm.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.Action">
+             <summary>
+             The action that the alarm triggers.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.Margin">
+             <summary>
+             The number of seconds before the event that the alarm will fire.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.Time">
+             <summary>
+             The time at which the alarm will fire.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.Type">
+             <summary>
+             The type of the alarm.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.ID">
+             <summary>
+             The unique identifier for the alarm.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.Name">
+             <summary>
+             The short name of the alarm.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.Notes">
+             <summary>
+             The long description of the alarm.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.Remaining">
+             <summary>
+             The number of seconds until the alarm will fire.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.Repeat">
+             <summary>
+             Whether the alarm will be repeated after it has fired.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.RepeatPeriod">
+             <summary>
+             The time delay to automatically create an alarm after it has fired.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.Vessel">
+             <summary>
+             The vessel that the alarm is attached to.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.XferOriginBody">
+             <summary>
+             The celestial body the vessel is departing from.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.Alarm.XferTargetBody">
+             <summary>
+             The celestial body the vessel is arriving at.
+             </summary>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.Alarm.Remove">
+             <summary>
+             Removes the alarm.
+             </summary>
+            </member>
+        <member name="T:KRPC.KerbalAlarmClock.AlarmAction">
+             <summary>
+             The action performed by an alarm when it fires.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmAction.DoNothing">
+             <summary>
+             Don't do anything at all...
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmAction.DoNothingDeleteWhenPassed">
+             <summary>
+             Don't do anything, and delete the alarm.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmAction.KillWarp">
+             <summary>
+             Drop out of time warp.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmAction.KillWarpOnly">
+             <summary>
+             Drop out of time warp.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmAction.MessageOnly">
+             <summary>
+             Display a message.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmAction.PauseGame">
+             <summary>
+             Pause the game.
+             </summary>
+            </member>
+        <member name="T:KRPC.KerbalAlarmClock.AlarmType">
+             <summary>
+             The type of an alarm.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.Raw">
+             <summary>
+             An alarm for a specific date/time or a specific period in the future.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.Maneuver">
+             <summary>
+             An alarm based on the next maneuver node on the current ships flight path.
+             This node will be stored and can be restored when you come back to the ship.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.ManeuverAuto">
+             <summary>
+             See <see cref="F:KRPC.KerbalAlarmClock.AlarmType.Maneuver" />.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.Apoapsis">
+             <summary>
+             An alarm for furthest part of the orbit from the planet.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.Periapsis">
+             <summary>
+             An alarm for nearest part of the orbit from the planet.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.AscendingNode">
+             <summary>
+             Ascending node for the targeted object, or equatorial ascending node.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.DescendingNode">
+             <summary>
+             Descending node for the targeted object, or equatorial descending node.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.Closest">
+             <summary>
+             An alarm based on the closest approach of this vessel to the targeted
+             vessel, some number of orbits into the future.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.Contract">
+             <summary>
+             An alarm based on the expiry or deadline of contracts in career modes.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.ContractAuto">
+             <summary>
+             See <see cref="F:KRPC.KerbalAlarmClock.AlarmType.Contract" />.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.Crew">
+             <summary>
+             An alarm that is attached to a crew member.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.Distance">
+             <summary>
+             An alarm that is triggered when a selected target comes within a chosen distance.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.EarthTime">
+             <summary>
+             An alarm based on the time in the "Earth" alternative Universe (aka the Real World).
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.LaunchRendevous">
+             <summary>
+             An alarm that fires as your landed craft passes under the orbit of your target.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.SOIChange">
+             <summary>
+             An alarm manually based on when the next SOI point is on the flight path
+             or set to continually monitor the active flight path and add alarms as it
+             detects SOI changes.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.SOIChangeAuto">
+             <summary>
+             See <see cref="F:KRPC.KerbalAlarmClock.AlarmType.SOIChange" />.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.Transfer">
+             <summary>
+             An alarm based on Interplanetary Transfer Phase Angles, i.e. when should
+             I launch to planet X? Based on Kosmo Not's post and used in Olex's
+             Calculator.
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.AlarmType.TransferModelled">
+             <summary>
+             See <see cref="F:KRPC.KerbalAlarmClock.AlarmType.Transfer" />.
+             </summary>
+            </member>
+        <member name="T:KRPC.KerbalAlarmClock.KACWrapper">
+             <summary>
+             The Wrapper class to access KAC from another plugin
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.KACWrapper.KAC">
+             <summary>
+             This is the Kerbal Alarm Clock object
+             
+             SET AFTER INIT
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.AssemblyExists">
+             <summary>
+             Whether we found the KerbalAlarmClock assembly in the loadedassemblies. 
+             
+             SET AFTER INIT
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.InstanceExists">
+             <summary>
+             Whether we managed to hook the running Instance from the assembly. 
+             
+             SET AFTER INIT
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.KACWrapper._KACWrapped">
+             <summary>
+             Whether we managed to wrap all the methods/functions from the instance. 
+             
+             SET AFTER INIT
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.APIReady">
+             <summary>
+             Whether the object has been wrapped and the APIReady flag is set in the real KAC
+             </summary>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KACWrapper.InitKACWrapper">
+             <summary>
+             This method will set up the KAC object and wrap all the methods/functions
+             </summary>
+             <param name="Force">This option will force the Init function to rebind everything</param>
+             <returns></returns>
+            </member>
+        <member name="T:KRPC.KerbalAlarmClock.KACWrapper.KACAPI">
+             <summary>
+             The Type that is an analogue of the real KAC. This lets you access all the API-able properties and Methods of the KAC
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.APIReady">
+             <summary>
+             Whether the APIReady flag is set in the real KAC
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.Alarms">
+             <summary>
+             The list of Alarms that are currently active in game
+             </summary>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.ExtractAlarmList(System.Object)">
+             <summary>
+             This converts the KACAlarmList actual object to a new List for consumption
+             </summary>
+             <param name="actualAlarmList"></param>
+             <returns></returns>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.AddHandler(System.Reflection.EventInfo,System.Object,System.Action{System.Object})">
+             <summary>
+             Takes an EventInfo and binds a method to the event firing
+             </summary>
+             <param name="Event">EventInfo of the event we want to attach to</param>
+             <param name="KACObject">actual object the eventinfo is gathered from</param>
+             <param name="Handler">Method that we are going to hook to the event</param>
+            </member>
+        <member name="E:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.onAlarmStateChanged">
+             <summary>
+             Event that fires when the State of an Alarm changes
+             </summary>
+            </member>
+        <member name="T:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.AlarmStateChangedHandler">
+             <summary>
+             Structure of the event delegeate
+             </summary>
+             <param name="e"></param>
+            </member>
+        <member name="T:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.AlarmStateChangedEventArgs">
+             <summary>
+             This is the structure that holds the event arguments
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.AlarmStateChangedEventArgs.alarm">
+             <summary>
+             Alarm that has had the state change
+             </summary>
+            </member>
+        <member name="F:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.AlarmStateChangedEventArgs.eventType">
+             <summary>
+             What the state was before the event
+             </summary>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.AlarmStateChanged(System.Object)">
+             <summary>
+             private function that grabs the actual event and fires our wrapped one
+             </summary>
+             <param name="actualEvent">actual event from the KAC</param>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.CreateAlarm(KRPC.KerbalAlarmClock.KACWrapper.KACAPI.AlarmTypeEnum,System.String,System.Double)">
+             <summary>
+             Create a new Alarm
+             </summary>
+             <param name="AlarmType">What type of alarm are we creating</param>
+             <param name="Name">Name of the Alarm for the display</param>
+             <param name="UT">Universal Time for the alarm</param>
+             <returns>ID of the newly created alarm</returns>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.DeleteAlarm(System.String)">
+             <summary>
+             Delete an Alarm
+             </summary>
+             <param name="AlarmID">Unique ID of the alarm</param>
+             <returns>Success of the deletion</returns>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.DrawAlarmActionChoice(KRPC.KerbalAlarmClock.KACWrapper.KACAPI.AlarmActionEnum@,System.String,System.Int32,System.Int32)">
+             <summary>
+             Delete an Alarm
+             </summary>
+             <param name="AlarmID">Unique ID of the alarm</param>
+             <returns>Success of the deletion</returns>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.VesselID">
+             <summary>
+             Unique Identifier of the Vessel that the alarm is attached to
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.ID">
+             <summary>
+             Unique Identifier of this alarm
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.Name">
+             <summary>
+             Short Text Name for the Alarm
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.Notes">
+             <summary>
+             Longer Text Description for the Alarm
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.XferOriginBodyName">
+             <summary>
+             Name of the origin body for a transfer
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.XferTargetBodyName">
+             <summary>
+             Name of the destination body for a transfer
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.AlarmType">
+             <summary>
+             What type of Alarm is this - affects icon displayed and some calc options
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.AlarmTime">
+             <summary>
+             In game UT value of the alarm
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.AlarmMargin">
+             <summary>
+             In game seconds the alarm will fire before the event it is for
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.AlarmAction">
+             <summary>
+             What should the Alarm Clock do when the alarm fires
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.Remaining">
+             <summary>
+             How much Game time is left before the alarm fires
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.RepeatAlarm">
+             <summary>
+             Whether the alarm will be repeated after it fires
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KACWrapper.KACAPI.KACAlarm.RepeatAlarmPeriod">
+             <summary>
+             Value in Seconds after which the alarm will repeat
+             </summary>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KACWrapper.LogFormatted_DebugOnly(System.String,System.Object[])">
+             <summary>
+             Some Structured logging to the debug file - ONLY RUNS WHEN DLL COMPILED IN DEBUG MODE
+             </summary>
+             <param name="Message">Text to be printed - can be formatted as per String.format</param>
+             <param name="strParams">Objects to feed into a String.format</param>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KACWrapper.LogFormatted(System.String,System.Object[])">
+             <summary>
+             Some Structured logging to the debug file
+             </summary>
+             <param name="Message">Text to be printed - can be formatted as per String.format</param>
+             <param name="strParams">Objects to feed into a String.format</param>
+            </member>
+        <member name="T:KRPC.KerbalAlarmClock.KerbalAlarmClock">
+             <summary>
+             This service provides functionality to interact with
+             <a href="https://forum.kerbalspaceprogram.com/index.php?/topic/22809-13x-kerbal-alarm-clock-v3850-may-30/">Kerbal Alarm Clock</a>.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KerbalAlarmClock.Available">
+             <summary>
+             Whether Kerbal Alarm Clock is available.
+             </summary>
+            </member>
+        <member name="P:KRPC.KerbalAlarmClock.KerbalAlarmClock.Alarms">
+             <summary>
+             A list of all the alarms.
+             </summary>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KerbalAlarmClock.AlarmWithName(System.String)">
+             <summary>
+             Get the alarm with the given <paramref name="name" />, or <c>null</c>
+             if no alarms have that name. If more than one alarm has the name,
+             only returns one of them.
+             </summary>
+             <param name="name">Name of the alarm to search for.</param>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KerbalAlarmClock.AlarmsWithType(KRPC.KerbalAlarmClock.AlarmType)">
+             <summary>
+             Get a list of alarms of the specified <paramref name="type" />.
+             </summary>
+             <param name="type">Type of alarm to return.</param>
+            </member>
+        <member name="M:KRPC.KerbalAlarmClock.KerbalAlarmClock.CreateAlarm(KRPC.KerbalAlarmClock.AlarmType,System.String,System.Double)">
+             <summary>
+             Create a new alarm and return it.
+             </summary>
+             <param name="type">Type of the new alarm.</param>
+             <param name="name">Name of the new alarm.</param>
+             <param name="ut">Time at which the new alarm should trigger.</param>
+            </member>
+    </members>
+</doc>

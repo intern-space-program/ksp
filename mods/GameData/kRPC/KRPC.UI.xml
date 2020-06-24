@@ -1,0 +1,508 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KRPC.UI</name>
+    </assembly>
+    <members>
+        <member name="T:KRPC.UI.Addon">
+             <summary>
+             Addon for managing the UI
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.Addon.Instantiate(UnityEngine.GameObject,System.String)">
+             <summary>
+             Load and instantiate the named prefab, and set its parent game object.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.Addon.Awake">
+             <summary>
+             Wake the addon
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.Addon.Update">
+             <summary>
+             Update the addon
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.Addon.OnDestroy">
+             <summary>
+             Destroy the addon
+             </summary>
+            </member>
+        <member name="T:KRPC.UI.Button">
+             <summary>
+             A text label. See <see cref="M:KRPC.UI.Panel.AddButton(System.String,System.Boolean)" />.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Button.RectTransform">
+             <summary>
+             The rect transform for the text.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Button.Text">
+             <summary>
+             The text for the button.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Button.Clicked">
+             <summary>
+             Whether the button has been clicked.
+             </summary>
+             <remarks>
+             This property is set to true when the user clicks the button.
+             A client script should reset the property to false in order to detect subsequent button presses.
+             </remarks>
+            </member>
+        <member name="T:KRPC.UI.Canvas">
+             <summary>
+             A canvas for user interface elements. See <see cref="P:KRPC.UI.UI.StockCanvas" /> and <see cref="M:KRPC.UI.UI.AddCanvas" />.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Canvas.RectTransform">
+             <summary>
+             The rect transform for the canvas.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.Canvas.AddPanel(System.Boolean)">
+             <summary>
+             Create a new container for user interface elements.
+             </summary>
+             <param name="visible">Whether the panel is visible.</param>
+            </member>
+        <member name="M:KRPC.UI.Canvas.AddText(System.String,System.Boolean)">
+             <summary>
+             Add text to the canvas.
+             </summary>
+             <param name="content">The text.</param>
+             <param name="visible">Whether the text is visible.</param>
+            </member>
+        <member name="M:KRPC.UI.Canvas.AddInputField(System.Boolean)">
+             <summary>
+             Add an input field to the canvas.
+             </summary>
+             <param name="visible">Whether the input field is visible.</param>
+            </member>
+        <member name="M:KRPC.UI.Canvas.AddButton(System.String,System.Boolean)">
+             <summary>
+             Add a button to the canvas.
+             </summary>
+             <param name="content">The label for the button.</param>
+             <param name="visible">Whether the button is visible.</param>
+            </member>
+        <member name="T:KRPC.UI.ExtensionMethods.TextExtensions">
+             <summary>
+             Text extensions.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.ExtensionMethods.TextExtensions.ToFontStyle(UnityEngine.FontStyle)">
+             <summary>
+             Convert a Unity font style to a kRPC font style.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.ExtensionMethods.TextExtensions.FromFontStyle(KRPC.UI.FontStyle)">
+             <summary>
+             Convert a kRPC font style to a Unity font style.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.ExtensionMethods.TextExtensions.ToTextAlignment(UnityEngine.TextAlignment)">
+             <summary>
+             Convert a Unity text alignment to a kRPC text alignment.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.ExtensionMethods.TextExtensions.FromTextAlignment(KRPC.UI.TextAlignment)">
+             <summary>
+             Convert a kRPC text alignment to a Unity text alignment.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.ExtensionMethods.TextExtensions.ToTextAnchor(UnityEngine.TextAnchor)">
+             <summary>
+             Convert a Unity text anchor to a kRPC text anchor.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.ExtensionMethods.TextExtensions.FromTextAnchor(KRPC.UI.TextAnchor)">
+             <summary>
+             Convert a kRPC text anchor to a Unity text anchor.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.ExtensionMethods.TextExtensions.ToScreenMessageStyle(KRPC.UI.MessagePosition)">
+             <summary>
+             Convert a kRPC message position to a screen message style.
+             </summary>
+            </member>
+        <member name="T:KRPC.UI.FontStyle">
+             <summary>
+             Font style.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.FontStyle.Normal">
+             <summary>
+             Normal.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.FontStyle.Bold">
+             <summary>
+             Bold.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.FontStyle.Italic">
+             <summary>
+             Italic.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.FontStyle.BoldAndItalic">
+             <summary>
+             Bold and italic.
+             </summary>
+            </member>
+        <member name="T:KRPC.UI.InputField">
+             <summary>
+             An input field. See <see cref="M:KRPC.UI.Panel.AddInputField(System.Boolean)" />.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.InputField.RectTransform">
+             <summary>
+             The rect transform for the input field.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.InputField.Value">
+             <summary>
+             The value of the input field.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.InputField.Text">
+             <summary>
+             The text component of the input field.
+             </summary>
+             <remarks>
+             Use <see cref="P:KRPC.UI.InputField.Value" /> to get and set the value in the field.
+             This object can be used to alter the style of the input field's text.
+             </remarks>
+            </member>
+        <member name="P:KRPC.UI.InputField.Changed">
+             <summary>
+             Whether the input field has been changed.
+             </summary>
+             <remarks>
+             This property is set to true when the user modifies the value of the input field.
+             A client script should reset the property to false in order to detect subsequent changes.
+             </remarks>
+            </member>
+        <member name="T:KRPC.UI.MessagePosition">
+             <summary>
+             Message position.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.MessagePosition.BottomCenter">
+             <summary>
+             Bottom center.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.MessagePosition.TopCenter">
+             <summary>
+             Top center.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.MessagePosition.TopLeft">
+             <summary>
+             Top left.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.MessagePosition.TopRight">
+             <summary>
+             Top right.
+             </summary>
+            </member>
+        <member name="T:KRPC.UI.Object">
+             <summary>
+             Abstract base class for all UI objects.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Object.GameObject">
+             <summary>
+             Unity game object for the UI element.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.Object.#ctor(UnityEngine.GameObject,System.Boolean,System.Boolean)">
+             <summary>
+             Create a UI object.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.Object.#ctor(UnityEngine.Canvas)">
+             <summary>
+             Create a UI object from a canvas.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Object.Visible">
+             <summary>
+             Whether the UI object is visible.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.Object.Destroy">
+             <summary>
+             Destroy the UI object.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.Object.Remove">
+             <summary>
+             Remove the UI object.
+             </summary>
+            </member>
+        <member name="T:KRPC.UI.Panel">
+             <summary>
+             A container for user interface elements. See <see cref="M:KRPC.UI.Canvas.AddPanel(System.Boolean)" />.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Panel.RectTransform">
+             <summary>
+             The rect transform for the panel.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.Panel.AddPanel(System.Boolean)">
+             <summary>
+             Create a panel within this panel.
+             </summary>
+             <param name="visible">Whether the new panel is visible.</param>
+            </member>
+        <member name="M:KRPC.UI.Panel.AddText(System.String,System.Boolean)">
+             <summary>
+             Add text to the panel.
+             </summary>
+             <param name="content">The text.</param>
+             <param name="visible">Whether the text is visible.</param>
+            </member>
+        <member name="M:KRPC.UI.Panel.AddInputField(System.Boolean)">
+             <summary>
+             Add an input field to the panel.
+             </summary>
+             <param name="visible">Whether the input field is visible.</param>
+            </member>
+        <member name="M:KRPC.UI.Panel.AddButton(System.String,System.Boolean)">
+             <summary>
+             Add a button to the panel.
+             </summary>
+             <param name="content">The label for the button.</param>
+             <param name="visible">Whether the button is visible.</param>
+            </member>
+        <member name="T:KRPC.UI.RectTransform">
+             <summary>
+             A Unity engine Rect Transform for a UI object.
+             See the <a href="https://docs.unity3d.com/Manual/class-RectTransform.html">Unity manual</a> for more details.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.RectTransform.Position">
+             <summary>
+             Position of the rectangles pivot point relative to the anchors.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.RectTransform.LocalPosition">
+             <summary>
+             Position of the rectangles pivot point relative to the anchors.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.RectTransform.Size">
+             <summary>
+             Width and height of the rectangle.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.RectTransform.UpperRight">
+             <summary>
+             Position of the rectangles upper right corner relative to the anchors.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.RectTransform.LowerLeft">
+             <summary>
+             Position of the rectangles lower left corner relative to the anchors.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.RectTransform.Anchor">
+             <summary>
+             Set the minimum and maximum anchor points as a fraction of the size of the parent rectangle.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.RectTransform.AnchorMax">
+             <summary>
+             The anchor point for the lower left corner of the rectangle defined as a fraction of the size of the parent rectangle.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.RectTransform.AnchorMin">
+             <summary>
+             The anchor point for the upper right corner of the rectangle defined as a fraction of the size of the parent rectangle.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.RectTransform.Pivot">
+             <summary>
+             Location of the pivot point around which the rectangle rotates, defined as a fraction of the size of the rectangle itself.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.RectTransform.Rotation">
+             <summary>
+             Rotation, as a quaternion, of the object around its pivot point.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.RectTransform.Scale">
+             <summary>
+             Scale factor applied to the object in the x, y and z dimensions.
+             </summary>
+            </member>
+        <member name="T:KRPC.UI.Text">
+             <summary>
+             A text label. See <see cref="M:KRPC.UI.Panel.AddText(System.String,System.Boolean)" />.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Text.RectTransform">
+             <summary>
+             The rect transform for the text.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Text.AvailableFonts">
+             <summary>
+             A list of all available fonts.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Text.Content">
+             <summary>
+             The text string
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Text.Font">
+             <summary>
+             Name of the font
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Text.Size">
+             <summary>
+             Font size.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Text.Style">
+             <summary>
+             Font style.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Text.Alignment">
+             <summary>
+             Alignment.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Text.LineSpacing">
+             <summary>
+             Line spacing.
+             </summary>
+            </member>
+        <member name="P:KRPC.UI.Text.Color">
+             <summary>
+             Set the color
+             </summary>
+            </member>
+        <member name="T:KRPC.UI.TextAlignment">
+             <summary>
+             Text alignment.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAlignment.Left">
+             <summary>
+             Left aligned.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAlignment.Right">
+             <summary>
+             Right aligned.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAlignment.Center">
+             <summary>
+             Center aligned.
+             </summary>
+            </member>
+        <member name="T:KRPC.UI.TextAnchor">
+             <summary>
+             Text alignment.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAnchor.LowerCenter">
+             <summary>
+             Lower center.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAnchor.LowerLeft">
+             <summary>
+             Lower left.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAnchor.LowerRight">
+             <summary>
+             Lower right.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAnchor.MiddleCenter">
+             <summary>
+             Middle center.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAnchor.MiddleLeft">
+             <summary>
+             Middle left.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAnchor.MiddleRight">
+             <summary>
+             Middle right.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAnchor.UpperCenter">
+             <summary>
+             Upper center.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAnchor.UpperLeft">
+             <summary>
+             Upper left.
+             </summary>
+            </member>
+        <member name="F:KRPC.UI.TextAnchor.UpperRight">
+             <summary>
+             Upper right.
+             </summary>
+            </member>
+        <member name="T:KRPC.UI.UI">
+             <summary>
+             Provides functionality for drawing and interacting with in-game user interface elements.
+             </summary>
+             <remarks>
+             For drawing 3D objects in the flight scene, see the Drawing service.
+             </remarks>
+            </member>
+        <member name="M:KRPC.UI.UI.AddCanvas">
+             <summary>
+             Add a new canvas.
+             </summary>
+             <remarks>
+             If you want to add UI elements to KSPs stock UI canvas, use <see cref="P:KRPC.UI.UI.StockCanvas" />.
+             </remarks>
+            </member>
+        <member name="P:KRPC.UI.UI.StockCanvas">
+             <summary>
+             The stock UI canvas.
+             </summary>
+            </member>
+        <member name="M:KRPC.UI.UI.Message(System.String,System.Single,KRPC.UI.MessagePosition,KRPC.Utils.Tuple{System.Double,System.Double,System.Double},System.Single)">
+             <summary>
+             Display a message on the screen.
+             </summary>
+             <remarks>
+             The message appears just like a stock message, for example quicksave or quickload messages.
+             </remarks>
+             <param name="content">Message content.</param>
+             <param name="duration">Duration before the message disappears, in seconds.</param>
+             <param name="position">Position to display the message.</param>
+             <param name="size">Size of the message, differs per position.</param>
+             <param name="color">The color of the message.</param>
+            </member>
+        <member name="M:KRPC.UI.UI.Clear(System.Boolean)">
+             <summary>
+             Remove all user interface elements.
+             </summary>
+             <param name="clientOnly">If true, only remove objects created by the calling client.</param>
+            </member>
+    </members>
+</doc>

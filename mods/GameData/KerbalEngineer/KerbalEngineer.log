@@ -1,0 +1,32 @@
+Executing: KerbalEngineer - 1.1.7.1
+Assembly: /Users/mike/Library/Application Support/Steam/steamapps/common/Kerbal Space Program/GameData/KerbalEngineer/KerbalEngineer.dll
+
+[Log 00:08:04.7881810]: images (UnityEngine.AssetBundle)
+[Log 00:09:17.3925400]: Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly: ModuleManager, Version=3.0.7.0, Culture=neutral, PublicKeyToken=null
+Assembly: ModuleManager, Version=3.0.7.0, Culture=neutral, PublicKeyToken=null
+Assembly: KerbalEngineer.Unity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly: KerbalEngineer, Version=1.1.7.1, Culture=neutral, PublicKeyToken=null
+Assembly: HyperEdit, Version=1.5.8.0, Culture=neutral, PublicKeyToken=null
+Assembly: KSPSteamCtrlr, Version=0.0.1.35, Culture=neutral, PublicKeyToken=null
+Assembly: Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604
+Assembly: KRPC.Drawing, Version=0.4.8.0, Culture=neutral, PublicKeyToken=null
+Assembly: KRPC.IO.Ports, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly: KRPC.InfernalRobotics, Version=0.4.8.0, Culture=neutral, PublicKeyToken=null
+Assembly: KRPC.KerbalAlarmClock, Version=0.4.8.0, Culture=neutral, PublicKeyToken=null
+Assembly: KRPC.RemoteTech, Version=0.4.8.0, Culture=neutral, PublicKeyToken=null
+Assembly: KRPC.SpaceCenter, Version=0.4.8.0, Culture=neutral, PublicKeyToken=null
+Assembly: KRPC.UI, Version=0.4.8.0, Culture=neutral, PublicKeyToken=null
+Assembly: KRPC, Version=0.4.8.0, Culture=neutral, PublicKeyToken=null
+
+[Log 00:09:17.3928110]: FlightEngineerCore->Awake
+[Log 00:09:18.7290120]: FlightEngineerCore->Start
+[Log 00:09:23.7927480]: FlightEngineerCore->OnDestroy
+[00:33:02.3118070]: Exception  // System.NullReferenceException: Object reference not set to an instance of an object
+  at KerbalEngineer.UIControls.PopOutElement.Update () [0x0003f] in <8b06541dac5a48b5bda3a8256a65689d>:0 
+[]:   at KerbalEngineer.UIControls.PopOutElement.Update () [0x0003f] in <8b06541dac5a48b5bda3a8256a65689d>:0 
+
+[Log 00:40:24.6708280]: BuildAdvanced->OnDestroy
+[Log 00:40:24.8922680]: FlightEngineerCore->Awake
+[Log 00:40:26.3895630]: FlightEngineerCore->Start
+[Log 00:41:07.1078640]: FlightEngineerCore->OnDestroy
