@@ -2,7 +2,7 @@ ship = Gateway
 version = 1.9.1
 description = 
 type = VAB
-size = 4.78120852,7.57463074,3.33016515
+size = 4.78120899,7.57463074,3.33016491
 steamPublishedFileId = 0
 persistentId = 2232180738
 rot = 0,0,0,0
@@ -216,6 +216,567 @@ PART
 	}
 	MODULE
 	{
+		name = MechJebCore
+		isEnabled = True
+		running = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnOrbitProgradeAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRetrogradeAction
+			{
+				actionGroup = None
+			}
+			OnOrbitNormalAction
+			{
+				actionGroup = None
+			}
+			OnOrbitAntinormalAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRadialInAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRadialOutAction
+			{
+				actionGroup = None
+			}
+			OnKillRotationAction
+			{
+				actionGroup = None
+			}
+			OnDeactivateSmartASSAction
+			{
+				actionGroup = None
+			}
+			OnLandsomewhereAction
+			{
+				actionGroup = None
+			}
+			OnLandTargetAction
+			{
+				actionGroup = None
+			}
+			OnPanicAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronOffAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronKeepVertAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronZeroSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronPlusOneSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronMinusOneSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronToggleHSAction
+			{
+				actionGroup = None
+			}
+			OnAscentAPToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		MechJebLocalSettings
+		{
+			MechJebModuleMenu
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAirplaneAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAirplaneGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentClassic
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentClassicMenu
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentGT
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentGuidance
+			{
+				unlockParts = 
+				unlockTechs = unmannedTech
+			}
+			MechJebModuleAscentNavBall
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAscentPVG
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAttitudeAdjustment
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleCustomWindowEditor
+			{
+				unlockParts = 
+				unlockTechs = flightControl
+			}
+			MechJebModuleDebugArrows
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleDockingAutopilot
+			{
+				forceRol = False
+				overrideSafeDistance = False
+				overrideTargetSize = False
+				unlockParts = 
+				unlockTechs = 
+				rol
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleDockingGuidance
+			{
+				unlockParts = 
+				unlockTechs = advUnmanned
+			}
+			MechJebModuleGuidanceController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleLandingAutopilot
+			{
+				deployGears = True
+				deployChutes = True
+				rcsAdjustment = True
+				unlockParts = 
+				unlockTechs = 
+				touchdownSpeed
+				{
+					_val = 0.5
+					_text = 0.5
+				}
+				limitGearsStage
+				{
+					val = 0
+					_text = 0
+				}
+				limitChutesStage
+				{
+					val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleLandingGuidance
+			{
+				landingSiteIdx = 0
+				unlockParts = 
+				unlockTechs = unmannedTech
+			}
+			MechJebModuleLandingPredictions
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleLogicalStageTracking
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleManeuverPlanner
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleNodeEditor
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleRendezvousAutopilot
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousAutopilotWindow
+			{
+				unlockParts = 
+				unlockTechs = advUnmanned
+			}
+			MechJebModuleRendezvousGuidance
+			{
+				unlockParts = 
+				unlockTechs = advUnmanned
+			}
+			MechJebModuleRoverController
+			{
+				ControlHeading = False
+				ControlSpeed = False
+				BrakeOnEject = False
+				BrakeOnEnergyDepletion = False
+				WarpToDaylight = False
+				StabilityControl = False
+				LimitAcceleration = False
+				unlockParts = 
+				unlockTechs = 
+				heading
+				{
+					_val = 0
+					_text = 0
+				}
+				speed
+				{
+					_val = 10
+					_text = 10
+				}
+			}
+			MechJebModuleRoverWindow
+			{
+				unlockParts = 
+				unlockTechs = fieldScience
+			}
+			MechJebModuleScript
+			{
+				minifiedGUI = False
+				selectedSlot = 0
+				selectedMemorySlotType = 0
+				activeSavepoint = -1
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSettings
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSmartASS
+			{
+				mode = ORBITAL
+				target = OFF
+				advReference = INERTIAL
+				advDirection = FORWARD
+				forceRol = False
+				forcePitch = True
+				forceYaw = True
+				unlockParts = 
+				unlockTechs = flightControl
+				srfHdg
+				{
+					_val = 90
+					_text = 90
+				}
+				srfPit
+				{
+					_val = 90
+					_text = 90
+				}
+				srfRol
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelYaw
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelPit
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelRol
+				{
+					_val = 0
+					_text = 0
+				}
+				rol
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleSmartRcs
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSpaceplaneAutopilot
+			{
+				bBreakAsSoonAsLanded = False
+				unlockParts = 
+				unlockTechs = 
+				glideslope
+				{
+					_val = 3
+					_text = 3
+				}
+				approachSpeed
+				{
+					_val = 80
+					_text = 80
+				}
+				touchdownSpeed
+				{
+					_val = 60
+					_text = 60
+				}
+				maximumSafeBankAngle
+				{
+					_val = 25
+					_text = 25
+				}
+			}
+			MechJebModuleSpaceplaneGuidance
+			{
+				runwayIndex = 0
+				unlockParts = 
+				unlockTechs = unmannedTech
+			}
+			MechJebModuleStageStats
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleTargetController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleThrustWindow
+			{
+				autostageSavedState = False
+				unlockParts = 
+				unlockTechs = advFlightControl
+			}
+			MechJebModuleTranslatron
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+				trans_spd
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleWarpHelper
+			{
+				unlockParts = 
+				unlockTechs = advFlightControl
+				phaseAngle
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleWaypointWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWaypointHelpWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			ModExtensionDemo
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleWarpController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleDeployableAntennaController
+			{
+				prev_shouldDeploy = False
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSolarPanelController
+			{
+				prev_shouldDeploy = False
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleThrustController
+			{
+				limitThrottle = False
+				limiterMinThrottle = False
+				electricThrottle = False
+				unlockParts = 
+				unlockTechs = 
+				maxThrottle
+				{
+					_val = 1
+					_text = 100
+				}
+				minThrottle
+				{
+					_val = 0.050000000000000003
+					_text = 5
+				}
+				electricThrottleLo
+				{
+					_val = 0.050000000000000003
+					_text = 5
+				}
+				electricThrottleHi
+				{
+					_val = 0.14999999999999999
+					_text = 15
+				}
+			}
+			MechJebModuleRCSController
+			{
+				unlockParts = 
+				unlockTechs = 
+				Tf
+				{
+					_val = 1
+					_text = 1
+				}
+				Kp
+				{
+					_val = 0.125
+					_text = 0.125
+				}
+				Ki
+				{
+					_val = 0.070000000000000007
+					_text = 0.07
+				}
+				Kd
+				{
+					_val = 0.53000000000000003
+					_text = 0.53
+				}
+			}
+			MechJebModuleRCSBalancer
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAttitudeController
+			{
+				unlockParts = 
+				unlockTechs = 
+				MJAttitudeController
+				{
+				}
+				KosAttitudeController
+				{
+				}
+				HybridController
+				{
+				}
+			}
+			MechJebModuleStagingController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleFlightRecorder
+			{
+				markUT = 0
+				deltaVExpended = 0
+				dragLosses = 0
+				gravityLosses = 0
+				steeringLosses = 0
+				markLAN = 0
+				markLatitude = 0
+				markLongitude = 0
+				markAltitude = 0
+				markBodyIndex = 1
+				maxDragGees = 0
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleFlightRecorderGraph
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = KOSNameTag
 		isEnabled = True
 		nameTag = 
@@ -405,7 +966,7 @@ PART
 	part = strutConnector_4294603314
 	partName = CompoundPart
 	persistentId = 4294064454
-	pos = -0.955986857,13.8558311,0.0345625021
+	pos = -0.955986857,13.8558311,0.0345625207
 	attPos = 0,0,0
 	attPos0 = 1.04976712E-08,-0.0166682545,-0.0345619395
 	rot = 0,1.00000012,3.55271368E-15,-8.42937027E-08
@@ -448,9 +1009,9 @@ PART
 	PARTDATA
 	{
 		tgt = 4294602500
-		pos = -0.352283537,-0.00104326033,0.00323081971
-		rot = -1.00974196E-28,1.21909979E-15,4.33110348E-30,1.00000048
-		dir = -0.999953568,-0.00296128471,0.00917065144
+		pos = -0.352283716,-0.00104326033,0.00323080481
+		rot = -2.01948392E-28,2.43819959E-15,8.66220696E-30,1.00000072
+		dir = -0.999953568,-0.00296128332,0.00917060487
 		col = Coll
 	}
 	MODULE
@@ -685,7 +1246,7 @@ PART
 	{
 		tgt = 4294602500
 		pos = -0.372603118,-0.00876143016,-0.0122852726
-		rot = 0,0,0,1.00000024
+		rot = 0,0,0,1.00000036
 		dir = -0.999180973,-0.0234948508,-0.0329444669
 		col = Coll
 	}
@@ -2706,7 +3267,7 @@ PART
 	pos = -0.0433301404,12.5110397,-0.702629387
 	attPos = 0,0,0
 	attPos0 = 4.95489928E-07,0.34229058,-2.89524621E-07
-	rot = -5.9604595E-08,-0.382683367,6.21724894E-15,0.923879623
+	rot = -5.9604595E-08,-0.382683367,1.15463195E-14,0.923879623
 	attRot = 0,0,0,1
 	attRot0 = -8.94069601E-08,-3.61713255E-08,1,2.43079711E-07
 	mir = 1,1,1
@@ -3889,7 +4450,7 @@ PART
 	pos = 0.527472854,12.5110407,0.466195166
 	attPos = 0,0,0
 	attPos0 = 3.42030518E-07,0.342289776,-4.67436848E-07
-	rot = 0,1,2.98023117E-08,8.42937595E-08
+	rot = 0,1,2.98023117E-08,8.42937666E-08
 	attRot = 0,0,0,1
 	attRot0 = -4.21468336E-08,1.21909206E-15,1,2.38418551E-07
 	mir = 1,1,1
@@ -4442,24 +5003,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDockingNodeNamed
-		isEnabled = True
-		portName = Clamp-O-Tron Docking Port
-		initialized = True
-		controlTransformName = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = KOSNameTag
 		isEnabled = True
 		nameTag = 
@@ -4618,7 +5161,7 @@ PART
 	part = largeSolarPanel_4294505518
 	partName = Part
 	persistentId = 2249632642
-	pos = -2.09695721,14.9564657,4.33215519E-07
+	pos = -2.09695745,14.9564657,4.98400823E-07
 	attPos = 0.0215444658,-0.0484085679,0.0215444528
 	attPos0 = -0.0215441193,0.775000751,-0.0215445403
 	rot = 1.1920929E-07,-1.1920929E-07,1.1920929E-07,1.00000012
@@ -4717,7 +5260,7 @@ PART
 	part = largeSolarPanel_4294504690
 	partName = Part
 	persistentId = 1677321857
-	pos = 2.09695578,14.9564657,-1.63242149E-07
+	pos = 2.09695578,14.9564657,-8.75642172E-08
 	attPos = 0.0215445347,-0.0484080315,0.0215444621
 	attPos0 = -0.0215440374,0.775000393,-0.0215445273
 	rot = 1.49011612E-07,1.00000012,-2.98023224E-08,1.1920929E-07
@@ -5051,9 +5594,9 @@ PART
 	pos = 0,15.6657667,0
 	attPos = 0,0,0
 	attPos0 = 0,0.565766335,0
-	rot = 1,0,0,0
-	attRot = 0.99999994,0,0,0
-	attRot0 = 1,0,0,0
+	rot = -0.707106709,0,-0.707106829,0
+	attRot = -0.70710665,0,-0.707106769,0
+	attRot0 = -0.707106709,0,-0.707106829,0
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Heaviest
@@ -5139,24 +5682,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDockingNodeNamed
-		isEnabled = True
-		portName = Clamp-O-Tron Docking Port
-		initialized = True
-		controlTransformName = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = KOSNameTag
 		isEnabled = True
 		nameTag = 
@@ -5180,7 +5705,7 @@ PART
 	pos = 0,16.6526661,0
 	attPos = 0,0,0
 	attPos0 = 0,-0.986899376,0
-	rot = 0,0,0,1
+	rot = 0,0.707106829,0,-0.707106709
 	attRot = 0,0,0,1
 	attRot0 = -1,0,0,0
 	mir = 1,1,1
@@ -5347,7 +5872,7 @@ PART
 	pos = 0,18.6264629,0
 	attPos = 0,0,0
 	attPos0 = 0,1.97379684,0
-	rot = 0,0,0,1
+	rot = 0,0.707106829,0,-0.707106709
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -5516,7 +6041,7 @@ PART
 	pos = 0,19.6133614,0
 	attPos = 0,0,0
 	attPos0 = 0,0.986898422,0
-	rot = 0,0,0,1
+	rot = 0,0.707106829,0,-0.707106709
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -5603,24 +6128,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDockingNodeNamed
-		isEnabled = True
-		portName = Clamp-O-Tron Docking Port Sr.
-		initialized = True
-		controlTransformName = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = KOSNameTag
 		isEnabled = True
 		nameTag = 
@@ -5641,10 +6148,10 @@ PART
 	part = dockingPort2_4294468610
 	partName = Part
 	persistentId = 60619461
-	pos = -1.14850736,18.6640186,6.84563801E-08
+	pos = 5.07529165E-08,18.6640186,-1.14850724
 	attPos = 0,0,0
 	attPos0 = -1.14850736,0.0375556946,6.84563801E-08
-	rot = 0.5,-0.5,0.5,0.5
+	rot = 5.96046448E-08,0.707106769,-0.707106769,5.96046448E-08
 	attRot = 0,0,0,1
 	attRot0 = 0.5,-0.5,0.5,0.5
 	mir = 1,1,1
@@ -5733,24 +6240,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDockingNodeNamed
-		isEnabled = True
-		portName = Clamp-O-Tron Docking Port
-		initialized = True
-		controlTransformName = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = KOSNameTag
 		isEnabled = True
 		nameTag = 
@@ -5771,10 +6260,10 @@ PART
 	part = dockingPort2_4294468232
 	partName = Part
 	persistentId = 1530075547
-	pos = 1.14850736,18.6640186,-1.68862087E-07
+	pos = 4.96527832E-08,18.6640186,1.14850724
 	attPos = 0,0,0
 	attPos0 = 1.14850736,0.0375556946,-1.68862087E-07
-	rot = 0.5,0.50000006,-0.50000006,0.5
+	rot = -0.707106829,2.98023224E-08,-2.98023224E-08,-0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 0.5,0.50000006,-0.50000006,0.5
 	mir = 1,1,1
@@ -5856,24 +6345,6 @@ PART
 			{
 				actionGroup = None
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDockingNodeNamed
-		isEnabled = True
-		portName = Clamp-O-Tron Docking Port
-		initialized = True
-		controlTransformName = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
