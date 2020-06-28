@@ -9,8 +9,7 @@ verify_ssl = true
 krpc = "==0.4.8"
 numpy = "==1.18.5"
 matplotlib = "==3.2.2"
-pandas = "==1.0.5"
-cython = "==0.29.20"
 
 [requires]
-python_version = "3.8.3"
+python_version = "3.7"
+
