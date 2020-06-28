@@ -23,39 +23,34 @@ from src.sequence_controllers import (
 )
 
 
+def check_status(status):
+    ''' Reacts to various param status messages. '''
+    ret = 0
+
+    # this conditional ladder may be expanded for fine-grain debugging
+    if status != SMOOTH_FLYING:
+        ret = 1
+
+    return ret
+
+
 def main(param):
     ''' This function commands the entire mission. '''
-    # mission setup
-    param = sc_00_COM_ES1_mission_setup.main(param)
-    if param.status != SMOOTH_FLYING:
-        print('Something went wrong with initializing the connection.')
-        sys.exit(1)
+    event_sequence_mains = (
+        sc_00_COM_ES1_mission_setup,
+        # sc_01_AE_ES1_kerbin_ascent,
+        # sc_02_ORBIT_ES1_trans_lunar_injection,
+        # sc_03_RPOD_ES1_orion_gateway_rpod,
+        # sc_04_RPOD_ES2_hls_gateway_separation
+    )
 
-    # Kerbin ascent
-
-    # Trans-Lunar Injection
-
-    # Orion-Gateway RPOD
-
-    # HLS-Gateway separation
-
-    # HLS deorbit
-
-    # HLS landing
-
-    # HLS ascent and tug rendezvous
-
-    # HLS-Tug RPOD
-
-    # HLS-Gateway intercept
-
-    # HLS-Gateway RPOD
-
-    # Orion-Gateway separation
-
-    # Trans-Kerbin Injection
-
-    # Kerbin re-entry and splashdown
+    for controller in event_sequence_mains:
+        param = controller.main(param)
+        ex = check_status(param.status)
+        if ex:
+            break
+        else:
+            continue
 
     print('Thanks for flying with us.\nY\'all come back now, y\'hear!')
     return param
@@ -63,5 +58,5 @@ def main(param):
 
 if __name__ == '__main__':
     param = Param()
-    main(param)
+    param = main(param)
     sys.exit(0)
