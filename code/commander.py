@@ -10,6 +10,8 @@ of the mission.
 
 
 import krpc
+import sys
+from code.util.commander.constants import SMOOTH_FLYING, COMMANDER_ERROR
 from code.param import Param
 from code.sequence_controllers import (
     sc_00_COM_ES1_mission_setup,
@@ -26,6 +28,9 @@ def main():
     # mission setup
     param = Param()
     param = sc_00_COM_ES1_mission_setup.main(param)
+    if param.status != SMOOTH_FLYING:
+        print('Something went wrong with initializing the connection.')
+        sys.exit(1)
 
     # Kerbin ascent
 
@@ -53,7 +58,8 @@ def main():
 
     # Kerbin re-entry and splashdown
 
-    pass
+    print('Thanks for flying with us.\nY\'all come back now, y\'hear!')
+    sys.exit(0)
 
 
 if __name__ == '__main__':
