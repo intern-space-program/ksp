@@ -23,10 +23,9 @@ from src.sequence_controllers import (
 )
 
 
-def main():
+def main(param):
     ''' This function commands the entire mission. '''
     # mission setup
-    param = Param()
     param = sc_00_COM_ES1_mission_setup.main(param)
     if param.status != SMOOTH_FLYING:
         print('Something went wrong with initializing the connection.')
@@ -59,8 +58,10 @@ def main():
     # Kerbin re-entry and splashdown
 
     print('Thanks for flying with us.\nY\'all come back now, y\'hear!')
-    sys.exit(0)
+    return param
 
 
 if __name__ == '__main__':
-    main()
+    param = Param()
+    main(param)
+    sys.exit(0)
