@@ -9,7 +9,7 @@ celestial bodies, reference frames, vessels, and named parts.
 
 
 import krpc
-from code.util.commander.constants import *
+from src.util.commander.constants import *
 
 
 def main(param):
