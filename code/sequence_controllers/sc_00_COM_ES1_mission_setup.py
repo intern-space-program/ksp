@@ -15,7 +15,6 @@ def main(param):
 
     # establish connection
     conn = krpc.connect(name='Artemis 3')
-    orion = conn.space_center.active_vessel
 
     # TODO: load celestial bodies
     for name, obj in conn.space_center.bodies.items():
@@ -28,6 +27,7 @@ def main(param):
     kerbin_nrrf = kerbin.non_rotating_reference_frame
 
     # TODO: load vessels
+    orion = conn.space_center.active_vessel
 
     # TODO: load named parts (i.e. docking ports)
 
