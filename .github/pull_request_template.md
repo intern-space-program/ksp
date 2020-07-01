@@ -23,7 +23,8 @@ Please check off the kinds of changes included in this pull request.
 - [ ] Removes unit tests
 
 ### Miscellaneous
-- [ ] Explain these changes in comment
+- [ ] Add/modify supporting documents (e.g. README.md files, community documents, templates)
+- [ ] Other (explain in comment below)
 
 ## Did you make sure to...
 
@@ -39,3 +40,6 @@ Please check off the kinds of changes included in this pull request.
 
 ### Sequence Controller Tests
 - [ ] run the code with the existing sequence controllers and ensure nothing breaks
+
+### Miscellaneous
+- [ ] connect the issues this pull request closes (**required**)
