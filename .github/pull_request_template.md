@@ -31,15 +31,19 @@ Please check off the kinds of changes included in this pull request.
 ### Vehicles
 - [ ] ensure modified vehicles don't break existing event sequence code
 - [ ] notify teams whose scripts depend on that vehicle file
+- [ ] N/A
 
 ### Code
 - [ ] add safety checks for common crashes (e.g. division by zero)
+- [ ] N/A
 
 ### Unit Tests
 - [ ] add new unit tests for any new code
+- [ ] N/A
 
 ### Sequence Controller Tests
 - [ ] run the code with the existing sequence controllers and ensure nothing breaks
+- [ ] N/A
 
 ### Miscellaneous
 - [ ] connect the issues this pull request closes (**required**)
