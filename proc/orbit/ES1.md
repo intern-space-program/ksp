@@ -4,6 +4,10 @@
 **Starting Assumptions**
 - Orion docked to ICPS
 - Orion & ICPS in low Kerbin orbit
+- Orbit description:
+  - 100 km apoapsis [100 m]
+  - 100 km periapsis [100 m]
+  - 0 degrees inclination [0.1 degrees]
 
 
 **BEGIN ORBIT EVENT SEQUENCE 1**
