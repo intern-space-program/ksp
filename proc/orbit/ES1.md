@@ -11,21 +11,23 @@
 
 
 **BEGIN ORBIT EVENT SEQUENCE 1**
-1. Attitude maneuver
-2. Perform Trans-Lunar Injection burn
+
+1. Determine position of maneuver node for Trans-Lunar Injection burn
+2. Determine delta V and direction for Trans-Lunar Injection burn
+3. Perform Trans-Lunar Injection burn
+  *TODO: duration of burn*
   - Fire ICPS
-  - Approximately 800-900 m/s delta V required
-3. Separate ICPS from Orion
-4. Perform OTC (outbound trajectory correction) as needed
-5. Orion outbound powered flyby
-  // At what distance from Mun to begin?
-  // Attitude maneuver?
-  // Use of main engine?
+  - Approximately 800-900 m/s delta V required (Vis-viva equation)
+4. Separate ICPS from Orion
+5. Perform OTC (outbound trajectory correction) after crossing into Mun sphere of influence
+  *TODO: duration of burn*
+  - Initial estimate to target
+  TODO: determine range in which to perform OTC
 6. Gateway orbit insertion burn
+  *TODO: duration of burn*
   // Attitude maneuver?
   // Main engine burn (thrust, velocity)
-  // How long for burn?
-  // Match Gateway's orbit
   // What distance away from Gateway?
+  - Hand over between 100 m - 1 km in matching orbit with Gateway
 
 **END ORBIT EVENT SEQUENCE 1**
