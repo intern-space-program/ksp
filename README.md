@@ -16,7 +16,7 @@ From the command line, run `$ pip install -r requirements.txt` from the `ksp` di
 #### Option 2: Install the Pipenv Environment
 From the `ksp` directory, run:
 `$ pip install pipenv`
-`$ pipenv install --python python3.8`
+`$ pipenv install --python python3.7`
 
 This will install all of the correct versions of the packages we will be using.
 
