@@ -11,7 +11,7 @@ GAME
 	scene = 7
 	editor = None
 	flag = Squad/Flags/NASA
-	launchID = 5
+	launchID = 4
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
 	modded = True
@@ -214,15 +214,6 @@ GAME
 					{
 						name = Gateway
 						flag = Squad/Flags/default
-					}
-				}
-				Landing
-				{
-					completedUnmanned = 233740.06246331969
-					vessel
-					{
-						name = HLS
-						flag = Squad/Flags/NASA
 					}
 				}
 				Suborbit
@@ -434,7 +425,7 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 272702.23800498957
+		NextSpawnTime = 242335.99256934936
 	}
 	SCENARIO
 	{
@@ -449,8 +440,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.9.1
-		UT = 251310.64382997554
-		activeVessel = 9
+		UT = 232392.25463141804
+		activeVessel = 8
 		mapViewFiltering = -17410
 		commNetUIModeTracking = Network
 		commNetUIModeFlight = Path
@@ -8196,3832 +8187,33 @@ GAME
 		}
 		VESSEL
 		{
-			pid = a8509fe7f6a34d078916e51fb885bc5d
-			persistentId = 719813254
-			name = HLS Debris
-			type = Debris
-			sit = LANDED
-			landed = True
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = LaunchPad
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 64.699999966105679
-			lct = 233743.0824633181
-			lastUT = 233807.78246328421
-			distanceTraveled = 0
-			root = 0
-			lat = -74.402384391015417
-			lon = -114.46877400222945
-			alt = 5392.1732543258113
-			hgt = 5.78773212
-			nrm = 0.00116986036,0.999991119,-0.00406782702
-			rot = -0.539378941,-0.0493438393,0.83187902,0.120884359
-			CoM = 1.84774058E-06,-2.11394596,-0.000116132156
-			stg = 1
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 2
-			PQSMax = 8
-			GroupOverride = 0
-			OverrideDefault = False,False,False,False
-			OverrideActionControl = 0,0,0,0
-			OverrideAxisControl = 0,0,0,0
-			OverrideGroupNames = ,,,
-			altDispState = DEFAULT
-			cPch = 0
-			cHdg = 0
-			cMod = -1
-			ORBIT
-			{
-				SMA = NaN
-				ECC = 1
-				INC = 164.40237588825241
-				LPE = 90
-				LAN = 271.84746083438591
-				MNA = 0
-				EPH = 234079.08246314208
-				REF = 2
-			}
-			PART
-			{
-				name = Decoupler.1
-				cid = 4294384594
-				uid = 4141917646
-				mid = 1339231923
-				persistentId = 2936961711
-				launchID = 3
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1.00000095
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 1
-				sqor = 1
-				sepI = 1
-				sidx = 0
-				attm = 0
-				sameVesselCollision = False
-				srfN = , -1
-				attN = top, -1
-				attN = bottom, 1
-				mass = 0.0399999991
-				shielded = False
-				temp = 300.48082702479707
-				tempExt = 303.4823135357563
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = False
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = Decoupler.1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDecouple
-					isEnabled = True
-					ejectionForcePercent = 100
-					isDecoupled = True
-					stagingEnabled = False
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleToggleCrossfeed
-					isEnabled = True
-					crossfeedStatus = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						EnableAction
-						{
-							actionGroup = None
-						}
-						DisableAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = fairingSize2
-				cid = 4294189404
-				uid = 274871386
-				mid = 1339231923
-				persistentId = 344547616
-				launchID = 3
-				parent = 0
-				position = 8.2262602063565282E-07,-0.27005133032798767,5.6373636425632867E-08
-				rotation = 0,0,0,1.00000095
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 3
-				sqor = 1
-				sepI = 1
-				sidx = 1
-				attm = 0
-				sameVesselCollision = False
-				srfN = , -1
-				attN = interstage01a, -1
-				attN = interstage01b, -1
-				attN = interstage02a, -1
-				attN = interstage02b, -1
-				attN = interstage03a, -1
-				attN = interstage03b, -1
-				attN = interstage04a, -1
-				attN = interstage04b, -1
-				attN = interstage05a, -1
-				attN = interstage05b, -1
-				attN = interstage06a, -1
-				attN = interstage06b, -1
-				attN = top, 0
-				attN = bottom, 10
-				mass = 0.174999997
-				shielded = False
-				temp = 300.34254583503213
-				tempExt = 304.85999538757716
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = fairingSize2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleProceduralFairing
-					isEnabled = True
-					interstageCraftID = 0
-					nArcs = 2
-					ejectionForce = 100
-					useClamshell = False
-					stagingEnabled = True
-					fsm = st_flight_deployed
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						DeployFairingAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleCargoBay
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNodeToggle
-					isEnabled = True
-					showMesh = False
-					showNodes = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePartVariants
-					isEnabled = True
-					useVariantMass = True
-					stagingEnabled = True
-					selectedVariant = Dark Grey
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = strutConnector
-				cid = 4294189178
-				uid = 3817576876
-				mid = 1339231923
-				persistentId = 3365004963
-				launchID = 3
-				parent = 1
-				position = 0.77625423669815063,-0.04255286231637001,-0.77624320983886719
-				rotation = -0.497592747,0.497592866,-0.502396047,0.502396822
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 3
-				sym = 4
-				sym = 5
-				srfN = srfAttach, 1,Collider
-				mass = 0.0500000007
-				shielded = False
-				temp = 300.43587383417247
-				tempExt = 302.78211257619381
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = strutConnector
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-					tgt = 0
-					pos = -1.17089677,-0.0331654511,-0.0473958515
-					rot = 0,0.00194345985,0.290264934,0.956944406
-					dir = -0.998781979,-0.0282908343,-0.0404242985
-					col = collisionMesh
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleStrut
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = strutConnector
-				cid = 4294189084
-				uid = 1734534669
-				mid = 1339231923
-				persistentId = 2458838430
-				launchID = 3
-				parent = 1
-				position = -0.77624696493148804,-0.042562562972307205,-0.77623653411865234
-				rotation = -0.707099378,0.70709914,-0.0033965779,0.00339652458
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 2
-				sym = 4
-				sym = 5
-				srfN = srfAttach, 1,Collider
-				mass = 0.0500000007
-				shielded = False
-				temp = 300.43587383417247
-				tempExt = 302.78211257619381
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = strutConnector
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-					tgt = 0
-					pos = -1.15873587,-0.0328058079,-0.0469116978
-					rot = 0,-0.382580787,0.0125519885,0.923836768
-					dir = -0.998781741,-0.028284261,-0.0404360332
-					col = collisionMesh
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleStrut
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = strutConnector
-				cid = 4294188990
-				uid = 2803437885
-				mid = 1339231923
-				persistentId = 2821218440
-				launchID = 3
-				parent = 1
-				position = -0.77625292539596558,-0.042564686387777328,0.77624368667602539
-				rotation = -0.502396047,0.502396584,0.497592956,-0.497592837
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 2
-				sym = 3
-				sym = 5
-				srfN = srfAttach, 1,Collider
-				mass = 0.0500000007
-				shielded = False
-				temp = 300.43587383417247
-				tempExt = 302.78211257619381
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = strutConnector
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-					tgt = 0
-					pos = -1.17284679,-0.0332201645,-0.047460787
-					rot = 0,-0.00519903516,0.382750928,0.923836946
-					dir = -0.998781979,-0.0282908529,-0.0404243991
-					col = collisionMesh
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleStrut
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = strutConnector
-				cid = 4294188896
-				uid = 4015813094
-				mid = 1339231923
-				persistentId = 1958897520
-				launchID = 3
-				parent = 1
-				position = 0.77624785900115967,-0.042554028332233429,0.7762371301651001
-				rotation = -0.0033964396,0.003396746,0.70709902,-0.707099676
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 2
-				sym = 3
-				sym = 4
-				srfN = srfAttach, 1,Collider
-				mass = 0.0500000007
-				shielded = False
-				temp = 300.43587383417247
-				tempExt = 302.78211257619381
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = strutConnector
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-					tgt = 0
-					pos = -1.1611588,-0.0328897089,-0.0470073335
-					rot = 0,-0.290248454,0.00363381929,0.956944466
-					dir = -0.998781741,-0.0282851551,-0.0404343382
-					col = collisionMesh
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleStrut
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = structuralIBeam2
-				cid = 4294188778
-				uid = 2193332922
-				mid = 1339231923
-				persistentId = 2708891039
-				launchID = 3
-				parent = 1
-				position = 0.76253139972686768,-2.0782883167266846,-0.77787673473358154
-				rotation = 0.923869669,-0.00443745777,-0.382679701,-0.00183822121
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 7
-				sym = 8
-				sym = 9
-				srfN = srfAttach, 1,Collider
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.375
-				shielded = False
-				temp = 290.75378889380733
-				tempExt = 296.24503187903747
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = structuralIBeam2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = structuralIBeam2
-				cid = 4294188754
-				uid = 1667713797
-				mid = 1339231923
-				persistentId = 511459992
-				launchID = 3
-				parent = 1
-				position = -0.77787685394287109,-2.0782897472381592,-0.7625199556350708
-				rotation = 0.382678598,-0.00443780748,-0.923869908,0.0018387629
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 6
-				sym = 8
-				sym = 9
-				srfN = srfAttach, 1,Collider
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.375
-				shielded = False
-				temp = 290.7624063055049
-				tempExt = 296.25016899535569
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = structuralIBeam2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = structuralIBeam2
-				cid = 4294188730
-				uid = 640603002
-				mid = 1339231923
-				persistentId = 1497832555
-				launchID = 3
-				parent = 1
-				position = -0.76252645254135132,-2.0782885551452637,0.77787727117538452
-				rotation = -0.38267985,-0.00183860713,-0.92386961,0.00443839654
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 6
-				sym = 7
-				sym = 9
-				srfN = srfAttach, 1,Collider
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.375
-				shielded = False
-				temp = 290.75324450241567
-				tempExt = 296.2447073497608
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = structuralIBeam2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = structuralIBeam2
-				cid = 4294188706
-				uid = 1736115405
-				mid = 1339231923
-				persistentId = 4115714285
-				launchID = 3
-				parent = 1
-				position = 0.7778821587562561,-2.0782959461212158,0.76252037286758423
-				rotation = -0.923869848,0.00183754042,-0.382679105,0.00443817023
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 6
-				sym = 7
-				sym = 8
-				srfN = srfAttach, 1,Collider
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.375
-				shielded = False
-				temp = 290.75338100995361
-				tempExt = 296.24478872631005
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = structuralIBeam2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = structuralIBeam2
-				cid = 4294180654
-				uid = 3386941611
-				mid = 1339231923
-				persistentId = 1764938406
-				launchID = 3
-				parent = 1
-				position = 3.3377273211954162E-06,-2.0683696269989014,-0.00014759061741642654
-				rotation = 3.27548914E-05,-0.703702807,-3.27502494E-05,0.710495949
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 0
-				sameVesselCollision = False
-				srfN = srfAttach, -1
-				attN = top, 1
-				attN = bottom, 19
-				mass = 0.375
-				shielded = False
-				temp = 297.93415471555124
-				tempExt = 299.02563077204582
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = structuralIBeam2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = proceduralTankLiquid
-				cid = 4294350734
-				uid = 882191021
-				mid = 1339231923
-				persistentId = 993970687
-				launchID = 3
-				parent = 10
-				position = -0.0070777218788862228,-2.1489880084991455,-0.7372395396232605
-				rotation = -4.56670386E-05,-0.00480356999,-1.40187723E-07,-0.99998939
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 13
-				srfN = srfAttach, 10,ibeam2
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.251358032
-				shielded = False
-				temp = 298.28479503658804
-				tempExt = 297.68294150572962
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = proceduralTankLiquid
-				modCost = 750.0979
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralPart
-					isEnabled = True
-					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (0.00100000005, 0.00100000005, 2.26091242)
-					forceLegacyTextures = True
-					textureSet = SegmentedSRB
-					capTextureIndex = 2
-					shapeName = Fillet Cylinder
-					moduleCost = 750.0979
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCylinder
-					isEnabled = False
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCone
-					isEnabled = False
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePill
-					isEnabled = True
-					diameter = 1.25
-					length = 2
-					fillet = 0.625
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeBezierCone
-					isEnabled = False
-					selectedShape = Round #1
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePolygon
-					isEnabled = False
-					cornerCount = 8
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TankContentSwitcher
-					isEnabled = True
-					tankVolume = 2.30815458
-					mass = 0.251358032
-					tankType = Mixed
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 30.628147382760112
-					maxAmount = 180.97999999999999
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 37.436079077498846
-					maxAmount = 221.19999999999999
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = fuelLine
-				cid = 4294160822
-				uid = 3963108239
-				mid = 1339231923
-				persistentId = 41055185
-				launchID = 3
-				parent = 11
-				position = -0.019504552707076073,-3.1490082740783691,-0.68912047147750854
-				rotation = 0.502419353,0.502373457,0.497615665,0.497570425
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				srfN = srfAttach, 11,collisionMesh
-				mass = 0.0500000007
-				shielded = False
-				temp = 298.53860464700529
-				tempExt = 298.32245239401539
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = fuelLine
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-					tgt = 4294336268
-					pos = -0.517846644,-0.273699343,-0.0279433504
-					rot = 0,0,0,1
-					dir = -0.883102417,-0.466754168,-0.0476527959
-					col = collisionMesh
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleFuelLine
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = proceduralTankLiquid
-				cid = 4294172208
-				uid = 2151059381
-				mid = 1339231923
-				persistentId = 525286971
-				launchID = 3
-				parent = 10
-				position = 0.0070815081708133221,-2.1491312980651855,0.73692995309829712
-				rotation = 1.31410998E-08,-0.99998951,-4.68536491E-05,0.00480348058
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 11
-				srfN = srfAttach, 10,ibeam2
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.251358032
-				shielded = False
-				temp = 298.28456718186106
-				tempExt = 297.64110334210716
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = proceduralTankLiquid
-				modCost = 750.0979
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralPart
-					isEnabled = True
-					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (0.640949965, 0.00100000005, 0.00100000005)
-					forceLegacyTextures = True
-					textureSet = SegmentedSRB
-					capTextureIndex = 2
-					shapeName = Fillet Cylinder
-					moduleCost = 750.0979
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCylinder
-					isEnabled = False
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCone
-					isEnabled = False
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePill
-					isEnabled = True
-					diameter = 1.25
-					length = 2
-					fillet = 0.625
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeBezierCone
-					isEnabled = False
-					selectedShape = Round #1
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePolygon
-					isEnabled = False
-					cornerCount = 8
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TankContentSwitcher
-					isEnabled = True
-					tankVolume = 2.30815458
-					mass = 0.251358032
-					tankType = Mixed
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 30.628147382760112
-					maxAmount = 180.97999999999999
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 37.436079077498846
-					maxAmount = 221.19999999999999
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = fuelLine
-				cid = 4294133308
-				uid = 59199645
-				mid = 1339231923
-				persistentId = 2748200936
-				launchID = 3
-				parent = 13
-				position = 0.022078374400734901,-3.1491532325744629,0.74530422687530518
-				rotation = 0.502419889,0.50237304,0.49761638,0.497569621
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				srfN = srfAttach, 13,collisionMesh
-				mass = 0.0500000007
-				shielded = False
-				temp = 298.53843001124881
-				tempExt = 298.31129307740719
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = fuelLine
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-					tgt = 4294336268
-					pos = -0.517836273,0.16605942,0.0995007008
-					rot = 0,0,0,1
-					dir = -0.93668443,0.300379604,0.179984584
-					col = collisionMesh
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleFuelLine
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = proceduralTankLiquid
-				cid = 4294363942
-				uid = 3710422259
-				mid = 1339231923
-				persistentId = 1252680066
-				launchID = 3
-				parent = 10
-				position = -0.72734510898590088,-1.967922568321228,0.0068507064133882523
-				rotation = 3.29172144E-05,0.710495591,3.2480435E-05,0.703702867
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 17
-				srfN = srfAttach, 10,ibeam2
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.384998441
-				shielded = False
-				temp = 298.07584088596423
-				tempExt = 297.43502302897241
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = proceduralTankLiquid
-				modCost = 1148.9021
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralPart
-					isEnabled = True
-					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (0.00100000005, 0.00100000005, 0.00100000005)
-					forceLegacyTextures = True
-					textureSet = Original
-					capTextureIndex = 2
-					shapeName = Fillet Cylinder
-					moduleCost = 1148.9021
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCylinder
-					isEnabled = False
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCone
-					isEnabled = False
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePill
-					isEnabled = True
-					diameter = 1.25
-					length = 3
-					fillet = 0.625
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeBezierCone
-					isEnabled = False
-					selectedShape = Round #1
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePolygon
-					isEnabled = False
-					cornerCount = 8
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TankContentSwitcher
-					isEnabled = True
-					tankVolume = 3.53533936
-					mass = 0.384998471
-					tankType = Mixed
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 49.956363391867043
-					maxAmount = 277.19999999999999
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 61.060469289637382
-					maxAmount = 338.80000000000001
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = fuelLine
-				cid = 4294159892
-				uid = 2692457966
-				mid = 1339231923
-				persistentId = 3640522143
-				launchID = 3
-				parent = 15
-				position = -0.76749497652053833,-3.4679431915283203,0.017883624881505966
-				rotation = 0.502419591,0.502372503,0.497616112,0.497570485
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				srfN = srfAttach, 15,collisionMesh
-				mass = 0.0500000007
-				shielded = False
-				temp = 298.43369172493942
-				tempExt = 298.19331432978726
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = fuelLine
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-					tgt = 4294336268
-					pos = -0.19897826,0.0214971658,-0.176061392
-					rot = 0,0,0,1
-					dir = -0.746469319,0.0806480199,-0.660514474
-					col = collisionMesh
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleFuelLine
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = proceduralTankLiquid
-				cid = 4294168462
-				uid = 1880784851
-				mid = 1339231923
-				persistentId = 3335031883
-				launchID = 3
-				parent = 10
-				position = 0.72734749317169189,-1.9679303169250488,-0.0071268980391323566
-				rotation = -3.31963165E-05,0.703703046,3.24118628E-05,-0.71049571
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 15
-				srfN = srfAttach, 10,ibeam2
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.384998441
-				shielded = False
-				temp = 298.16611598010928
-				tempExt = 297.94710681894816
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = proceduralTankLiquid
-				modCost = 1148.9021
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralPart
-					isEnabled = True
-					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (2.26098418, 0.00100000005, 0.641085267)
-					forceLegacyTextures = True
-					textureSet = Original
-					capTextureIndex = 2
-					shapeName = Fillet Cylinder
-					moduleCost = 1148.9021
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCylinder
-					isEnabled = False
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCone
-					isEnabled = False
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePill
-					isEnabled = True
-					diameter = 1.25
-					length = 3
-					fillet = 0.625
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeBezierCone
-					isEnabled = False
-					selectedShape = Round #1
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePolygon
-					isEnabled = False
-					cornerCount = 8
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TankContentSwitcher
-					isEnabled = True
-					tankVolume = 3.53533936
-					mass = 0.384998471
-					tankType = Mixed
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 49.956363391867043
-					maxAmount = 277.19999999999999
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 61.060469289637382
-					maxAmount = 338.80000000000001
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = fuelLine
-				cid = 4294157384
-				uid = 3678026477
-				mid = 1339231923
-				persistentId = 1495750892
-				launchID = 3
-				parent = 17
-				position = 0.6956666111946106,-3.4679546356201172,-0.01542990654706955
-				rotation = 0.50241971,0.502373815,0.497615933,0.497569472
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				srfN = srfAttach, 17,collisionMesh
-				mass = 0.0500000007
-				shielded = False
-				temp = 298.47910821544787
-				tempExt = 298.35342092321349
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = fuelLine
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-					tgt = 4294336268
-					pos = -0.19896841,0.0340940394,0.301184326
-					rot = 0,0,0,1
-					dir = -0.548745632,0.0940342173,0.830683947
-					col = collisionMesh
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleFuelLine
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = proceduralTankLiquid
-				cid = 4294336268
-				uid = 3617574955
-				mid = 1339231923
-				persistentId = 2926389928
-				launchID = 3
-				parent = 10
-				position = 1.2998215197512764E-06,-3.7294127941131592,-0.00030141955357976258
-				rotation = 4.61981363E-05,-4.84717333E-08,-1.25835854E-07,1.00000083
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 0
-				sameVesselCollision = False
-				srfN = srfAttach, -1
-				attN = top, 10
-				attN = bottom, -1
-				mass = 0.0668202043
-				shielded = False
-				temp = 298.78557454257941
-				tempExt = 298.46814880840435
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = proceduralTankLiquid
-				modCost = 199.40213
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralPart
-					isEnabled = True
-					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (0.00100000005, 0.00100000005, 4.54521894)
-					forceLegacyTextures = True
-					textureSet = SegmentedSRB
-					capTextureIndex = 0
-					shapeName = Cylinder
-					moduleCost = 199.40213
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCylinder
-					isEnabled = True
-					diameter = 2.5
-					length = 0.125
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCone
-					isEnabled = False
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePill
-					isEnabled = False
-					diameter = 1.25
-					length = 1
-					fillet = 0.25
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeBezierCone
-					isEnabled = False
-					selectedShape = Round #1
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePolygon
-					isEnabled = False
-					cornerCount = 8
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TankContentSwitcher
-					isEnabled = True
-					tankVolume = 0.613592327
-					mass = 0.0668202043
-					tankType = Mixed
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 9.0465503224400994
-					maxAmount = 48.109999999999999
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 11.057070062639983
-					maxAmount = 58.799999999999997
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = landingLeg1-2
-				cid = 4294326856
-				uid = 3390950404
-				mid = 1339231923
-				persistentId = 3268998100
-				launchID = 3
-				parent = 19
-				position = -1.0547569990158081,-4.2222304344177246,-1.055026650428772
-				rotation = 0.115058206,0.88110739,0.277857661,-0.364977121
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 21
-				sym = 22
-				sym = 23
-				srfN = srfAttach, 19,collisionMesh
-				mass = 0.100000001
-				shielded = False
-				temp = 299.30468197025914
-				tempExt = 298.43806016952266
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = ForceHeaviest
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = landingLeg1-2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleWheelBase
-					isEnabled = True
-					wheelType = LEG
-					isGrounded = True
-					autoFriction = False
-					frictionMultiplier = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActAutoFrictionToggle
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelSuspension
-					isEnabled = True
-					springTweakable = 1
-					damperTweakable = 1
-					autoSpringDamper = True
-					suspensionPos = (8.30107808E-07, 3.24845314E-06, 0.447883129)
-					autoBoost = 0
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelDeployment
-					isEnabled = True
-					shieldedCanDeploy = False
-					stateDisplayString = Deployed
-					stateString = Deployed
-					stagingEnabled = True
-					position = 1
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = Gear
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelLock
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelBogey
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelDamage
-					isEnabled = True
-					isDamaged = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = landingLeg1-2
-				cid = 4294326380
-				uid = 799989097
-				mid = 1339231923
-				persistentId = 755043291
-				launchID = 3
-				parent = 19
-				position = -1.0547977685928345,-4.222435474395752,1.0543851852416992
-				rotation = 0.277775466,0.364966452,0.115091853,-0.881133378
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 20
-				sym = 22
-				sym = 23
-				srfN = srfAttach, 19,collisionMesh
-				mass = 0.100000001
-				shielded = False
-				temp = 299.29814326355358
-				tempExt = 298.39119284467961
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = ForceHeaviest
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = landingLeg1-2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleWheelBase
-					isEnabled = True
-					wheelType = LEG
-					isGrounded = True
-					autoFriction = False
-					frictionMultiplier = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActAutoFrictionToggle
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelSuspension
-					isEnabled = True
-					springTweakable = 1
-					damperTweakable = 1
-					autoSpringDamper = True
-					suspensionPos = (1.4469353E-07, 2.59280205E-06, 0.441900253)
-					autoBoost = 0
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelDeployment
-					isEnabled = True
-					shieldedCanDeploy = False
-					stateDisplayString = Deployed
-					stateString = Deployed
-					stagingEnabled = True
-					position = 1
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = Gear
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelLock
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelBogey
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelDamage
-					isEnabled = True
-					isDamaged = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = landingLeg1-2
-				cid = 4294326264
-				uid = 3039199547
-				mid = 1339231923
-				persistentId = 2640191859
-				launchID = 3
-				parent = 19
-				position = 1.0547623634338379,-4.2224411964416504,1.0543274879455566
-				rotation = 0.277775854,-0.364967346,-0.115092367,-0.88113302
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 20
-				sym = 21
-				sym = 23
-				srfN = srfAttach, 19,collisionMesh
-				mass = 0.100000001
-				shielded = False
-				temp = 299.34892542612528
-				tempExt = 299.00641741868469
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = ForceHeaviest
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = landingLeg1-2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleWheelBase
-					isEnabled = True
-					wheelType = LEG
-					isGrounded = True
-					autoFriction = False
-					frictionMultiplier = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActAutoFrictionToggle
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelSuspension
-					isEnabled = True
-					springTweakable = 1
-					damperTweakable = 1
-					autoSpringDamper = True
-					suspensionPos = (-2.6027476E-07, 0, 0.442948133)
-					autoBoost = 0
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelDeployment
-					isEnabled = True
-					shieldedCanDeploy = False
-					stateDisplayString = Deployed
-					stateString = Deployed
-					stagingEnabled = True
-					position = 1
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = Gear
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelLock
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelBogey
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelDamage
-					isEnabled = True
-					isDamaged = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = landingLeg1-2
-				cid = 4294326148
-				uid = 1622530932
-				mid = 1339231923
-				persistentId = 647137567
-				launchID = 3
-				parent = 19
-				position = 1.0548059940338135,-4.2222342491149902,-1.0550676584243774
-				rotation = 0.115058199,-0.881107569,-0.277856886,-0.364977926
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 20
-				sym = 21
-				sym = 22
-				srfN = srfAttach, 19,collisionMesh
-				mass = 0.100000001
-				shielded = False
-				temp = 299.35272861655801
-				tempExt = 299.08575445965647
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = ForceHeaviest
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = landingLeg1-2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleWheelBase
-					isEnabled = True
-					wheelType = LEG
-					isGrounded = True
-					autoFriction = False
-					frictionMultiplier = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActAutoFrictionToggle
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelSuspension
-					isEnabled = True
-					springTweakable = 1
-					damperTweakable = 1
-					autoSpringDamper = True
-					suspensionPos = (-5.45369176E-07, 8.34465027E-07, 0.44908908)
-					autoBoost = 0
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelDeployment
-					isEnabled = True
-					shieldedCanDeploy = False
-					stateDisplayString = Deployed
-					stateString = Deployed
-					stagingEnabled = True
-					position = 1
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActionToggle
-						{
-							actionGroup = Gear
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelLock
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelBogey
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleWheelDamage
-					isEnabled = True
-					isDamaged = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = False, 0
-				Gear = True, 233522.196654712
-				Light = False, 0
-				RCS = True, 232406.274631411
-				SAS = True, 232383.354631423
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = True, 233738.56246332
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-				AxisGroupsModule
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = 4ebee55e4cad4f02814600b46b14c727
+			pid = fc545bd2b828407cb54599a50ad10d2c
 			persistentId = 416473385
 			name = HLS
 			type = Ship
-			sit = SUB_ORBITAL
+			sit = ORBITING
 			landed = False
 			skipGroundPositioning = False
 			vesselSpawning = False
 			launchedFrom = LaunchPad
 			landedAt = 
-			displaylandedAt = 
+			displaylandedAt = LaunchPad
 			splashed = False
-			met = 17262.621366817184
-			lct = 234048.02246315836
-			lastUT = 251310.64382997554
-			distanceTraveled = 74383.987313913764
+			met = 47.779999974969542
+			lct = 232344.47463144307
+			lastUT = 232392.25463141804
+			distanceTraveled = 18781.492934008842
 			root = 0
-			lat = 32.424254795395186
-			lon = 19.119977294035827
-			alt = 98958.150786657818
-			hgt = 98958.1484
-			nrm = 0.0511879921,-0.250043452,0.96688062
-			rot = 0.189772233,0.455727935,0.724136531,0.481585801
-			CoM = -4.22998238,0.0474615097,-0.000261068344
-			stg = 2
+			lat = 18.552515446650549
+			lon = 68.053523536809621
+			alt = 99996.246976924594
+			hgt = 99996.25
+			nrm = -0.903486073,0.214817524,0.370899379
+			rot = 0.358383209,-0.478116125,-0.789406002,-0.140728757
+			CoM = -4.01635551,0.0430341959,-0.0578015298
+			stg = 3
 			prst = False
-			ref = 982697890
+			ref = 39555726
 			ctrl = True
 			PQSMin = 2
 			PQSMax = 9
@@ -12031,31 +8223,31 @@ GAME
 			OverrideAxisControl = 0,0,0,0
 			OverrideGroupNames = ,,,
 			altDispState = ASL
-			cPch = 1.056
-			cHdg = -9.344002
+			cPch = 0.3668655
+			cHdg = -8.991536
 			cMod = 0
 			ORBIT
 			{
-				SMA = 249957.17738361948
-				ECC = 0.20237412038008848
-				INC = 89.963910114553371
-				LPE = 315.84629421162219
-				LAN = 0.092568222293436975
-				MNA = -2.8404218578322116
-				EPH = 251310.64382997554
+				SMA = 299990.96833654522
+				ECC = 3.0888700244624194E-05
+				INC = 90.00102043508933
+				LPE = 325.17677551698534
+				LAN = 0.67390363132022912
+				MNA = -2.8575953061727928
+				EPH = 232392.25463141804
 				REF = 2
 			}
 			PART
 			{
 				name = Large.Crewed.Lab
 				cid = 4294461750
-				uid = 227823593
-				mid = 1649994282
-				persistentId = 3273548446
-				launchID = 4
+				uid = 792719387
+				mid = 1339231923
+				persistentId = 3706436649
+				launchID = 3
 				parent = 0
 				position = 0,0,0
-				rotation = 0,0,0,1
+				rotation = 0,0,0,1.00000024
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -12071,8 +8263,8 @@ GAME
 				attN = bottom, 1
 				mass = 3.5
 				shielded = False
-				temp = 167.24892575430061
-				tempExt = 167.19688206186871
+				temp = 302.28481573341514
+				tempExt = 301.47707723887237
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12081,7 +8273,7 @@ GAME
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = Squad/Flags/NASA
-				rTrf = Large.Crewed.Lab (HLS)
+				rTrf = Large.Crewed.Lab
 				modCost = 0
 				EVENTS
 				{
@@ -12150,7 +8342,7 @@ GAME
 					EfficiencyBonus = 1
 					IsActivated = False
 					stagingEnabled = True
-					lastUpdateTime = 251310.64382997554
+					lastUpdateTime = 232392.25463141804
 					EVENTS
 					{
 					}
@@ -12274,7 +8466,6 @@ GAME
 					{
 						flight = 0
 						0 = Orbit,Mun
-						0 = Suborbit,Mun
 					}
 					UPGRADESAPPLIED
 					{
@@ -12285,12 +8476,12 @@ GAME
 			{
 				name = proceduralNoseCone
 				cid = 4294459366
-				uid = 2935443774
-				mid = 1649994282
-				persistentId = 3195253039
-				launchID = 4
+				uid = 149862371
+				mid = 1339231923
+				persistentId = 1432128899
+				launchID = 3
 				parent = 0
-				position = -2.384185791015625E-07,-1.9560106992721558,0
+				position = -2.384185791015625E-07,-1.9560098648071289,0
 				rotation = -1.00000024,0,0,0
 				mirror = 1,1,1
 				symMethod = Radial
@@ -12306,8 +8497,8 @@ GAME
 				attN = bottom, 0
 				mass = 0.0480489135
 				shielded = False
-				temp = 167.24511638649486
-				tempExt = 167.18682925859775
+				temp = 301.37066432508021
+				tempExt = 300.81741695529837
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12419,12 +8610,12 @@ GAME
 			{
 				name = proceduralNoseCone
 				cid = 4294457152
-				uid = 2528925293
-				mid = 1649994282
-				persistentId = 1540090116
-				launchID = 4
+				uid = 3536769229
+				mid = 1339231923
+				persistentId = 2898137641
+				launchID = 3
 				parent = 0
-				position = 2.384185791015625E-07,1.9500095844268799,0
+				position = 2.384185791015625E-07,1.9500086307525635,0
 				rotation = 0,1.00000024,0,0
 				mirror = 1,1,1
 				symMethod = Radial
@@ -12440,8 +8631,8 @@ GAME
 				attN = bottom, 0
 				mass = 0.0480489135
 				shielded = False
-				temp = 167.24511638649093
-				tempExt = 167.1868292585925
+				temp = 301.20422252242975
+				tempExt = 300.63669784534113
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12478,7 +8669,7 @@ GAME
 					name = ProceduralPart
 					isEnabled = True
 					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (2.30255127, 1.19978297, 0.00100000005)
+					tempColliderSize = (0.896169066, 2.62192011, 0.00100000005)
 					forceLegacyTextures = True
 					textureSet = SegmentedSRB
 					capTextureIndex = 0
@@ -12553,10 +8744,10 @@ GAME
 			{
 				name = dockingPort2
 				cid = 4294455026
-				uid = 1870443386
-				mid = 1649994282
-				persistentId = 1735913180
-				launchID = 4
+				uid = 122570391
+				mid = 1339231923
+				persistentId = 3671204422
+				launchID = 3
 				parent = 0
 				position = 1.0355530977249146,-0.040027618408203125,7.5575371738523245E-08
 				rotation = 0.5,0.50000006,-0.500000119,0.500000298
@@ -12575,8 +8766,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.24497150735198
-				tempExt = 167.18716402831109
+				temp = 301.79858712641465
+				tempExt = 301.13527663558364
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12673,12 +8864,12 @@ GAME
 			{
 				name = stackPoint1
 				cid = 4294453216
-				uid = 1707707866
-				mid = 1649994282
-				persistentId = 2422760724
-				launchID = 4
+				uid = 1751472118
+				mid = 1339231923
+				persistentId = 2758373803
+				launchID = 3
 				parent = 0
-				position = -1.1242181062698364,-0.043823719024658203,7.416383596137166E-08
+				position = -1.12421715259552,-0.043823719024658203,7.416383596137166E-08
 				rotation = 0.500000179,-0.50000006,0.500000179,0.50000006
 				mirror = 1,1,1
 				symMethod = Radial
@@ -12694,8 +8885,8 @@ GAME
 				attN = top, 5
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.24511815800543
-				tempExt = 167.18593918164319
+				temp = 301.76250748506737
+				tempExt = 301.06670388719317
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -12748,12 +8939,12 @@ GAME
 			{
 				name = probeStackSmall
 				cid = 4294452628
-				uid = 982697890
-				mid = 1649994282
-				persistentId = 2279289222
-				launchID = 4
+				uid = 39555726
+				mid = 1339231923
+				persistentId = 1423263145
+				launchID = 3
 				parent = 4
-				position = -1.2711030244827271,-0.043823719024658203,7.416383596137166E-08
+				position = -1.2711011171340942,-0.043823719024658203,7.416383596137166E-08
 				rotation = -7.10542905E-15,0,-0.707107067,0.707106888
 				mirror = 1,1,1
 				symMethod = Radial
@@ -12770,8 +8961,8 @@ GAME
 				attN = top, 4
 				mass = 0.100000001
 				shielded = False
-				temp = 167.2443607170274
-				tempExt = 167.17604351787915
+				temp = 302.23176371489552
+				tempExt = 301.43621018539204
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -12986,7 +9177,6 @@ GAME
 					{
 						flight = 0
 						0 = Orbit,Mun
-						0 = Suborbit,Mun
 					}
 					UPGRADESAPPLIED
 					{
@@ -12995,7 +9185,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 14.992690209528943
+					amount = 14.922847103667785
 					maxAmount = 15
 					flowState = True
 					isTweakable = True
@@ -13008,10 +9198,10 @@ GAME
 			{
 				name = batteryBank
 				cid = 4294449820
-				uid = 3050770450
-				mid = 1649994282
-				persistentId = 1489736233
-				launchID = 4
+				uid = 3518584160
+				mid = 1339231923
+				persistentId = 3152243600
+				launchID = 3
 				parent = 5
 				position = -1.4819566011428833,-0.043823719024658203,7.416383596137166E-08
 				rotation = -7.10542905E-15,0,-0.707107067,0.707106888
@@ -13030,8 +9220,8 @@ GAME
 				attN = bottom, 7
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.24043339493301
-				tempExt = 167.1831224948404
+				temp = 302.24044483628501
+				tempExt = 301.46179786147769
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13082,7 +9272,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 999.51268063527368
+					amount = 994.85647357798086
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -13094,13 +9284,13 @@ GAME
 			PART
 			{
 				name = proceduralTankLiquid
-				cid = 4294479440
-				uid = 1587581568
-				mid = 1649994282
-				persistentId = 1054573106
-				launchID = 4
+				cid = 4294448054
+				uid = 3181770880
+				mid = 1339231923
+				persistentId = 2564681347
+				launchID = 3
 				parent = 6
-				position = -2.4928572177886963,0.0061860084533691406,3.7510253605432808E-06
+				position = -2.4928534030914307,0.0061860084533691406,3.7212230381555855E-06
 				rotation = 0,0,1.00000036,2.52881136E-07
 				mirror = 1,1,1
 				symMethod = Radial
@@ -13117,8 +9307,8 @@ GAME
 				attN = bottom, -1
 				mass = 1.7873913
 				shielded = False
-				temp = 167.24496398673261
-				tempExt = 167.19287840687468
+				temp = 302.32595729548638
+				tempExt = 301.49631544438796
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13155,7 +9345,7 @@ GAME
 					name = ProceduralPart
 					isEnabled = True
 					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (2.29053736, 0.00100000005, 3.3048625)
+					tempColliderSize = (0.89617312, 0.00100000005, 2.48617029)
 					forceLegacyTextures = True
 					textureSet = SegmentedSRB
 					capTextureIndex = 0
@@ -13299,7 +9489,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 772.1520306825638
+					amount = 1286.9200000000001
 					maxAmount = 1286.9200000000001
 					flowState = True
 					isTweakable = True
@@ -13310,7 +9500,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 943.74003750085831
+					amount = 1572.9000000000001
 					maxAmount = 1572.9000000000001
 					flowState = True
 					isTweakable = True
@@ -13322,13 +9512,13 @@ GAME
 			PART
 			{
 				name = stackPoint1
-				cid = 4294479002
-				uid = 2503469182
-				mid = 1649994282
-				persistentId = 3716508825
-				launchID = 4
+				cid = 4294410874
+				uid = 2672025901
+				mid = 1339231923
+				persistentId = 3705824548
+				launchID = 3
 				parent = 7
-				position = -2.49285888671875,1.6061925888061523,5.2001632866449654E-06
+				position = -2.4920578002929688,2.0362176895141602,0.00081093574408441782
 				rotation = 1.6858742E-07,0.707107127,1.6858742E-07,-0.707107127
 				mirror = 1,1,1
 				symMethod = Radial
@@ -13344,8 +9534,8 @@ GAME
 				attN = top, 9
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.22287467187846
-				tempExt = 167.16859402089187
+				temp = 302.20174114284055
+				tempExt = 301.42098588324245
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13396,126 +9586,15 @@ GAME
 			}
 			PART
 			{
-				name = advSasModule
-				cid = 4294468134
-				uid = 323026623
-				mid = 1649994282
-				persistentId = 519541758
-				launchID = 4
-				parent = 8
-				position = -2.4928607940673828,1.8521047830581665,5.6770004448480904E-06
-				rotation = 0,0,-1.00000036,8.42937098E-08
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = -1
-				resPri = 0
-				dstg = 0
-				sqor = -1
-				sepI = -1
-				sidx = -1
-				attm = 0
-				sameVesselCollision = False
-				srfN = , -1
-				attN = top, 8
-				attN = bottom, 10
-				mass = 0.100000001
-				shielded = False
-				temp = 167.20484007168943
-				tempExt = 167.13901200485995
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = advSasModule
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					actuatorModeCycle = 0
-					authorityLimiter = 100
-					stateString = Running
-					stagingEnabled = True
-					WheelState = Active
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						CycleAction
-						{
-							actionGroup = None
-						}
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
 				name = structuralPanel2
-				cid = 4294478966
-				uid = 3638824942
-				mid = 1649994282
-				persistentId = 2549674540
-				launchID = 4
-				parent = 9
-				position = -2.4928627014160156,2.0786328315734863,6.2730468926019967E-06
-				rotation = -1.05367143E-07,-0.707106948,-1.05367143E-07,0.707106948
+				cid = 4294411866
+				uid = 4266097379
+				mid = 1339231923
+				persistentId = 1948651674
+				launchID = 3
+				parent = 8
+				position = -2.4920578002929688,2.1106023788452148,0.00081141258124262094
+				rotation = -1.6858742E-07,-0.707107127,-1.6858742E-07,0.707107127
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -13528,11 +9607,11 @@ GAME
 				sameVesselCollision = False
 				srfN = srfAttach, -1
 				attN = top, -1
-				attN = bottom, 9
+				attN = bottom, 8
 				mass = 0.300000012
 				shielded = False
-				temp = 167.19884945128138
-				tempExt = 167.11595343495648
+				temp = 302.13702667175863
+				tempExt = 301.34165001519926
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13584,13 +9663,13 @@ GAME
 			PART
 			{
 				name = structuralPanel2
-				cid = 4294478942
-				uid = 2168744294
-				mid = 1649994282
-				persistentId = 1281359218
-				launchID = 4
-				parent = 10
-				position = -0.49066144227981567,2.0831460952758789,-1.3563476386480033E-06
+				cid = 4294411324
+				uid = 3010883539
+				mid = 1339231923
+				persistentId = 4250781288
+				launchID = 3
+				parent = 9
+				position = -0.48986512422561646,2.115114688873291,0.00080712104681879282
 				rotation = 1.00000036,-2.52881136E-07,-1.4901164E-07,0
 				mirror = 1,1,1
 				symMethod = Radial
@@ -13602,13 +9681,13 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
-				srfN = srfAttach, 10,panel
+				srfN = srfAttach, 9,panel
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.300000012
 				shielded = False
-				temp = 167.15354588726336
-				tempExt = 167.08748036225634
+				temp = 302.0879119165262
+				tempExt = 301.30035238628386
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13660,234 +9739,14 @@ GAME
 			PART
 			{
 				name = LgRadialSolarPanel
-				cid = 4294478918
-				uid = 1808505944
-				mid = 1649994282
-				persistentId = 4075319459
-				launchID = 4
-				parent = 11
-				position = -0.49066144227981567,2.0160994529724121,0.43724137544631958
-				rotation = -0.500000596,-0.5,-0.49999994,0.500000119
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = -1
-				resPri = 0
-				dstg = 0
-				sqor = -1
-				sepI = -1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				srfN = srfAttach, 11,panel
-				mass = 0.0399999991
-				shielded = False
-				temp = 167.15172007189526
-				tempExt = 167.08304585458737
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = LgRadialSolarPanel
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					efficiencyMult = 1
-					launchUT = 234048.02246315836
-					currentRotation = (0, 0, 0, 1)
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					deployState = EXTENDED
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-							active = False
-						}
-						ExtendAction
-						{
-							actionGroup = None
-							active = False
-						}
-						RetractAction
-						{
-							actionGroup = None
-							active = False
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = LgRadialSolarPanel
-				cid = 4294478864
-				uid = 967043155
-				mid = 1649994282
-				persistentId = 3817653638
-				launchID = 4
-				parent = 11
-				position = -0.49065762758255005,2.0160984992980957,-0.47323817014694214
-				rotation = -0.500000596,-0.5,-0.49999994,0.500000119
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = -1
-				resPri = 0
-				dstg = 0
-				sqor = -1
-				sepI = -1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				srfN = srfAttach, 11,panel
-				mass = 0.0399999991
-				shielded = False
-				temp = 167.15172007189526
-				tempExt = 167.08304585458737
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = LgRadialSolarPanel
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					efficiencyMult = 1
-					launchUT = 234048.02246315836
-					currentRotation = (0, 0, 0, 1)
-					storedAnimationTime = 0
-					storedAnimationSpeed = 0
-					deployState = EXTENDED
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-							active = False
-						}
-						ExtendAction
-						{
-							actionGroup = None
-							active = False
-						}
-						RetractAction
-						{
-							actionGroup = None
-							active = False
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = LgRadialSolarPanel
-				cid = 4294478810
-				uid = 3031111582
-				mid = 1649994282
-				persistentId = 3522575595
-				launchID = 4
+				cid = 4294408938
+				uid = 4088682956
+				mid = 1339231923
+				persistentId = 3954653508
+				launchID = 3
 				parent = 10
-				position = -2.4928665161132813,2.0115799903869629,-0.52796286344528198
-				rotation = -0.500000596,-0.500000358,-0.499999911,0.50000006
+				position = -0.48986321687698364,2.048067569732666,0.43804949522018433
+				rotation = -0.500000715,-0.50000006,-0.5,0.500000119
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -13901,8 +9760,8 @@ GAME
 				srfN = srfAttach, 10,panel
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.19583160805828
-				tempExt = 167.11847190219706
+				temp = 302.0711316520007
+				tempExt = 301.2904935910579
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -13939,7 +9798,7 @@ GAME
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
 					efficiencyMult = 1
-					launchUT = 234048.02246315836
+					launchUT = 232344.47463144307
 					currentRotation = (0, 0, 0, 1)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
@@ -13990,14 +9849,14 @@ GAME
 			PART
 			{
 				name = LgRadialSolarPanel
-				cid = 4294478756
-				uid = 4168725265
-				mid = 1649994282
-				persistentId = 2719363995
-				launchID = 4
+				cid = 4294408720
+				uid = 201646653
+				mid = 1339231923
+				persistentId = 3926027590
+				launchID = 3
 				parent = 10
-				position = -2.4751796722412109,2.0449247360229492,0.43925613164901733
-				rotation = -0.500000596,-0.500000358,-0.499999911,0.50000006
+				position = -0.48986321687698364,2.0480666160583496,-0.47242850065231323
+				rotation = -0.500000715,-0.50000006,-0.5,0.500000119
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -14011,8 +9870,8 @@ GAME
 				srfN = srfAttach, 10,panel
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.19583160805828
-				tempExt = 167.11847190219706
+				temp = 302.0711316520007
+				tempExt = 301.2904935910579
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -14049,7 +9908,227 @@ GAME
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
 					efficiencyMult = 1
-					launchUT = 234048.02246315836
+					launchUT = 232344.47463144307
+					currentRotation = (0, 0, 0, 1)
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ExtendAction
+						{
+							actionGroup = None
+							active = False
+						}
+						RetractAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = LgRadialSolarPanel
+				cid = 4294408504
+				uid = 3707704219
+				mid = 1339231923
+				persistentId = 2286059701
+				launchID = 3
+				parent = 9
+				position = -2.4920625686645508,2.0435490608215332,-0.52715772390365601
+				rotation = -0.500000536,-0.50000006,-0.50000006,0.5
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				srfN = srfAttach, 9,panel
+				mass = 0.0399999991
+				shielded = False
+				temp = 302.11185748503868
+				tempExt = 301.32711715870056
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/NASA
+				rTrf = LgRadialSolarPanel
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					efficiencyMult = 1
+					launchUT = 232344.47463144307
+					currentRotation = (0, 0, 0, 1)
+					storedAnimationTime = 0
+					storedAnimationSpeed = 0
+					deployState = EXTENDED
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ExtendAction
+						{
+							actionGroup = None
+							active = False
+						}
+						RetractAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = LgRadialSolarPanel
+				cid = 4294408288
+				uid = 2303367540
+				mid = 1339231923
+				persistentId = 1358121482
+				launchID = 3
+				parent = 9
+				position = -2.4743757247924805,2.0768933296203613,0.44006091356277466
+				rotation = -0.500000536,-0.50000006,-0.50000006,0.5
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = -1
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = -1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				srfN = srfAttach, 9,panel
+				mass = 0.0399999991
+				shielded = False
+				temp = 302.11185662049985
+				tempExt = 301.32711566930942
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/NASA
+				rTrf = LgRadialSolarPanel
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					efficiencyMult = 1
+					launchUT = 232344.47463144307
 					currentRotation = (0, 0, 0, 1)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
@@ -14100,13 +10179,13 @@ GAME
 			PART
 			{
 				name = stackPoint1
-				cid = 4294478702
-				uid = 1274771793
-				mid = 1649994282
-				persistentId = 4002627594
-				launchID = 4
+				cid = 4294405604
+				uid = 654393906
+				mid = 1339231923
+				persistentId = 1743270562
+				launchID = 3
 				parent = 7
-				position = -2.2928547859191895,-1.3938188552856445,2.8159774956293404E-06
+				position = -2.2955107688903809,-2.0238454341888428,-4.5749984565190971E-06
 				rotation = -0.707107127,8.42937098E-08,0.707107127,8.42937098E-08
 				mirror = 1,1,1
 				symMethod = Radial
@@ -14119,11 +10198,11 @@ GAME
 				attm = 1
 				sameVesselCollision = False
 				srfN = srfAttach, 7,collisionMesh
-				attN = top, 17
+				attN = top, 16
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.23918382811613
-				tempExt = 167.1798987475585
+				temp = 302.22918213475674
+				tempExt = 301.46776095009096
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -14174,126 +10253,15 @@ GAME
 			}
 			PART
 			{
-				name = advSasModule
-				cid = 4294460640
-				uid = 594596201
-				mid = 1649994282
-				persistentId = 1308988483
-				launchID = 4
-				parent = 16
-				position = -2.2928586006164551,-1.6397325992584229,1.8623031792230904E-06
-				rotation = 0,0,2.52881136E-07,1.00000048
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = -1
-				resPri = 0
-				dstg = 0
-				sqor = -1
-				sepI = -1
-				sidx = -1
-				attm = 0
-				sameVesselCollision = False
-				srfN = , -1
-				attN = top, 16
-				attN = bottom, 18
-				mass = 0.100000001
-				shielded = False
-				temp = 167.23694993141328
-				tempExt = 167.17090395392586
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = advSasModule
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					actuatorModeCycle = 0
-					authorityLimiter = 100
-					stateString = Running
-					stagingEnabled = True
-					WheelState = Active
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						CycleAction
-						{
-							actionGroup = None
-						}
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
 				name = structuralPanel2
-				cid = 4294478666
-				uid = 3543296640
-				mid = 1649994282
-				persistentId = 3409766838
-				launchID = 4
-				parent = 17
-				position = -2.2928586006164551,-1.866262674331665,1.3854660210199654E-06
-				rotation = -0.707107127,1.6858742E-07,-0.707107127,-1.6858742E-07
+				cid = 4294405558
+				uid = 1400450368
+				mid = 1339231923
+				persistentId = 3136940979
+				launchID = 3
+				parent = 15
+				position = -2.2955117225646973,-2.0982282161712646,-4.9326263251714408E-06
+				rotation = 0.707107127,-8.42937098E-08,-0.707107127,-8.42937098E-08
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -14306,11 +10274,11 @@ GAME
 				sameVesselCollision = False
 				srfN = srfAttach, -1
 				attN = top, -1
-				attN = bottom, 17
+				attN = bottom, 15
 				mass = 0.300000012
 				shielded = False
-				temp = 167.20570660435601
-				tempExt = 167.13485371416127
+				temp = 302.18603684294249
+				tempExt = 301.39149837862988
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -14362,14 +10330,14 @@ GAME
 			PART
 			{
 				name = radPanelLg
-				cid = 4294478642
-				uid = 3811348638
-				mid = 1649994282
-				persistentId = 2826527032
-				launchID = 4
-				parent = 18
-				position = -2.2928547859191895,-1.8829243183135986,0.56243008375167847
-				rotation = 0.500000179,-0.50000006,-0.500000775,-0.5
+				cid = 4294401584
+				uid = 2140912185
+				mid = 1339231923
+				persistentId = 62746667
+				launchID = 3
+				parent = 16
+				position = -2.2955145835876465,-2.1148908138275146,-0.56243163347244263
+				rotation = 0.500000834,0.49999994,0.500000238,-0.499999851
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -14380,11 +10348,11 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
-				srfN = srfAttach, 18,panel
+				srfN = srfAttach, 16,panel
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.25112900348847
-				tempExt = 167.23508650197144
+				temp = 301.88034864701399
+				tempExt = 301.7124170807536
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -14464,14 +10432,14 @@ GAME
 			PART
 			{
 				name = radPanelLg
-				cid = 4294478596
-				uid = 202504961
-				mid = 1649994282
-				persistentId = 3069661877
-				launchID = 4
-				parent = 18
-				position = -2.2928547859191895,-1.8829305171966553,-0.60477858781814575
-				rotation = 0.500000179,-0.50000006,-0.500000775,-0.5
+				cid = 4294401370
+				uid = 2145235335
+				mid = 1339231923
+				persistentId = 3774881713
+				launchID = 3
+				parent = 16
+				position = -2.2955145835876465,-2.1148965358734131,0.60477286577224731
+				rotation = 0.500000834,0.49999994,0.500000238,-0.499999851
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -14482,11 +10450,11 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
-				srfN = srfAttach, 18,panel
+				srfN = srfAttach, 16,panel
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.27308698920416
-				tempExt = 167.25701472003561
+				temp = 301.95295729917899
+				tempExt = 301.7834030357626
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -14566,13 +10534,13 @@ GAME
 			PART
 			{
 				name = stackPoint1
-				cid = 4294478550
-				uid = 1986912235
-				mid = 1649994282
-				persistentId = 2817465353
-				launchID = 4
+				cid = 4294399432
+				uid = 448253935
+				mid = 1339231923
+				persistentId = 2843085946
+				launchID = 3
 				parent = 7
-				position = -3.715752124786377,0.070145130157470703,3.9037622627802193E-06
+				position = -3.7157464027404785,0.070145130157470703,3.8441576180048287E-06
 				rotation = 5.9604659E-08,5.9604659E-08,0.710495412,0.703702331
 				mirror = 1,1,1
 				symMethod = Radial
@@ -14585,11 +10553,11 @@ GAME
 				attm = 1
 				sameVesselCollision = False
 				srfN = srfAttach, 7,collisionMesh
-				attN = top, 22
+				attN = top, 20
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.24085970810057
-				tempExt = 167.17963527263225
+				temp = 302.2617220691256
+				tempExt = 301.46238226406268
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -14641,13 +10609,13 @@ GAME
 			PART
 			{
 				name = liquidEngine3.v2
-				cid = 4294478514
-				uid = 3786431780
-				mid = 1649994282
-				persistentId = 2217843651
-				launchID = 4
-				parent = 21
-				position = -3.7626767158508301,0.069694757461547852,4.0751256165094674E-06
+				cid = 4294397962
+				uid = 1640026560
+				mid = 1339231923
+				persistentId = 3963989960
+				launchID = 3
+				parent = 19
+				position = -3.7626662254333496,0.069694757461547852,3.9857186493463814E-06
 				rotation = -1.24913669E-07,0,-0.703702331,0.710495591
 				mirror = 1,1,1
 				symMethod = Radial
@@ -14660,12 +10628,12 @@ GAME
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
-				attN = top, 21
-				attN = bottom, 23
+				attN = top, 19
+				attN = bottom, 21
 				mass = 0.5
 				shielded = False
-				temp = 167.24236721839586
-				tempExt = 167.20312023805968
+				temp = 302.21834898026765
+				tempExt = 301.41181459227874
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -14912,13 +10880,13 @@ GAME
 			PART
 			{
 				name = Decoupler.1
-				cid = 4294477552
-				uid = 2010462057
-				mid = 1649994282
-				persistentId = 3252711981
-				launchID = 4
-				parent = 22
-				position = -4.612663745880127,0.061533927917480469,4.3358959374018013E-06
+				cid = 4294384594
+				uid = 4141917646
+				mid = 1339231923
+				persistentId = 2936961711
+				launchID = 3
+				parent = 20
+				position = -4.6126456260681152,0.061532497406005859,4.2166866478510201E-06
 				rotation = -1.24913669E-07,0,-0.703702331,0.710495591
 				mirror = 1,1,1
 				symMethod = Radial
@@ -14931,12 +10899,12 @@ GAME
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
-				attN = top, 22
-				attN = bottom, 24
+				attN = top, 20
+				attN = bottom, 22
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.23942692815484
-				tempExt = 167.13968061349061
+				temp = 302.24525152830546
+				tempExt = 301.22926927517267
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -15052,13 +11020,13 @@ GAME
 			PART
 			{
 				name = fairingSize2
-				cid = 4294477478
-				uid = 1583700111
-				mid = 1649994282
-				persistentId = 1698398662
-				launchID = 4
-				parent = 23
-				position = -4.8827099800109863,0.058938026428222656,4.4700063881464303E-06
+				cid = 4294189404
+				uid = 274871386
+				mid = 1339231923
+				persistentId = 344547616
+				launchID = 3
+				parent = 21
+				position = -4.8826842308044434,0.058937549591064453,4.3209947762079537E-06
 				rotation = -1.24913669E-07,0,-0.703702331,0.710495591
 				mirror = 1,1,1
 				symMethod = Radial
@@ -15083,12 +11051,12 @@ GAME
 				attN = interstage05b, -1
 				attN = interstage06a, -1
 				attN = interstage06b, -1
-				attN = top, 23
-				attN = bottom, 33
+				attN = top, 21
+				attN = bottom, 31
 				mass = 0.174999997
 				shielded = False
-				temp = 167.24312435544584
-				tempExt = 167.03169886703947
+				temp = 302.2758357731899
+				tempExt = 300.52613816800874
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -15124,7 +11092,7 @@ GAME
 				{
 					name = ModuleProceduralFairing
 					isEnabled = True
-					interstageCraftID = 0
+					interstageCraftID = 4294397962
 					nArcs = 2
 					ejectionForce = 100
 					useClamshell = False
@@ -15432,14 +11400,14 @@ GAME
 			PART
 			{
 				name = strutConnector
-				cid = 4294477252
-				uid = 3539362111
-				mid = 1649994282
-				persistentId = 762824743
-				launchID = 4
-				parent = 24
-				position = -4.6477627754211426,-0.71509552001953125,-0.77623945474624634
-				rotation = -0.00338022015,0.703694105,-0.710487425,0.00341347395
+				cid = 4294189178
+				uid = 3817576876
+				mid = 1339231923
+				persistentId = 3365004963
+				launchID = 3
+				parent = 22
+				position = -4.6477398872375488,-0.71509408950805664,-0.77623885869979858
+				rotation = -0.00338026229,0.703693986,-0.710487366,0.00341341062
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -15450,14 +11418,14 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
+				sym = 24
+				sym = 25
 				sym = 26
-				sym = 27
-				sym = 28
-				srfN = srfAttach, 24,Collider
+				srfN = srfAttach, 22,Collider 
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.24404923548536
-				tempExt = 167.16624160134091
+				temp = 302.30302921053044
+				tempExt = 301.48304776640282
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -15488,10 +11456,10 @@ GAME
 				}
 				PARTDATA
 				{
-					tgt = 4294479440
-					pos = -1.17092752,-0.0331659205,-0.0473900586
-					rot = 4.45770931E-09,0.0019434368,0.290265083,0.956945598
-					dir = -0.998782158,-0.0282899905,-0.0404229499
+					tgt = 4294448054
+					pos = -1.17089677,-0.0331654511,-0.0473958515
+					rot = 0,0.00194345985,0.290264934,0.956944406
+					dir = -0.998781979,-0.0282908343,-0.0404242985
 					col = collisionMesh
 				}
 				MODULE
@@ -15544,13 +11512,13 @@ GAME
 			PART
 			{
 				name = strutConnector
-				cid = 4294477158
-				uid = 304505320
-				mid = 1649994282
-				persistentId = 321273145
-				launchID = 4
-				parent = 24
-				position = -4.6626858711242676,0.83733558654785156,-0.77623230218887329
+				cid = 4294189084
+				uid = 1734534669
+				mid = 1339231923
+				persistentId = 2458838430
+				launchID = 3
+				parent = 22
+				position = -4.6626629829406738,0.83733391761779785,-0.77623242139816284
 				rotation = -0.00480364589,0.99997735,-0.00480347965,2.29476464E-05
 				mirror = 1,1,1
 				symMethod = Radial
@@ -15562,14 +11530,14 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
+				sym = 23
 				sym = 25
-				sym = 27
-				sym = 28
-				srfN = srfAttach, 24,Collider
+				sym = 26
+				srfN = srfAttach, 22,Collider 
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.24404923548536
-				tempExt = 167.16624160134091
+				temp = 302.30302921053044
+				tempExt = 301.48304776640282
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -15600,10 +11568,10 @@ GAME
 				}
 				PARTDATA
 				{
-					tgt = 4294479440
-					pos = -1.15876508,-0.0328074619,-0.0469136238
-					rot = 3.05627121E-11,-0.382581383,0.0125519764,0.923838079
-					dir = -0.99878186,-0.0282779485,-0.0404365622
+					tgt = 4294448054
+					pos = -1.15873587,-0.0328058079,-0.0469116978
+					rot = 0,-0.382580787,0.0125519885,0.923836768
+					dir = -0.998781741,-0.028284261,-0.0404360332
 					col = collisionMesh
 				}
 				MODULE
@@ -15656,13 +11624,13 @@ GAME
 			PART
 			{
 				name = strutConnector
-				cid = 4294477064
-				uid = 1354166218
-				mid = 1649994282
-				persistentId = 2599610415
-				launchID = 4
-				parent = 24
-				position = -4.6626877784729004,0.83734250068664551,0.77624887228012085
+				cid = 4294188990
+				uid = 2803437885
+				mid = 1339231923
+				persistentId = 2821218440
+				launchID = 3
+				parent = 22
+				position = -4.6626648902893066,0.83734011650085449,0.77624779939651489
 				rotation = -0.00341246254,0.710487247,0.703694105,-0.00338026229
 				mirror = 1,1,1
 				symMethod = Radial
@@ -15674,14 +11642,14 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
-				sym = 25
+				sym = 23
+				sym = 24
 				sym = 26
-				sym = 28
-				srfN = srfAttach, 24,Collider
+				srfN = srfAttach, 22,Collider 
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.24404923548536
-				tempExt = 167.16624160134091
+				temp = 302.30302921053044
+				tempExt = 301.48304776640282
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -15712,10 +11680,10 @@ GAME
 				}
 				PARTDATA
 				{
-					tgt = 4294479440
-					pos = -1.17287886,-0.033220049,-0.0474625677
-					rot = 1.15121974E-08,-0.00519879488,0.382751495,0.923838019
-					dir = -0.998782337,-0.0282890238,-0.0404174514
+					tgt = 4294448054
+					pos = -1.17284679,-0.0332201645,-0.047460787
+					rot = 0,-0.00519903516,0.382750928,0.923836946
+					dir = -0.998781979,-0.0282908529,-0.0404243991
 					col = collisionMesh
 				}
 				MODULE
@@ -15768,13 +11736,13 @@ GAME
 			PART
 			{
 				name = strutConnector
-				cid = 4294476970
-				uid = 4127648936
-				mid = 1649994282
-				persistentId = 3926787251
-				launchID = 4
-				parent = 24
-				position = -4.6477627754211426,-0.715087890625,0.77624183893203735
+				cid = 4294188896
+				uid = 4015813094
+				mid = 1339231923
+				persistentId = 1958897520
+				launchID = 3
+				parent = 22
+				position = -4.6477408409118652,-0.7150874137878418,0.7762414813041687
 				rotation = -2.27688506E-05,0.00480353925,0.999977469,-0.00480398303
 				mirror = 1,1,1
 				symMethod = Radial
@@ -15786,14 +11754,14 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
+				sym = 23
+				sym = 24
 				sym = 25
-				sym = 26
-				sym = 27
-				srfN = srfAttach, 24,Collider
+				srfN = srfAttach, 22,Collider 
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.24404923548536
-				tempExt = 167.16624160134091
+				temp = 302.30302921053044
+				tempExt = 301.48304776640282
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -15824,10 +11792,10 @@ GAME
 				}
 				PARTDATA
 				{
-					tgt = 4294479440
-					pos = -1.16118801,-0.0328849405,-0.0470094085
-					rot = 3.96214006E-10,-0.290249169,0.00363392103,0.956946492
-					dir = -0.998781741,-0.0282855816,-0.0404345728
+					tgt = 4294448054
+					pos = -1.1611588,-0.0328897089,-0.0470073335
+					rot = 0,-0.290248454,0.00363381929,0.956944466
+					dir = -0.998781741,-0.0282851551,-0.0404343382
 					col = collisionMesh
 				}
 				MODULE
@@ -15880,14 +11848,14 @@ GAME
 			PART
 			{
 				name = structuralIBeam2
-				cid = 4294476876
-				uid = 1931186663
-				mid = 1649994282
-				persistentId = 1852053956
-				launchID = 4
-				parent = 24
-				position = -6.6835355758666992,-0.72092866897583008,-0.77787262201309204
-				rotation = 0.653281987,-0.653281331,-0.270598382,-0.270598263
+				cid = 4294188778
+				uid = 2193332922
+				mid = 1339231923
+				persistentId = 2708891039
+				launchID = 3
+				parent = 22
+				position = -6.6835112571716309,-0.72092723846435547,-0.77787202596664429
+				rotation = 0.653282046,-0.65328145,-0.270598412,-0.270598263
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -15898,174 +11866,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
-				sym = 30
-				sym = 31
-				sym = 32
-				srfN = srfAttach, 24,Collider
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.375
-				shielded = False
-				temp = 167.23433367479623
-				tempExt = 167.1529419719177
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = structuralIBeam2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = structuralIBeam2
-				cid = 4294476852
-				uid = 1882268100
-				mid = 1649994282
-				persistentId = 806940375
-				launchID = 4
-				parent = 24
-				position = -6.6983346939086914,0.81940937042236328,-0.7625153660774231
-				rotation = 0.26876834,-0.272444695,-0.65769887,-0.648822308
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 29
-				sym = 31
-				sym = 32
-				srfN = srfAttach, 24,Collider
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.375
-				shielded = False
-				temp = 167.23432159551979
-				tempExt = 167.15293025550636
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = structuralIBeam2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = structuralIBeam2
-				cid = 4294476828
-				uid = 231709014
-				mid = 1649994282
-				persistentId = 3291796768
-				launchID = 4
-				parent = 24
-				position = -6.698185920715332,0.80406284332275391,0.77788281440734863
-				rotation = -0.273185968,0.26798594,-0.659527957,-0.64697516
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
+				sym = 28
 				sym = 29
 				sym = 30
-				sym = 32
-				srfN = srfAttach, 24,Collider
+				srfN = srfAttach, 22,Collider 
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.375
 				shielded = False
-				temp = 167.23413713976896
-				tempExt = 167.15275134085383
+				temp = 302.29104405347204
+				tempExt = 301.45454130897065
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -16117,14 +11927,14 @@ GAME
 			PART
 			{
 				name = structuralIBeam2
-				cid = 4294476804
-				uid = 3061854444
-				mid = 1649994282
-				persistentId = 1359372019
-				launchID = 4
-				parent = 24
-				position = -6.6833963394165039,-0.73627758026123047,0.76252532005310059
-				rotation = -0.655111849,0.651434124,-0.275014699,-0.266138732
+				cid = 4294188754
+				uid = 1667713797
+				mid = 1339231923
+				persistentId = 511459992
+				launchID = 3
+				parent = 22
+				position = -6.6983098983764648,0.81940841674804688,-0.76251548528671265
+				rotation = 0.268768311,-0.272444725,-0.65769881,-0.648822308
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -16135,16 +11945,16 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
+				sym = 27
 				sym = 29
 				sym = 30
-				sym = 31
-				srfN = srfAttach, 24,Collider
+				srfN = srfAttach, 22,Collider 
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.375
 				shielded = False
-				temp = 167.23430217873158
-				tempExt = 167.15291142200311
+				temp = 302.2910310361388
+				tempExt = 301.46028565828919
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -16196,14 +12006,172 @@ GAME
 			PART
 			{
 				name = structuralIBeam2
-				cid = 4294476780
-				uid = 2160544716
-				mid = 1649994282
-				persistentId = 2931228751
-				launchID = 4
-				parent = 24
-				position = -6.6809492111206055,0.041659355163574219,-0.00014287268277257681
-				rotation = -0.495173603,-0.500000238,-0.500000417,0.504780471
+				cid = 4294188730
+				uid = 640603002
+				mid = 1339231923
+				persistentId = 1497832555
+				launchID = 3
+				parent = 22
+				position = -6.6981611251831055,0.80405902862548828,0.77788174152374268
+				rotation = -0.273185909,0.267986,-0.659527957,-0.64697516
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				resPri = 0
+				dstg = 4
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 27
+				sym = 28
+				sym = 30
+				srfN = srfAttach, 22,Collider 
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.375
+				shielded = False
+				temp = 302.2910188880391
+				tempExt = 301.45451521413111
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/NASA
+				rTrf = structuralIBeam2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = structuralIBeam2
+				cid = 4294188706
+				uid = 1736115405
+				mid = 1339231923
+				persistentId = 4115714285
+				launchID = 3
+				parent = 22
+				position = -6.6833710670471191,-0.73627710342407227,0.76252508163452148
+				rotation = -0.65511173,0.651434243,-0.275014699,-0.266138732
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				resPri = 0
+				dstg = 4
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 27
+				sym = 28
+				sym = 29
+				srfN = srfAttach, 22,Collider 
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.375
+				shielded = False
+				temp = 302.29102137081804
+				tempExt = 301.45451768005381
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/NASA
+				rTrf = structuralIBeam2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = structuralIBeam2
+				cid = 4294180654
+				uid = 3386941611
+				mid = 1339231923
+				persistentId = 1764938406
+				launchID = 3
+				parent = 22
+				position = -6.6809177398681641,0.041660308837890625,-0.00014300679322332144
+				rotation = -0.495173633,-0.500000298,-0.500000358,0.50478071
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -16215,12 +12183,12 @@ GAME
 				attm = 0
 				sameVesselCollision = False
 				srfN = srfAttach, -1
-				attN = top, 24
-				attN = bottom, 42
+				attN = top, 22
+				attN = bottom, 40
 				mass = 0.375
 				shielded = False
-				temp = 167.25116179227095
-				tempExt = 167.78844794172812
+				temp = 302.29485866276667
+				tempExt = 301.38931259476271
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -16272,14 +12240,14 @@ GAME
 			PART
 			{
 				name = proceduralTankLiquid
-				cid = 4294476756
-				uid = 3506921351
-				mid = 1649994282
-				persistentId = 1573855821
-				launchID = 4
-				parent = 33
-				position = -6.761631965637207,0.047966480255126953,-0.73723518848419189
-				rotation = -0.00341259106,-0.00338077638,0.703694105,-0.710487485
+				cid = 4294350734
+				uid = 882191021
+				mid = 1339231923
+				persistentId = 993970687
+				launchID = 3
+				parent = 31
+				position = -6.7616004943847656,0.047966480255126953,-0.73723495006561279
+				rotation = -0.00341260131,-0.00338077592,0.703694105,-0.710487485
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -16290,14 +12258,14 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
-				sym = 36
-				srfN = srfAttach, 33,ibeam2
+				sym = 34
+				srfN = srfAttach, 31,ibeam2
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.251358032
 				shielded = False
-				temp = 167.27742865315798
-				tempExt = 167.25786418022139
+				temp = 302.31494793791251
+				tempExt = 301.49620020290797
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -16334,7 +12302,7 @@ GAME
 					name = ProceduralPart
 					isEnabled = True
 					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (0.00100000005, 0.00100000005, 1.58878982)
+					tempColliderSize = (0.00100000005, 0.00100000005, 1.22008693)
 					forceLegacyTextures = True
 					textureSet = SegmentedSRB
 					capTextureIndex = 2
@@ -16478,7 +12446,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 155.18545944000621
+					amount = 162.88199568510055
 					maxAmount = 180.97999999999999
 					flowState = True
 					isTweakable = True
@@ -16489,7 +12457,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 189.67309827999631
+					amount = 199.07999472618101
 					maxAmount = 221.19999999999999
 					flowState = True
 					isTweakable = True
@@ -16501,14 +12469,352 @@ GAME
 			PART
 			{
 				name = fuelLine
-				cid = 4294475824
-				uid = 1534898852
-				mid = 1649994282
-				persistentId = 981685495
-				launchID = 4
+				cid = 4294160822
+				uid = 3963108239
+				mid = 1339231923
+				persistentId = 41055185
+				launchID = 3
+				parent = 32
+				position = -7.761693000793457,0.050786495208740234,-0.68911570310592651
+				rotation = 0.710487366,0.00338049396,0.00341220945,0.703694284
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				resPri = 0
+				dstg = 4
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				srfN = srfAttach, 32,collisionMesh
+				mass = 0.0500000007
+				shielded = False
+				temp = 302.29499917495286
+				tempExt = 301.70318265601941
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/NASA
+				rTrf = fuelLine
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+					tgt = 4294336268
+					pos = -0.517846644,-0.273699343,-0.0279433504
+					rot = 0,0,0,1
+					dir = -0.883102417,-0.466754168,-0.0476527959
+					col = collisionMesh
+				}
+				MODULE
+				{
+					name = CModuleLinkedMesh
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = CModuleFuelLine
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = proceduralTankLiquid
+				cid = 4294172208
+				uid = 2151059381
+				mid = 1339231923
+				persistentId = 525286971
+				launchID = 3
+				parent = 31
+				position = -6.7616076469421387,0.033806800842285156,0.73693454265594482
+				rotation = -0.703694284,-0.710487485,-0.00341338152,0.00337987742
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				resPri = 0
+				dstg = 4
+				sqor = -1
+				sepI = 1
+				sidx = -1
+				attm = 1
+				sameVesselCollision = False
+				sym = 32
+				srfN = srfAttach, 31,ibeam2
+				attN = top, -1
+				attN = bottom, -1
+				mass = 0.251358032
+				shielded = False
+				temp = 302.31493083464164
+				tempExt = 301.49577305404938
+				tempExtUnexp = 4
+				staticPressureAtm = 0
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/NASA
+				rTrf = proceduralTankLiquid
+				modCost = 750.0979
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+					ToggleSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					SetSameVesselInteraction
+					{
+						actionGroup = None
+					}
+					RemoveSameVesselInteraction
+					{
+						actionGroup = None
+					}
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ProceduralPart
+					isEnabled = True
+					tempColliderCenter = (0, 0, 0)
+					tempColliderSize = (3.17422318, 0.00100000005, 0.00100000005)
+					forceLegacyTextures = True
+					textureSet = SegmentedSRB
+					capTextureIndex = 2
+					shapeName = Fillet Cylinder
+					moduleCost = 750.0979
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeCylinder
+					isEnabled = False
+					diameter = 1.25
+					length = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeCone
+					isEnabled = False
+					topDiameter = 0.625
+					bottomDiameter = 1.25
+					length = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapePill
+					isEnabled = True
+					diameter = 1.25
+					length = 2
+					fillet = 0.625
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapeBezierCone
+					isEnabled = False
+					selectedShape = Round #1
+					topDiameter = 0.625
+					bottomDiameter = 1.25
+					length = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ProceduralShapePolygon
+					isEnabled = False
+					cornerCount = 8
+					diameter = 1.25
+					length = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = TankContentSwitcher
+					isEnabled = True
+					tankVolume = 2.30815458
+					mass = 0.251358032
+					tankType = Mixed
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = KOSNameTag
+					isEnabled = True
+					nameTag = 
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 162.88199568510055
+					maxAmount = 180.97999999999999
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 199.07999472618101
+					maxAmount = 221.19999999999999
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = fuelLine
+				cid = 4294133308
+				uid = 59199645
+				mid = 1339231923
+				persistentId = 2748200936
+				launchID = 3
 				parent = 34
-				position = -7.7617330551147461,0.050787448883056641,-0.68911594152450562
-				rotation = 0.710487306,0.00338059943,0.00341216731,0.703694284
+				position = -7.7614383697509766,0.0092043876647949219,0.74530899524688721
+				rotation = 0.710487485,0.00337984087,0.00341326324,0.703694224
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -16522,8 +12828,8 @@ GAME
 				srfN = srfAttach, 34,collisionMesh
 				mass = 0.0500000007
 				shielded = False
-				temp = 168.15963795910119
-				tempExt = 168.38331291219927
+				temp = 302.29499155662842
+				tempExt = 301.70301558079819
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -16554,10 +12860,10 @@ GAME
 				}
 				PARTDATA
 				{
-					tgt = 4294476508
-					pos = -0.517889023,-0.273699433,-0.0279449597
-					rot = -5.15349363E-09,4.63629135E-13,6.55475674E-13,1.00000215
-					dir = -0.88312012,-0.466720581,-0.0476525947
+					tgt = 4294336268
+					pos = -0.517836273,0.16605942,0.0995007008
+					rot = 0,0,0,1
+					dir = -0.93668443,0.300379604,0.179984584
 					col = collisionMesh
 				}
 				MODULE
@@ -16610,14 +12916,14 @@ GAME
 			PART
 			{
 				name = proceduralTankLiquid
-				cid = 4294476694
-				uid = 836301543
-				mid = 1649994282
-				persistentId = 1157249173
-				launchID = 4
-				parent = 33
-				position = -6.7616395950317383,0.033807277679443359,0.7369350790977478
-				rotation = -0.703694105,-0.710487306,-0.00341338199,0.00337987742
+				cid = 4294363942
+				uid = 3710422259
+				mid = 1339231923
+				persistentId = 1252680066
+				launchID = 3
+				parent = 31
+				position = -6.5874624252319336,0.76993942260742188,0.0068551446311175823
+				rotation = 0.500000238,0.504780352,-0.495173901,0.500000179
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -16628,352 +12934,14 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
-				sym = 34
-				srfN = srfAttach, 33,ibeam2
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.251358032
-				shielded = False
-				temp = 167.27685817638871
-				tempExt = 167.25724735963152
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = proceduralTankLiquid
-				modCost = 750.0979
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralPart
-					isEnabled = True
-					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (2.03389549, 0.00100000005, 0.00100000005)
-					forceLegacyTextures = True
-					textureSet = SegmentedSRB
-					capTextureIndex = 2
-					shapeName = Fillet Cylinder
-					moduleCost = 750.0979
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCylinder
-					isEnabled = False
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCone
-					isEnabled = False
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePill
-					isEnabled = True
-					diameter = 1.25
-					length = 2
-					fillet = 0.625
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeBezierCone
-					isEnabled = False
-					selectedShape = Round #1
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePolygon
-					isEnabled = False
-					cornerCount = 8
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TankContentSwitcher
-					isEnabled = True
-					tankVolume = 2.30815458
-					mass = 0.251358032
-					tankType = Mixed
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 155.18545944000621
-					maxAmount = 180.97999999999999
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 189.67309827999631
-					maxAmount = 221.19999999999999
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = fuelLine
-				cid = 4294475636
-				uid = 1586542693
-				mid = 1649994282
-				persistentId = 2904221248
-				launchID = 4
-				parent = 36
-				position = -7.7614774703979492,0.0092058181762695313,0.74530953168869019
-				rotation = 0.710487247,0.00337958778,0.00341317896,0.703694105
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				srfN = srfAttach, 36,collisionMesh
-				mass = 0.0500000007
-				shielded = False
-				temp = 168.15935192790516
-				tempExt = 168.38304710851259
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = fuelLine
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-					tgt = 4294476508
-					pos = -0.517880619,0.166060403,0.0994981453
-					rot = -5.72613956E-09,2.66453526E-13,-8.70414851E-13,1.00000226
-					dir = -0.936696231,0.300355256,0.179963365
-					col = collisionMesh
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleFuelLine
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = proceduralTankLiquid
-				cid = 4294476632
-				uid = 3670069310
-				mid = 1649994282
-				persistentId = 3284803568
-				launchID = 4
-				parent = 33
-				position = -6.5874929428100586,0.76994228363037109,0.0068556214682757854
-				rotation = 0.500000298,0.504780471,-0.495173931,0.50000006
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 1
-				resPri = 0
-				dstg = 4
-				sqor = -1
-				sepI = 1
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 40
-				srfN = srfAttach, 33,ibeam2
+				sym = 38
+				srfN = srfAttach, 31,ibeam2
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.384998441
 				shielded = False
-				temp = 167.26174644124876
-				tempExt = 167.23098436474706
+				temp = 302.31668517605169
+				tempExt = 301.49530932041529
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -17154,7 +13122,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 253.11688323931304
+					amount = 265.67039999999997
 					maxAmount = 277.19999999999999
 					flowState = True
 					isTweakable = True
@@ -17165,7 +13133,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 309.36809297306831
+					amount = 324.71129999999999
 					maxAmount = 338.80000000000001
 					flowState = True
 					isTweakable = True
@@ -17177,14 +13145,14 @@ GAME
 			PART
 			{
 				name = fuelLine
-				cid = 4294475730
-				uid = 138530129
-				mid = 1649994282
-				persistentId = 3808762167
-				launchID = 4
-				parent = 38
-				position = -8.0878362655639648,0.79568099975585938,0.017888680100440979
-				rotation = 0.710486889,0.00337958778,0.00341237825,0.703694522
+				cid = 4294159892
+				uid = 2692457966
+				mid = 1339231923
+				persistentId = 3640522143
+				launchID = 3
+				parent = 36
+				position = -8.0877981185913086,0.79567813873291016,0.017888322472572327
+				rotation = 0.710486889,0.00337967207,0.00341248349,0.703694642
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -17195,11 +13163,11 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
-				srfN = srfAttach, 38,collisionMesh
+				srfN = srfAttach, 36,collisionMesh
 				mass = 0.0500000007
 				shielded = False
-				temp = 168.15270826348191
-				tempExt = 168.36300608854501
+				temp = 302.29573480113186
+				tempExt = 301.70251591597787
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -17230,10 +13198,10 @@ GAME
 				}
 				PARTDATA
 				{
-					tgt = 4294476508
-					pos = -0.199015915,0.0214973465,-0.176065728
-					rot = -4.58040006E-09,7.81597009E-13,-1.27897692E-13,1.00000215
-					dir = -0.746532798,0.0806391537,-0.660443902
+					tgt = 4294336268
+					pos = -0.19897826,0.0214971658,-0.176061392
+					rot = 0,0,0,1
+					dir = -0.746469319,0.0806480199,-0.660514474
 					col = collisionMesh
 				}
 				MODULE
@@ -17286,14 +13254,14 @@ GAME
 			PART
 			{
 				name = proceduralTankLiquid
-				cid = 4294476570
-				uid = 1984865466
-				mid = 1649994282
-				persistentId = 3284814129
-				launchID = 4
-				parent = 33
-				position = -6.5735273361206055,-0.68468570709228516,-0.0071223829872906208
-				rotation = 0.495173395,0.500000715,0.499999851,-0.50478071
+				cid = 4294168462
+				uid = 1880784851
+				mid = 1339231923
+				persistentId = 3335031883
+				launchID = 3
+				parent = 31
+				position = -6.5734963417053223,-0.68468475341796875,-0.0071222041733562946
+				rotation = 0.495173484,0.500000775,0.49999994,-0.504780769
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -17304,14 +13272,14 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
-				sym = 38
-				srfN = srfAttach, 33,ibeam2
+				sym = 36
+				srfN = srfAttach, 31,ibeam2
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.384998441
 				shielded = False
-				temp = 167.26198119376443
-				tempExt = 167.23120811264067
+				temp = 302.31908401470281
+				tempExt = 301.49623904183613
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -17348,7 +13316,7 @@ GAME
 					name = ProceduralPart
 					isEnabled = True
 					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (1.65917778, 0.00100000005, 2.43374538)
+					tempColliderSize = (1.205477, 0.00100000005, 4.11559391)
 					forceLegacyTextures = True
 					textureSet = Original
 					capTextureIndex = 2
@@ -17492,7 +13460,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 253.11688323931304
+					amount = 265.67039999999997
 					maxAmount = 277.19999999999999
 					flowState = True
 					isTweakable = True
@@ -17503,7 +13471,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 309.36809297306831
+					amount = 324.71129999999999
 					maxAmount = 338.80000000000001
 					flowState = True
 					isTweakable = True
@@ -17515,14 +13483,14 @@ GAME
 			PART
 			{
 				name = fuelLine
-				cid = 4294475542
-				uid = 513800431
-				mid = 1649994282
-				persistentId = 3575991948
-				launchID = 4
-				parent = 40
-				position = -8.0737924575805664,-0.66741657257080078,-0.015425011515617371
-				rotation = 0.710487843,0.00338051515,0.00341288396,0.703693807
+				cid = 4294157384
+				uid = 3678026477
+				mid = 1339231923
+				persistentId = 1495750892
+				launchID = 3
+				parent = 38
+				position = -8.0737543106079102,-0.66741466522216797,-0.015424951910972595
+				rotation = 0.710487902,0.00338051515,0.00341305253,0.703693807
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -17533,11 +13501,11 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
-				srfN = srfAttach, 40,collisionMesh
+				srfN = srfAttach, 38,collisionMesh
 				mass = 0.0500000007
 				shielded = False
-				temp = 168.15282578936601
-				tempExt = 168.36310959651081
+				temp = 302.29675088223041
+				tempExt = 301.70313872687547
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -17568,10 +13536,10 @@ GAME
 				}
 				PARTDATA
 				{
-					tgt = 4294476508
-					pos = -0.199010149,0.0340919383,0.301177025
-					rot = -5.72692116E-09,-1.24344979E-13,8.8817842E-14,1.00000226
-					dir = -0.548850179,0.0940221697,0.830616236
+					tgt = 4294336268
+					pos = -0.19896841,0.0340940394,0.301184326
+					rot = 0,0,0,1
+					dir = -0.548745632,0.0940342173,0.830683947
 					col = collisionMesh
 				}
 				MODULE
@@ -17624,13 +13592,13 @@ GAME
 			PART
 			{
 				name = proceduralTankLiquid
-				cid = 4294476508
-				uid = 1070712003
-				mid = 1649994282
-				persistentId = 4228650244
-				launchID = 4
-				parent = 33
-				position = -8.3419218063354492,0.025707244873046875,-0.00029640679713338614
+				cid = 4294336268
+				uid = 3617574955
+				mid = 1339231923
+				persistentId = 2926389928
+				launchID = 3
+				parent = 31
+				position = -8.3418827056884766,0.025706291198730469,-0.00029654090758413076
 				rotation = 3.26645168E-05,-3.25441433E-05,-0.703702331,0.710495412
 				mirror = 1,1,1
 				symMethod = Radial
@@ -17643,12 +13611,12 @@ GAME
 				attm = 0
 				sameVesselCollision = False
 				srfN = srfAttach, -1
-				attN = top, 33
-				attN = bottom, 43
+				attN = top, 31
+				attN = bottom, 41
 				mass = 0.0668202043
 				shielded = False
-				temp = 169.1238853970452
-				tempExt = 169.71626108937897
+				temp = 302.27799566084764
+				tempExt = 301.13173550878838
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -17685,7 +13653,7 @@ GAME
 					name = ProceduralPart
 					isEnabled = True
 					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (0.00100000005, 0.00100000005, 2.95267749)
+					tempColliderSize = (0.00100000005, 0.00100000005, 2.49904966)
 					forceLegacyTextures = True
 					textureSet = SegmentedSRB
 					capTextureIndex = 0
@@ -17829,7 +13797,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 45.836695592144046
+					amount = 48.109999999999999
 					maxAmount = 48.109999999999999
 					flowState = True
 					isTweakable = True
@@ -17840,7 +13808,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 56.021591693349244
+					amount = 58.799999999999997
 					maxAmount = 58.799999999999997
 					flowState = True
 					isTweakable = True
@@ -17852,13 +13820,13 @@ GAME
 			PART
 			{
 				name = liquidEngine2-2.v2
-				cid = 4294476446
-				uid = 4278485701
-				mid = 1649994282
-				persistentId = 1815532940
-				launchID = 4
-				parent = 42
-				position = -8.4048013687133789,0.025103569030761719,-0.00030251627322286367
+				cid = 4294343282
+				uid = 1852538469
+				mid = 1339231923
+				persistentId = 1615528841
+				launchID = 3
+				parent = 40
+				position = -8.4047574996948242,0.025102615356445313,-0.0003026503836736083
 				rotation = 3.26645168E-05,-3.25441433E-05,-0.703702331,0.710495412
 				mirror = 1,1,1
 				symMethod = Radial
@@ -17871,16 +13839,16 @@ GAME
 				attm = 0
 				sameVesselCollision = False
 				srfN = , -1
-				attN = top, 42
+				attN = top, 40
 				attN = bottom, -1
 				mass = 1.75
 				shielded = False
-				temp = 175.46392311625615
-				tempExt = 173.6228535898901
+				temp = 302.23910129068452
+				tempExt = 301.41636673005678
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
-				state = 1
+				state = 0
 				attached = True
 				autostrutMode = Off
 				rigidAttachment = False
@@ -17914,9 +13882,9 @@ GAME
 					isEnabled = True
 					independentThrottle = False
 					independentThrottlePercentage = 0
-					staged = True
+					staged = False
 					flameout = False
-					EngineIgnited = True
+					EngineIgnited = False
 					engineShutdown = False
 					currentThrottle = 0
 					thrustPercentage = 100
@@ -17978,7 +13946,7 @@ GAME
 					isEnabled = True
 					activejettisonName = Shroud
 					isJettisoned = True
-					shroudHideOverride = True
+					shroudHideOverride = False
 					stagingEnabled = True
 					EVENTS
 					{
@@ -18004,7 +13972,7 @@ GAME
 					enableYaw = True
 					enablePitch = True
 					enableRoll = True
-					gimbalActive = True
+					gimbalActive = False
 					stagingEnabled = True
 					EVENTS
 					{
@@ -18059,7 +14027,7 @@ GAME
 				{
 					name = FXModuleAnimateThrottle
 					isEnabled = True
-					animState = 0.118118323
+					animState = 0
 					stagingEnabled = True
 					EVENTS
 					{
@@ -18136,14 +14104,14 @@ GAME
 			PART
 			{
 				name = landingLeg1-2
-				cid = 4294476272
-				uid = 1577471806
-				mid = 1649994282
-				persistentId = 1471784985
-				launchID = 4
-				parent = 42
-				position = -8.8448457717895508,1.0756826400756836,-1.0550218820571899
-				rotation = 0.701785028,0.545055866,0.454251498,-0.0637854338
+				cid = 4294326856
+				uid = 3390950404
+				mid = 1339231923
+				persistentId = 3268998100
+				launchID = 3
+				parent = 40
+				position = -8.8448095321655273,1.0756807327270508,-1.0550218820571899
+				rotation = 0.701785028,0.545055687,0.454251349,-0.063785471
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -18154,14 +14122,14 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
+				sym = 43
+				sym = 44
 				sym = 45
-				sym = 46
-				sym = 47
-				srfN = srfAttach, 42,collisionMesh
+				srfN = srfAttach, 40,collisionMesh
 				mass = 0.100000001
 				shielded = False
-				temp = 167.69082204977636
-				tempExt = 169.0693854209982
+				temp = 302.24602076733248
+				tempExt = 301.02287515671003
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -18325,14 +14293,14 @@ GAME
 			PART
 			{
 				name = landingLeg1-2
-				cid = 4294476160
-				uid = 3055275784
-				mid = 1649994282
-				persistentId = 2794172078
-				launchID = 4
-				parent = 42
-				position = -8.8450555801391602,1.0757246017456055,1.0543915033340454
-				rotation = 0.454185605,0.0638358369,0.70182699,-0.545050561
+				cid = 4294326380
+				uid = 799989097
+				mid = 1339231923
+				persistentId = 755043291
+				launchID = 3
+				parent = 40
+				position = -8.8450145721435547,1.0757198333740234,1.0543899536132813
+				rotation = 0.454185665,0.063835755,0.701827168,-0.545050442
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -18343,14 +14311,14 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
+				sym = 42
 				sym = 44
-				sym = 46
-				sym = 47
-				srfN = srfAttach, 42,collisionMesh
+				sym = 45
+				srfN = srfAttach, 40,collisionMesh
 				mass = 0.100000001
 				shielded = False
-				temp = 167.68715396390272
-				tempExt = 169.03995132190249
+				temp = 302.24582187968389
+				tempExt = 301.01580870768277
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -18514,14 +14482,14 @@ GAME
 			PART
 			{
 				name = landingLeg1-2
-				cid = 4294476048
-				uid = 2574464131
-				mid = 1649994282
-				persistentId = 393757466
-				launchID = 4
-				parent = 42
-				position = -8.8247976303100586,-1.0337429046630859,1.0543328523635864
-				rotation = -0.0594697222,-0.454778761,0.538282096,-0.707031071
+				cid = 4294326264
+				uid = 3039199547
+				mid = 1339231923
+				persistentId = 2640191859
+				launchID = 3
+				parent = 40
+				position = -8.8247556686401367,-1.0337409973144531,1.0543326139450073
+				rotation = -0.0594696775,-0.45477879,0.538282275,-0.70703119
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -18532,14 +14500,14 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
-				sym = 44
+				sym = 42
+				sym = 43
 				sym = 45
-				sym = 47
-				srfN = srfAttach, 42,collisionMesh
+				srfN = srfAttach, 40,collisionMesh
 				mass = 0.100000001
 				shielded = False
-				temp = 167.68741436472462
-				tempExt = 169.04001603420355
+				temp = 302.24584244078454
+				tempExt = 301.01797042071018
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -18703,14 +14671,14 @@ GAME
 			PART
 			{
 				name = landingLeg1-2
-				cid = 4294475936
-				uid = 1335256076
-				mid = 1649994282
-				persistentId = 566796051
-				launchID = 4
-				parent = 42
-				position = -8.824589729309082,-1.0337858200073242,-1.0550637245178223
-				rotation = -0.538288295,-0.706988752,0.0594200715,-0.454843372
+				cid = 4294326148
+				uid = 1622530932
+				mid = 1339231923
+				persistentId = 647137567
+				launchID = 3
+				parent = 40
+				position = -8.8245487213134766,-1.033782958984375,-1.0550625324249268
+				rotation = -0.538288534,-0.70698911,0.0594197772,-0.454843283
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -18721,14 +14689,14 @@ GAME
 				sidx = -1
 				attm = 1
 				sameVesselCollision = False
+				sym = 42
+				sym = 43
 				sym = 44
-				sym = 45
-				sym = 46
-				srfN = srfAttach, 42,collisionMesh
+				srfN = srfAttach, 40,collisionMesh
 				mass = 0.100000001
 				shielded = False
-				temp = 167.68748640947206
-				tempExt = 169.04003471132017
+				temp = 302.24607056633442
+				tempExt = 301.01587952175208
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -18892,14 +14860,14 @@ GAME
 			PART
 			{
 				name = rcsTankRadialLong
-				cid = 4294478352
-				uid = 1977621182
-				mid = 1649994282
-				persistentId = 1279882296
-				launchID = 4
+				cid = 4294148064
+				uid = 1692626337
+				mid = 1339231923
+				persistentId = 2952732022
+				launchID = 3
 				parent = 7
-				position = -1.6863557100296021,0.891021728515625,-0.46562439203262329
-				rotation = -0.499994576,-0.00415989477,0.866015911,-0.00240093772
+				position = -1.6863538026809692,0.89101958274841309,-0.46562463045120239
+				rotation = -0.499994516,-0.00415976811,0.866015851,-0.00240085344
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -18913,8 +14881,8 @@ GAME
 				srfN = srfAttach, 7,collisionMesh
 				mass = 0.0299999993
 				shielded = False
-				temp = 167.24104939451496
-				tempExt = 167.18305648872078
+				temp = 302.30606359612761
+				tempExt = 301.49231928771559
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -18965,7 +14933,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 50
+					amount = 49.771278282743559
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -18977,14 +14945,14 @@ GAME
 			PART
 			{
 				name = rcsTankRadialLong
-				cid = 4294478328
-				uid = 3051755767
-				mid = 1649994282
-				persistentId = 3896944612
-				launchID = 4
+				cid = 4294148018
+				uid = 4050983061
+				mid = 1339231923
+				persistentId = 4101368421
+				launchID = 3
 				parent = 7
-				position = -1.6944125890731812,-0.79316020011901855,-0.46097603440284729
-				rotation = -0.499994487,0.0041603581,0.866015732,0.00240270793
+				position = -1.6944125890731812,-0.79315829277038574,-0.46097555756568909
+				rotation = -0.499994516,0.00416027382,0.866015732,0.00240253936
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -18998,8 +14966,8 @@ GAME
 				srfN = srfAttach, 7,collisionMesh
 				mass = 0.0299999993
 				shielded = False
-				temp = 167.24104939451496
-				tempExt = 167.18305648872078
+				temp = 302.30606359612761
+				tempExt = 301.49231928771559
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -19050,7 +15018,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 50
+					amount = 49.771278282743559
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -19062,13 +15030,13 @@ GAME
 			PART
 			{
 				name = rcsTankRadialLong
-				cid = 4294478304
-				uid = 763215668
-				mid = 1649994282
-				persistentId = 2134267482
-				launchID = 4
+				cid = 4294147974
+				uid = 2256753473
+				mid = 1339231923
+				persistentId = 2892581226
+				launchID = 3
 				parent = 7
-				position = -1.6973117589950562,-0.85086488723754883,0.45930671691894531
+				position = -1.6973108053207397,-0.85086321830749512,0.45930695533752441
 				rotation = 0.866015851,-0.00240220223,-0.499994487,-0.00416014763
 				mirror = 1,1,1
 				symMethod = Radial
@@ -19083,8 +15051,8 @@ GAME
 				srfN = srfAttach, 7,collisionMesh
 				mass = 0.0299999993
 				shielded = False
-				temp = 167.24104939451496
-				tempExt = 167.18305648872078
+				temp = 302.30606359612761
+				tempExt = 301.49231928771559
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -19135,7 +15103,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 50
+					amount = 49.771278282743559
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -19147,13 +15115,13 @@ GAME
 			PART
 			{
 				name = rcsTankRadialLong
-				cid = 4294478280
-				uid = 783697691
-				mid = 1649994282
-				persistentId = 3265415279
-				launchID = 4
+				cid = 4294147818
+				uid = 1991034317
+				mid = 1339231923
+				persistentId = 1026200697
+				launchID = 3
 				parent = 7
-				position = -1.6907693147659302,0.87184429168701172,0.46308612823486328
+				position = -1.6907693147659302,0.8718416690826416,0.46308541297912598
 				rotation = 0.866015851,0.00240110629,-0.499994516,0.00415989477
 				mirror = 1,1,1
 				symMethod = Radial
@@ -19168,8 +15136,8 @@ GAME
 				srfN = srfAttach, 7,collisionMesh
 				mass = 0.0299999993
 				shielded = False
-				temp = 167.24104939451496
-				tempExt = 167.18305648872078
+				temp = 302.30606359612761
+				tempExt = 301.49231928771559
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -19220,7 +15188,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 50
+					amount = 49.771278282743559
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -19232,13 +15200,13 @@ GAME
 			PART
 			{
 				name = RCSBlock.v2
-				cid = 4294478256
-				uid = 1407995310
-				mid = 1649994282
-				persistentId = 1846888478
-				launchID = 4
+				cid = 4294138570
+				uid = 3099953745
+				mid = 1339231923
+				persistentId = 2278312525
+				launchID = 3
 				parent = 7
-				position = -2.4928550720214844,0.89871597290039063,-1.2221599817276001
+				position = -2.4928531646728516,0.89871406555175781,-1.2221599817276001
 				rotation = 0.70709902,-0.00339691015,0.707098901,-0.0033963623
 				mirror = 1,1,1
 				symMethod = Radial
@@ -19253,8 +15221,8 @@ GAME
 				srfN = srfAttach, 7,collisionMesh
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.2407601283046
-				tempExt = 167.18346954935456
+				temp = 302.28557244452173
+				tempExt = 301.4867340483716
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -19321,7 +15289,7 @@ GAME
 					name = FXModuleAnimateRCS
 					isEnabled = True
 					stagingEnabled = True
-					animStates = 0,0,0,0
+					animStates = 0.01649626,0.01517495,0.0126107,0.01605163
 					EVENTS
 					{
 					}
@@ -19352,13 +15320,13 @@ GAME
 			PART
 			{
 				name = RCSBlock.v2
-				cid = 4294478168
-				uid = 1397737683
-				mid = 1649994282
-				persistentId = 1965920361
-				launchID = 4
+				cid = 4294138452
+				uid = 2274401088
+				mid = 1339231923
+				persistentId = 2017752104
+				launchID = 3
 				parent = 7
-				position = -2.4928631782531738,-0.78633999824523926,-1.2368496656417847
+				position = -2.4928603172302246,-0.78633761405944824,-1.2368487119674683
 				rotation = 0.70709902,-0.00339691015,0.707098901,-0.0033963623
 				mirror = 1,1,1
 				symMethod = Radial
@@ -19373,8 +15341,8 @@ GAME
 				srfN = srfAttach, 7,collisionMesh
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.24092741451051
-				tempExt = 167.18352360114648
+				temp = 302.28652137624249
+				tempExt = 301.51791729022352
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -19441,7 +15409,7 @@ GAME
 					name = FXModuleAnimateRCS
 					isEnabled = True
 					stagingEnabled = True
-					animStates = 0,0,0,0
+					animStates = 0.01564002,0.01405439,0.01117674,0.01433965
 					EVENTS
 					{
 					}
@@ -19472,13 +15440,13 @@ GAME
 			PART
 			{
 				name = RCSBlock.v2
-				cid = 4294478080
-				uid = 2003465628
-				mid = 1649994282
-				persistentId = 1778876688
-				launchID = 4
+				cid = 4294138336
+				uid = 728427191
+				mid = 1339231923
+				persistentId = 1233382035
+				launchID = 3
 				parent = 7
-				position = -2.4928555488586426,-0.85365915298461914,1.2347952127456665
+				position = -2.4928555488586426,-0.85365748405456543,1.2347952127456665
 				rotation = 0.707098901,0.0033963623,-0.707098901,-0.00339669944
 				mirror = 1,1,1
 				symMethod = Radial
@@ -19493,8 +15461,8 @@ GAME
 				srfN = srfAttach, 7,collisionMesh
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.24060760187089
-				tempExt = 167.18342026658786
+				temp = 302.28496496762853
+				tempExt = 301.48605490781119
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -19561,7 +15529,7 @@ GAME
 					name = FXModuleAnimateRCS
 					isEnabled = True
 					stagingEnabled = True
-					animStates = 0,0,0,0
+					animStates = 0.01347375,0.01463467,0.01327638,0.01356725
 					EVENTS
 					{
 					}
@@ -19592,13 +15560,13 @@ GAME
 			PART
 			{
 				name = RCSBlock.v2
-				cid = 4294477992
-				uid = 2980990061
-				mid = 1649994282
-				persistentId = 254448374
-				launchID = 4
+				cid = 4294138220
+				uid = 1425474127
+				mid = 1339231923
+				persistentId = 3105373986
+				launchID = 3
 				parent = 7
-				position = -2.4928550720214844,0.87441027164459229,1.2212953567504883
+				position = -2.4928531646728516,0.87440788745880127,1.2212944030761719
 				rotation = 0.70709914,-0.00339680491,-0.707098842,0.00339621492
 				mirror = 1,1,1
 				symMethod = Radial
@@ -19613,8 +15581,8 @@ GAME
 				srfN = srfAttach, 7,collisionMesh
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.24053795634447
-				tempExt = 167.1833977634445
+				temp = 302.28482019009539
+				tempExt = 301.48600821097301
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -19681,7 +15649,7 @@ GAME
 					name = FXModuleAnimateRCS
 					isEnabled = True
 					stagingEnabled = True
-					animStates = 0,0,0,0
+					animStates = 0.01490425,0.01691444,0.01268035,0.01588878
 					EVENTS
 					{
 					}
@@ -19713,12 +15681,12 @@ GAME
 			{
 				name = strutConnector
 				cid = 4294413824
-				uid = 1975119420
-				mid = 1649994282
-				persistentId = 3787199814
-				launchID = 4
+				uid = 506952900
+				mid = 1339231923
+				persistentId = 1824643709
+				launchID = 3
 				parent = 0
-				position = -0.61987680196762085,0.95825499296188354,-1.0736563205718994
+				position = -0.61987584829330444,0.95825451612472534,-1.0736563205718994
 				rotation = -1.26440568E-07,0.500000119,1.6858742E-07,-0.866025627
 				mirror = 1,1,1
 				symMethod = Radial
@@ -19733,8 +15701,8 @@ GAME
 				srfN = srfAttach, 0,ColliderMain
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.24694561066428
-				tempExt = 167.21207929209513
+				temp = 302.30383274916261
+				tempExt = 301.75894414661843
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -19765,10 +15733,10 @@ GAME
 				}
 				PARTDATA
 				{
-					tgt = 4294479440
-					pos = -0.642797291,-0.00350231491,1.09802592
-					rot = -4.17382129E-10,0.896800101,0.0108594401,0.442304641
-					dir = -0.505206764,-0.00275264564,0.862993896
+					tgt = 4294448054
+					pos = -0.642794251,-0.00350815617,1.09802091
+					rot = -2.34806563E-10,0.896801651,0.0108596245,0.442305893
+					dir = -0.505206704,-0.0027572494,0.862993896
 					col = collisionMesh
 				}
 				MODULE
@@ -19822,12 +15790,12 @@ GAME
 			{
 				name = strutConnector
 				cid = 4294412880
-				uid = 1975667449
-				mid = 1649994282
-				persistentId = 1580362185
-				launchID = 4
+				uid = 3622728081
+				mid = 1339231923
+				persistentId = 1561312303
+				launchID = 3
 				parent = 0
-				position = -0.61766451597213745,-0.98112958669662476,-1.0698268413543701
+				position = -0.61766546964645386,-0.981128990650177,-1.0698268413543701
 				rotation = 2.10734285E-07,-0.500000179,-8.42937098E-08,0.866025686
 				mirror = 1,1,1
 				symMethod = Radial
@@ -19842,8 +15810,8 @@ GAME
 				srfN = srfAttach, 0,ColliderMain
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.24694561066428
-				tempExt = 167.21207929209513
+				temp = 302.30383274916261
+				tempExt = 301.75894414661843
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -19874,10 +15842,10 @@ GAME
 				}
 				PARTDATA
 				{
-					tgt = 4294479440
-					pos = -0.728892684,0.144660532,1.14154041
-					rot = -3.0022948E-10,0.849148691,-0.00909692794,0.528077781
-					dir = -0.535122871,0.10620378,0.838071704
+					tgt = 4294448054
+					pos = -0.728886008,0.144659579,1.14153218
+					rot = 1.09512038E-10,0.849151194,-0.00909661502,0.52807951
+					dir = -0.535122097,0.106203906,0.83807224
 					col = collisionMesh
 				}
 				MODULE
@@ -19931,12 +15899,12 @@ GAME
 			{
 				name = strutConnector
 				cid = 4294412612
-				uid = 1710662366
-				mid = 1649994282
-				persistentId = 56967872
-				launchID = 4
+				uid = 2886239129
+				mid = 1339231923
+				persistentId = 2348511159
+				launchID = 3
 				parent = 0
-				position = -0.61845797300338745,-0.94958728551864624,1.071202278137207
+				position = -0.61845892667770386,-0.94958668947219849,1.071202278137207
 				rotation = 8.42937098E-08,0.500000119,1.6858742E-07,0.866025627
 				mirror = 1,1,1
 				symMethod = Radial
@@ -19951,8 +15919,8 @@ GAME
 				srfN = srfAttach, 0,ColliderMain
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.24694561066428
-				tempExt = 167.21207929209513
+				temp = 302.30383274916261
+				tempExt = 301.75894414661843
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -19983,10 +15951,10 @@ GAME
 				}
 				PARTDATA
 				{
-					tgt = 4294479440
-					pos = -0.755596995,0.0650302023,-1.16012359
-					rot = 1.35906092E-10,0.896800041,-0.0108600454,-0.44230473
-					dir = -0.545157194,0.0469187722,-0.83701992
+					tgt = 4294448054
+					pos = -0.755586684,0.0650290102,-1.16010869
+					rot = 2.07345599E-11,0.896801829,-0.0108602662,-0.442305773
+					dir = -0.545156896,0.0469185263,-0.837020099
 					col = collisionMesh
 				}
 				MODULE
@@ -20040,12 +16008,12 @@ GAME
 			{
 				name = strutConnector
 				cid = 4294412246
-				uid = 4070335703
-				mid = 1649994282
-				persistentId = 2276159806
-				launchID = 4
+				uid = 1163222338
+				mid = 1339231923
+				persistentId = 2204500471
+				launchID = 3
 				parent = 0
-				position = -0.61211007833480835,0.95425504446029663,1.0602028369903564
+				position = -0.61210817098617554,0.95425456762313843,1.0602028369903564
 				rotation = 8.42937098E-08,0.500000119,1.6858742E-07,0.866025627
 				mirror = 1,1,1
 				symMethod = Radial
@@ -20060,8 +16028,8 @@ GAME
 				srfN = srfAttach, 0,ColliderMain
 				mass = 0.0500000007
 				shielded = False
-				temp = 167.24694561066428
-				tempExt = 167.21207929209513
+				temp = 302.30383274916261
+				tempExt = 301.75894414661843
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0
@@ -20092,10 +16060,10 @@ GAME
 				}
 				PARTDATA
 				{
-					tgt = 4294479440
-					pos = -0.813355803,0.0250021461,-1.21726811
-					rot = 1.35906092E-10,0.896800041,-0.0108600454,-0.44230473
-					dir = -0.555490732,0.0170755051,-0.831347346
+					tgt = 4294448054
+					pos = -0.813343763,0.0249949936,-1.2172519
+					rot = 2.07345599E-11,0.896801829,-0.0108602662,-0.442305773
+					dir = -0.555490196,0.0170708559,-0.831347764
 					col = collisionMesh
 				}
 				MODULE
@@ -20149,12 +16117,12 @@ GAME
 			{
 				name = RCSBlock.v2
 				cid = 4294134800
-				uid = 309310081
-				mid = 1649994282
-				persistentId = 3457749552
-				launchID = 4
+				uid = 3199094669
+				mid = 1339231923
+				persistentId = 2210288348
+				launchID = 3
 				parent = 0
-				position = -1.1920928955078125E-07,-0.93633413314819336,1.2396358251571655
+				position = -1.1920928955078125E-07,-0.93633377552032471,1.2396358251571655
 				rotation = 8.42937098E-08,0.707106948,1.89660852E-07,0.707106948
 				mirror = 1,1,1
 				symMethod = Radial
@@ -20169,8 +16137,8 @@ GAME
 				srfN = srfAttach, 0,ColliderMain
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.25505363344735
-				tempExt = 167.19096321321166
+				temp = 302.2806765066357
+				tempExt = 301.47013885907751
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -20237,7 +16205,7 @@ GAME
 					name = FXModuleAnimateRCS
 					isEnabled = True
 					stagingEnabled = True
-					animStates = 0,0,0,0
+					animStates = 0.01129422,0.009722588,0.01751615,0.01518972
 					EVENTS
 					{
 					}
@@ -20269,12 +16237,12 @@ GAME
 			{
 				name = RCSBlock.v2
 				cid = 4294134684
-				uid = 1211026253
-				mid = 1649994282
-				persistentId = 2730337833
-				launchID = 4
+				uid = 3584364838
+				mid = 1339231923
+				persistentId = 530792904
+				launchID = 3
 				parent = 0
-				position = 1.1920928955078125E-07,0.95067203044891357,1.2407271862030029
+				position = 1.1920928955078125E-07,0.95067155361175537,1.2407271862030029
 				rotation = 4.21468549E-08,0.707106829,1.6858742E-07,0.707107127
 				mirror = 1,1,1
 				symMethod = Radial
@@ -20289,8 +16257,8 @@ GAME
 				srfN = srfAttach, 0,ColliderMain
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.25505445561285
-				tempExt = 167.19096347920913
+				temp = 302.2807062773104
+				tempExt = 301.47014817852079
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -20357,7 +16325,7 @@ GAME
 					name = FXModuleAnimateRCS
 					isEnabled = True
 					stagingEnabled = True
-					animStates = 0,0,0,0
+					animStates = 0.0121643,0.01141893,0.01742861,0.01514425
 					EVENTS
 					{
 					}
@@ -20389,12 +16357,12 @@ GAME
 			{
 				name = RCSBlock.v2
 				cid = 4294134568
-				uid = 1942482212
-				mid = 1649994282
-				persistentId = 2640031305
-				launchID = 4
+				uid = 2817173588
+				mid = 1339231923
+				persistentId = 1972177432
+				launchID = 3
 				parent = 0
-				position = -1.1920928955078125E-07,-0.9486699104309082,-1.22040855884552
+				position = -1.1920928955078125E-07,-0.94866931438446045,-1.22040855884552
 				rotation = 1.6858742E-07,-0.707107127,-4.21468549E-08,0.707106829
 				mirror = 1,1,1
 				symMethod = Radial
@@ -20409,8 +16377,8 @@ GAME
 				srfN = srfAttach, 0,ColliderMain
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.25505231725811
-				tempExt = 167.19096278738132
+				temp = 302.28069301866827
+				tempExt = 301.47014402934741
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -20477,7 +16445,7 @@ GAME
 					name = FXModuleAnimateRCS
 					isEnabled = True
 					stagingEnabled = True
-					animStates = 0,0,0,0
+					animStates = 0.01023824,0.0116713,0.01849254,0.01434338
 					EVENTS
 					{
 					}
@@ -20509,12 +16477,12 @@ GAME
 			{
 				name = RCSBlock.v2
 				cid = 4294134452
-				uid = 3637813356
-				mid = 1649994282
-				persistentId = 546713970
-				launchID = 4
+				uid = 1126650248
+				mid = 1339231923
+				persistentId = 550750522
+				launchID = 3
 				parent = 0
-				position = 1.1920928955078125E-07,0.96421831846237183,-1.2314732074737549
+				position = 1.1920928955078125E-07,0.96421784162521362,-1.2314732074737549
 				rotation = 1.6858742E-07,-0.707107127,-4.21468549E-08,0.707106829
 				mirror = 1,1,1
 				symMethod = Radial
@@ -20529,8 +16497,8 @@ GAME
 				srfN = srfAttach, 0,ColliderMain
 				mass = 0.0399999991
 				shielded = False
-				temp = 167.25505330768692
-				tempExt = 167.19096310781751
+				temp = 302.28070485329096
+				tempExt = 301.4701477344272
 				tempExtUnexp = 4
 				staticPressureAtm = 0
 				expt = 0.5
@@ -20597,7 +16565,7 @@ GAME
 					name = FXModuleAnimateRCS
 					isEnabled = True
 					stagingEnabled = True
-					animStates = 0,0,0,0
+					animStates = 0.011448,0.01061403,0.01881021,0.01443441
 					EVENTS
 					{
 					}
@@ -20627,14 +16595,14 @@ GAME
 			}
 			ACTIONGROUPS
 			{
-				Stage = True, 251286.563829988
+				Stage = False, 0
 				Gear = False, 0
 				Light = False, 0
-				RCS = False, 0
-				SAS = True, 234085.402463139
+				RCS = False, 232385.554631422
+				SAS = True, 232383.354631423
 				Brakes = False, 0
 				Abort = False, 0
-				Custom01 = False, 251196.323898384
+				Custom01 = False, 0
 				Custom02 = False, 0
 				Custom03 = False, 0
 				Custom04 = False, 0
@@ -20642,7 +16610,7 @@ GAME
 				Custom06 = False, 0
 				Custom07 = False, 0
 				Custom08 = False, 0
-				Custom09 = True, 251264.963829999
+				Custom09 = False, 0
 				Custom10 = False, 0
 			}
 			DISCOVERY
@@ -20658,9 +16626,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = -0.00762440497
-				yaw = -0.0210142396
-				roll = 0.000751516316
+				pitch = -1
+				yaw = -1
+				roll = 1
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -20678,1372 +16646,6 @@ GAME
 				{
 					controlState = ProbeFull
 					canComm = True
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = f1ecaa51757a4360b2295ecde1c5c1b6
-			persistentId = 4021354249
-			name = HLS Debris
-			type = Debris
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = LaunchPad
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 35.499999981402652
-			lct = 251275.14382999414
-			lastUT = 251310.64382997554
-			distanceTraveled = 14575.922067502923
-			root = 0
-			lat = 32.272755235550051
-			lon = 19.119121971924908
-			alt = 98940.75319450628
-			hgt = 98940.75
-			nrm = 0.513502836,0.364506155,0.776820421
-			rot = 0.084044151,-0.305206031,-0.062761575,-0.946491957
-			CoM = -0.0112948539,-2.54225421,0.000111639201
-			stg = 4
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 2
-			PQSMax = 8
-			GroupOverride = 0
-			OverrideDefault = False,False,False,False
-			OverrideActionControl = 0,0,0,0
-			OverrideAxisControl = 0,0,0,0
-			OverrideGroupNames = ,,,
-			altDispState = DEFAULT
-			cPch = 0
-			cHdg = 0
-			cMod = -1
-			ORBIT
-			{
-				SMA = 309479.18063045567
-				ECC = 0.057001865386968886
-				INC = 89.992230306216527
-				LPE = 203.70722577015908
-				LAN = 0.073717824103880503
-				MNA = -0.89649490900342532
-				EPH = 251302.74382997968
-				REF = 2
-			}
-			PART
-			{
-				name = dockingPort2
-				cid = 4294403116
-				uid = 3563333207
-				mid = 1649994282
-				persistentId = 2464018562
-				launchID = 4
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1.00000072
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = -1
-				resPri = 0
-				dstg = 6
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				sameVesselCollision = False
-				srfN = srfAttach, -1
-				attN = top, -1
-				attN = bottom, 1
-				mass = 0.0500000007
-				shielded = False
-				temp = 167.65411851994659
-				tempExt = 168.19363906791142
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = False
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = dockingPort2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDockingNode
-					isEnabled = True
-					acquireForceTweak = 100
-					crossfeed = True
-					stagingEnabled = False
-					state = Ready
-					dockUId = 0
-					dockNodeIdx = 0
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						UndockAction
-						{
-							actionGroup = None
-						}
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-						MakeReferenceToggle
-						{
-							actionGroup = None
-						}
-						EnableXFeedAction
-						{
-							actionGroup = None
-						}
-						DisableXFeedAction
-						{
-							actionGroup = None
-						}
-						ToggleXFeedAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = proceduralTankLiquid
-				cid = 4294419460
-				uid = 1464618561
-				mid = 1649994282
-				persistentId = 945579544
-				launchID = 4
-				parent = 0
-				position = -9.6156384188361699E-07,-1.0000334978103638,1.9224769332026881E-08
-				rotation = 0,0,0,1.00000072
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = -1
-				resPri = 0
-				dstg = 6
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				sameVesselCollision = False
-				srfN = srfAttach, -1
-				attN = top, 0
-				attN = bottom, 2
-				mass = 1.24328554
-				shielded = False
-				temp = 167.62239894864558
-				tempExt = 168.21095738991787
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = proceduralTankLiquid
-				modCost = 3710.1792
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralPart
-					isEnabled = True
-					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (0.00100000005, 0.00100000005, 3.23900986)
-					forceLegacyTextures = True
-					textureSet = SegmentedSRB
-					capTextureIndex = 0
-					shapeName = Polygon
-					moduleCost = 3710.1792
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCylinder
-					isEnabled = False
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCone
-					isEnabled = False
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePill
-					isEnabled = False
-					diameter = 1.25
-					length = 1
-					fillet = 0.25
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeBezierCone
-					isEnabled = False
-					selectedShape = Round #1
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePolygon
-					isEnabled = True
-					cornerCount = 8
-					diameter = 2.62500024
-					length = 2
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TankContentSwitcher
-					isEnabled = True
-					tankVolume = 11.4167633
-					mass = 1.24328554
-					tankType = Mixed
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 683.51236180620219
-					maxAmount = 895.16999999999996
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 835.39759662560925
-					maxAmount = 1094.0899999999999
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = trussPiece1x
-				cid = 4294399972
-				uid = 134745270
-				mid = 1649994282
-				persistentId = 2836470005
-				launchID = 4
-				parent = 1
-				position = -0.011527965776622295,-2.3250420093536377,0.00011071839981013909
-				rotation = 0,0,0,1.00000072
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = -1
-				resPri = 0
-				dstg = 6
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				sameVesselCollision = False
-				srfN = srfAttach, -1
-				attN = bottom, 3
-				attN = top, 1
-				mass = 0.125
-				shielded = False
-				temp = 167.71663239999813
-				tempExt = 170.25911285379846
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = trussPiece1x
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = proceduralTankLiquid
-				cid = 4294399050
-				uid = 4016672623
-				mid = 1649994282
-				persistentId = 1635138523
-				launchID = 4
-				parent = 2
-				position = -0.02113163098692894,-3.4501359462738037,0.00020300695905461907
-				rotation = 0,0,0,1.00000072
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = -1
-				resPri = 0
-				dstg = 6
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				sameVesselCollision = False
-				srfN = srfAttach, -1
-				attN = top, 2
-				attN = bottom, 4
-				mass = 1.0209595
-				shielded = False
-				temp = 171.82730512768876
-				tempExt = 176.83109107686454
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = proceduralTankLiquid
-				modCost = 3046.71582
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ProceduralPart
-					isEnabled = True
-					tempColliderCenter = (0, 0, 0)
-					tempColliderSize = (0.00100000005, 0.00100000005, 3.09183979)
-					forceLegacyTextures = True
-					textureSet = Atlas
-					capTextureIndex = 0
-					shapeName = Fillet Cylinder
-					moduleCost = 3046.71582
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCylinder
-					isEnabled = False
-					diameter = 2.5
-					length = 1.50000012
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeCone
-					isEnabled = False
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePill
-					isEnabled = True
-					diameter = 2.5
-					length = 2
-					fillet = 0.75000006
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapeBezierCone
-					isEnabled = False
-					selectedShape = Round #1
-					topDiameter = 0.625
-					bottomDiameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ProceduralShapePolygon
-					isEnabled = False
-					cornerCount = 8
-					diameter = 1.25
-					length = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TankContentSwitcher
-					isEnabled = True
-					tankVolume = 9.37520218
-					mass = 1.0209595
-					tankType = Mixed
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 561.28232854110991
-					maxAmount = 735.09000000000003
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 686.00811332917078
-					maxAmount = 898.44000000000005
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = engineLargeSkipper.v2
-				cid = 4294371818
-				uid = 3950459345
-				mid = 1649994282
-				persistentId = 2769778239
-				launchID = 4
-				parent = 3
-				position = -0.021132050082087517,-5.0332751274108887,0.00020305371435824782
-				rotation = 0,0,0,1.00000072
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 4
-				resPri = 0
-				dstg = 6
-				sqor = 4
-				sepI = 0
-				sidx = 0
-				attm = 0
-				sameVesselCollision = False
-				srfN = , -1
-				attN = top, 3
-				attN = bottom, -1
-				mass = 3
-				shielded = False
-				temp = 195.72468771689515
-				tempExt = 187.21511844522573
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = engineLargeSkipper.v2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleEngines
-					isEnabled = True
-					independentThrottle = False
-					independentThrottlePercentage = 0
-					staged = False
-					flameout = False
-					EngineIgnited = True
-					engineShutdown = False
-					currentThrottle = 0
-					thrustPercentage = 100
-					manuallyOverridden = False
-					includeinDVCalcs = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ToggleThrottle
-						{
-							actionGroup = None
-						}
-					}
-					AXISGROUPS
-					{
-						independentThrottlePercentage
-						{
-							axisGroup = None
-							axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							axisInverted = None
-							overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-						}
-						thrustPercentage
-						{
-							axisGroup = None
-							axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							axisInverted = None
-							overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-							overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleJettison
-					isEnabled = True
-					activejettisonName = fairing2
-					isJettisoned = True
-					shroudHideOverride = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						JettisonAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleGimbal
-					isEnabled = True
-					gimbalLock = False
-					gimbalLimiter = 100
-					currentShowToggles = False
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					gimbalActive = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						LockAction
-						{
-							actionGroup = None
-						}
-						FreeAction
-						{
-							actionGroup = None
-						}
-						TogglePitchAction
-						{
-							actionGroup = None
-						}
-						ToggleYawAction
-						{
-							actionGroup = None
-						}
-						ToggleRollAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FXModuleAnimateThrottle
-					isEnabled = True
-					animState = 0.0841792822
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAlternator
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleSurfaceFX
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePartVariants
-					isEnabled = True
-					useVariantMass = True
-					stagingEnabled = True
-					selectedVariant = Bare
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = largeSolarPanel
-				cid = 4294362896
-				uid = 2661078760
-				mid = 1649994282
-				persistentId = 1074793717
-				launchID = 4
-				parent = 2
-				position = 0.31304219365119934,-2.2086360454559326,0.00011057801748393103
-				rotation = 2.59646562E-08,-0.707107544,0.707107246,-1.47672452E-08
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = -1
-				resPri = 0
-				dstg = 6
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 6
-				srfN = srfAttach, 2,truss1x
-				mass = 0.300000012
-				shielded = False
-				temp = 167.24999346004267
-				tempExt = 167.70403884706397
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = largeSolarPanel
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = Custom01
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					efficiencyMult = 1
-					launchUT = 234048.02246315836
-					currentRotation = (-0.577603817, -0.577604771, -0.407892287, 0.407885373)
-					storedAnimationTime = 0
-					storedAnimationSpeed = 1
-					deployState = EXTENDED
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = largeSolarPanel
-				cid = 4294362816
-				uid = 2007483346
-				mid = 1649994282
-				persistentId = 1588083519
-				launchID = 4
-				parent = 2
-				position = -0.33610093593597412,-2.2086353302001953,0.00011085462756454945
-				rotation = 0.707107306,-1.62584442E-07,-7.03265428E-08,0.707107425
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = -1
-				resPri = 0
-				dstg = 6
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				sym = 5
-				srfN = srfAttach, 2,truss1x
-				mass = 0.300000012
-				shielded = False
-				temp = 167.26881153493034
-				tempExt = 167.79410489059958
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = largeSolarPanel
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = Custom01
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDeployableSolarPanel
-					isEnabled = True
-					efficiencyMult = 1
-					launchUT = 234048.02246315836
-					currentRotation = (0.577604592, 0.577608049, -0.407891512, 0.407880336)
-					storedAnimationTime = 0
-					storedAnimationSpeed = 1
-					deployState = EXTENDED
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ExtendPanelsAction
-						{
-							actionGroup = None
-						}
-						ExtendAction
-						{
-							actionGroup = None
-						}
-						RetractAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = fuelLine
-				cid = 4294378826
-				uid = 3845443577
-				mid = 1649994282
-				persistentId = 732333123
-				launchID = 4
-				parent = 1
-				position = -0.11790759116411209,-2.0001051425933838,-0.44003424048423767
-				rotation = 0.502396405,0.502396405,0.497592419,0.497592926
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = -1
-				resPri = 0
-				dstg = 6
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 1
-				sameVesselCollision = False
-				srfN = srfAttach, 1,collisionMesh
-				mass = 0.0500000007
-				shielded = False
-				temp = 169.70468990549656
-				tempExt = 171.62462880622419
-				tempExtUnexp = 4
-				staticPressureAtm = 0
-				expt = 0
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/NASA
-				rTrf = fuelLine
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					ToggleSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					SetSameVesselInteraction
-					{
-						actionGroup = None
-					}
-					RemoveSameVesselInteraction
-					{
-						actionGroup = None
-					}
-				}
-				PARTDATA
-				{
-					tgt = 4294399050
-					pos = -0.575061977,-0.240359724,0.0227912143
-					rot = 0,0,0,1.00000119
-					dir = -0.922032595,-0.385383695,0.0365425721
-					col = collisionMesh
-				}
-				MODULE
-				{
-					name = CModuleLinkedMesh
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = CModuleFuelLine
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = True, 251271.963829996
-				Gear = False, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = True, 234085.402463139
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 251196.323898384
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = True, 251264.963829999
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-				AxisGroupsModule
-				{
 				}
 			}
 		}
