@@ -7,6 +7,7 @@ The following mods are required:
 * [SDHI Service Module System v4.0.2](https://github.com/sumghai/SDHI_ServiceModuleSystem/releases/tag/4.0.2) is required for the Orion SM and LAS (page says compatible with KSP v1.7.x, tested and working with KSP v1.9.1).
 * Kerbal Engineer is great for in-game telemetry readouts. It's a bit of a pain to find a link, so just use the version stored in the `GameData` directory.
 * Procedural Parts gives us the custom fuel tanks used in our HLS model.
+* ModuleManager (both of them) make the mods play nicely together and with the game.
 
 The following mods are useful for testing, but not required:
 * Hyperedit (in Kerbaltek directory) is useful for snapping a ship to a specific orbit without needing to fly it there.
