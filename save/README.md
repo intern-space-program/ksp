@@ -1,6 +1,6 @@
 # World Save
 
-This folder contains the world save file we'll use in our simulation.
+`Intern Space Program` is the world save we'll use to do our full run. `Intern Space Program Testing` has different ships pre-staged at different phases of the mission for ease of testing modularized code.
 
 ## How to Install
 
