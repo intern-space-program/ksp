@@ -1036,3 +1036,4 @@ MigrationBackup/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux,python,c++,visualstudio,visualstudiocode,emacs,vim,sublimetext,pycharm,eclipse,clion,clion+all,clion+iml
 
+.vscode/settings.json
