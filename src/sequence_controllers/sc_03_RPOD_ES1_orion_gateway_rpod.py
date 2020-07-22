@@ -128,8 +128,6 @@ def main(param):
             print('here')
             raise TimeoutError
 
-        # set target to specific Gateway docking port
-
 
         # translational maneuver around gateway to line up with docking port
 
