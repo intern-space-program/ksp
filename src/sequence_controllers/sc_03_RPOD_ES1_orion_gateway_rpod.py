@@ -1,28 +1,61 @@
-import numpy as np
+# external library imports
 import krpc
+import numpy as np
+from time import sleep, time
+
+# internal imports
 from src.util import constants
 from src.param import Param
 
 
 def main(param):
-
     # noinspection PyBroadException
     try:
         # load in parameters
         conn = param.conn
         vessel_ctl = param.ships['orion']
         vessel_tgt = param.ships['gateway']
+        kerbin = param.bodies['kerbin']
+        mun = param.bodies['mun']
 
         # set control from Orion docking port
         vessel_ctl.parts.controlling = vessel_ctl.parts.with_tag('dockingPortOrion')[0]
+        ctl_port = vessel_ctl.parts.with_tag('dockingPortOrion')[0].docking_port
 
         # set target to Gateway docking port
-        target = vessel_tgt.parts.with_tag('dockingPortGatewayForOrion')[0]
+        target = vessel_tgt.parts.with_tag('dockingPortGatewayForOrion')[0].docking_port
         conn.space_center.target_vessel = vessel_tgt
         conn.space_center.target_docking_port = target
 
         # attitude maneuver to point at Gateway
+        vessel_ctl.auto_pilot.target_direction = \
+            np.array(target.position(mun.non_rotating_reference_frame)) \
+            - np.array(vessel_ctl.position(mun.non_rotating_reference_frame))
 
+        vessel_ctl.auto_pilot.reference_frame = mun.non_rotating_reference_frame
+
+        vessel_ctl.auto_pilot.engage()
+
+        time_start = time()
+        timeout = False
+
+        attitude_tolerance = 1.0  # (degrees)
+        attitude_rate_tolerance = 0.01  # (radians/second)
+
+        attitude_pass = vessel_ctl.auto_pilot.error < attitude_tolerance
+        attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
+
+        while not(attitude_pass and attitude_rate_pass) and not timeout:
+            attitude_pass = vessel_ctl.auto_pilot.error < attitude_tolerance
+            attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
+
+            sleep(0.1)  # limit processing rate
+            timeout = time()-time_start > constants.TIME_LIMIT_1_MIN/10.0
+
+        if timeout:
+            raise TimeoutError
+
+        vessel_ctl.auto_pilot.sas_mode = conn.space_center.SASMode.target
 
         # OMS approach burn
 
@@ -51,8 +84,11 @@ def main(param):
         # set success code
         param.status = constants.SUCCESS
 
-    except:
-        param.status = constants.ERROR
+    except TimeoutError:
+        param.status = constants.ERROR_OUT_OF_TIME
+
+    # except:
+    #     param.status = constants.ERROR_GENERAL
 
     return param
 
@@ -65,6 +101,11 @@ if __name__ == '__main__':
         'orion': param.conn.space_center.vessels[1],
         'gateway': param.conn.space_center.vessels[0]
     }
+    param.bodies = {
+        'kerbin': param.conn.space_center.bodies['Kerbin'],
+        'mun': param.conn.space_center.bodies['Mun']
+    }
     param.status = constants.SUCCESS
 
-    main(param)
+    ret = main(param)
+    print('exit status:', ret.status)
