@@ -8,6 +8,11 @@ from src.util import constants
 from src.param import Param
 
 
+def get_vector(obj1, obj2):
+    ''' Get the vector from obj1 to obj2. '''
+    return obj2.position(obj1.reference_frame)
+
+
 def main(param):
     # noinspection PyBroadException
     try:
@@ -66,6 +71,8 @@ def main(param):
         timeout = False
         burn_done = False
         while not burn_done and not timeout:
+            vessel_ctl.auto_pilot.sas_mode = conn.space_center.SASMode.target
+
             if vessel_ctl.flight(target.reference_frame).speed >= 10.0:
                 vessel_ctl.control.throttle = 0.0
                 burn_done = True
@@ -76,17 +83,6 @@ def main(param):
             raise TimeoutError
 
         # stop at boundary sphere (OMS stop burn)
-        time_start = time()
-        timeout = False
-        within_boundary_box = False
-        while not within_boundary_box and not timeout:
-            sleep(0.1)
-            within_boundary_box = np.linalg.norm(vessel_ctl.position(target.reference_frame)) < 200.0
-            timeout = time()-time_start > constants.TIME_LIMIT_1_MIN
-
-        if timeout:
-            raise TimeoutError
-
         vessel_ctl.auto_pilot.target_direction = -1 * (
             np.array(target.position(mun.non_rotating_reference_frame))
             - np.array(vessel_ctl.position(mun.non_rotating_reference_frame))
@@ -99,6 +95,11 @@ def main(param):
         attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
 
         while not(attitude_pass and attitude_rate_pass) and not timeout:
+            vessel_ctl.auto_pilot.target_direction = -1 * (
+                    np.array(target.position(mun.non_rotating_reference_frame))
+                    - np.array(vessel_ctl.position(mun.non_rotating_reference_frame))
+            )
+
             attitude_pass = vessel_ctl.auto_pilot.error < attitude_tolerance
             attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
 
@@ -109,6 +110,17 @@ def main(param):
             raise TimeoutError
 
         vessel_ctl.auto_pilot.sas_mode = conn.space_center.SASMode.anti_target
+
+        time_start = time()
+        timeout = False
+        within_boundary_box = False
+        while not within_boundary_box and not timeout:
+            sleep(0.1)
+            within_boundary_box = np.linalg.norm(vessel_ctl.position(target.reference_frame)) < 200.0
+            timeout = time()-time_start > constants.TIME_LIMIT_1_MIN
+
+        if timeout:
+            raise TimeoutError
 
         tgt_twr = 0.1
         tgt_thrust = tgt_twr * vessel_ctl.mass * kerbin.surface_gravity
@@ -128,11 +140,55 @@ def main(param):
             print('here')
             raise TimeoutError
 
+        # rotate to face anti-parallel to direction of target docking port
+        vessel_ctl.auto_pilot.target_direction = -1 * np.array(target.direction(mun.non_rotating_reference_frame))
+        vessel_ctl.auto_pilot.engage()
 
-        # translational maneuver around gateway to line up with docking port
+        time_start = time()
+        timeout = False
+
+        attitude_tolerance = 1.0  # (degrees)
+        attitude_rate_tolerance = 0.01  # (radians/second)
+
+        attitude_pass = vessel_ctl.auto_pilot.error < attitude_tolerance
+        attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
+
+        while not(attitude_pass and attitude_rate_pass) and not timeout:
+            attitude_pass = vessel_ctl.auto_pilot.error < attitude_tolerance
+            attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
+
+            sleep(0.1)  # limit processing rate
+            timeout = time()-time_start > constants.TIME_LIMIT_1_MIN
+
+        if timeout:
+            raise TimeoutError
+
+        # translational maneuver around gateway to line up with docking
+        vessel_ctl.control.rcs = True
+        vessel_ctl.control.forward = -1.0
+
+        while vessel_ctl.velocity(target.reference_frame)[1] < 3.0:  # y-axis is out the target docking port
+            vessel_ctl.auto_pilot.target_direction = -1 * np.array(target.direction(mun.non_rotating_reference_frame))
+            sleep(0.1)
+
+        vessel_ctl.control.forward = 0.0
+
+        while vessel_ctl.position(target.reference_frame)[1] < 10.0:
+            vessel_ctl.auto_pilot.target_direction = -1 * np.array(target.direction(mun.non_rotating_reference_frame))
+            sleep(0.1)
+
+        vessel_ctl.control.forward = 1.0
+
+        while vessel_ctl.velocity(target.reference_frame)[1] > 0.1:
+            vessel_ctl.auto_pilot.target_direction = -1 * np.array(target.direction(mun.non_rotating_reference_frame))
+            sleep(0.1)
+
+        vessel_ctl.control.forward = 0.0
+
+        # zero-out relative x error
 
 
-        # attitude maneuver to point at target docking port
+        # zero-out relative z error
 
 
         # RCS approach burn
