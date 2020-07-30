@@ -5,7 +5,7 @@ from time import sleep, time
 
 # internal imports
 from src.util import constants
-from src.util.rpod.util import close_the_gap, line_it_up, touch_the_butt
+from src.util.rpod.util import close_the_gap, around_town, line_it_up, touch_the_butt
 from src.param import Param
 
 
@@ -24,71 +24,16 @@ def main(param):
         ctl_port = vessel_ctl.parts.with_tag('dockingPortOrion')[0].docking_port
 
         # set target to Gateway docking port
-        target = vessel_tgt.parts.with_tag('dockingPortGatewayForOrion')[0].docking_port
+        tgt_port = vessel_tgt.parts.with_tag('dockingPortGatewayForOrion')[0].docking_port
         conn.space_center.target_vessel = vessel_tgt
-        conn.space_center.target_docking_port = target
+        conn.space_center.target_docking_port = tgt_port
 
-        util.close_the_gap(vessel_ctl, vessel_tgt, twr=0.1)
+        close_the_gap(vessel_ctl, vessel_tgt, twr=0.1)  # get the vehicles close together
+        around_town(vessel_ctl, tgt_port)  # translate around target until on side of target port
+        line_it_up(ctl_port, tgt_port)  # kill off translational error with target port
+        touch_the_butt(ctl_port, tgt_port)  # approach and dock to target port
 
-        # rotate to face anti-parallel to direction of target docking port
-        vessel_ctl.auto_pilot.target_direction = -1 * np.array(target.direction(mun.non_rotating_reference_frame))
-        vessel_ctl.auto_pilot.engage()
-
-        time_start = time()
-        timeout = False
-
-        attitude_tolerance = 1.0  # (degrees)
-        attitude_rate_tolerance = 0.01  # (radians/second)
-
-        attitude_pass = vessel_ctl.auto_pilot.error < attitude_tolerance
-        attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
-
-        while not(attitude_pass and attitude_rate_pass) and not timeout:
-            attitude_pass = vessel_ctl.auto_pilot.error < attitude_tolerance
-            attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
-
-            sleep(0.1)  # limit processing rate
-            timeout = time()-time_start > constants.TIME_LIMIT_1_MIN
-
-        if timeout:
-            raise TimeoutError
-
-        # translational maneuver around gateway to line up with docking
-        vessel_ctl.control.rcs = True
-        vessel_ctl.control.forward = -1.0
-
-        while vessel_ctl.velocity(target.reference_frame)[1] < 3.0:  # y-axis is out the target docking port
-            vessel_ctl.auto_pilot.target_direction = -1 * np.array(target.direction(mun.non_rotating_reference_frame))
-            sleep(0.1)
-
-        vessel_ctl.control.forward = 0.0
-
-        while vessel_ctl.position(target.reference_frame)[1] < 10.0:
-            vessel_ctl.auto_pilot.target_direction = -1 * np.array(target.direction(mun.non_rotating_reference_frame))
-            sleep(0.1)
-
-        vessel_ctl.control.forward = 1.0
-
-        while vessel_ctl.velocity(target.reference_frame)[1] > 0.1:
-            vessel_ctl.auto_pilot.target_direction = -1 * np.array(target.direction(mun.non_rotating_reference_frame))
-            sleep(0.1)
-
-        vessel_ctl.control.forward = 0.0
-
-        # zero-out relative x error
-
-
-        # zero-out relative z error
-
-
-        # RCS approach burn
-
-
-        # docking
-
-
-        # set new ships in param
-
+        # TODO: set new ships in param
 
         # set success code
         param.status = constants.SUCCESS
