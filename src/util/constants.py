@@ -5,3 +5,11 @@ ERROR_OUT_OF_TIME = 2
 
 # TIME LIMITS
 TIME_LIMIT_1_MIN = 60.0  # (seconds)
+
+# CELESTIAL BODY CONSTANTS
+MASSES = {  # (kg)
+    'Kerbin': 5.2915158e22
+}
+SURFACE_GRAVITY = {  # (m/s**2
+    'Kerbin': 9.81
+}
