@@ -39,7 +39,7 @@ def hold_until(cond, max_time=constants.TIME_LIMIT_1_MIN, updates=[]):
             timeout = time()-time_start > max_time
 
         if timeout:
-            status = constants.ERROR_OUT_OF_TIME
+            raise TimeoutError
 
     return status
 
@@ -109,49 +109,73 @@ def close_the_gap(ctl, tgt, speed=10.0, twr=0.25, dist=100.0):
     point_at_target(ctl, tgt)
 
     if status == constants.SUCCESS:
-        print('Burn: burning toward target... ', end='')
-        thrust = twr * ctl.mass * constants.SURFACE_GRAVITY['Kerbin']
-        throttle = thrust / ctl.available_thrust
-        ctl.control.throttle = throttle
-        status = hold_until(
-            cond=lambda: np.linalg.norm(ctl.velocity(tgt.reference_frame)) >= speed,
-            updates=[lambda: point_at_target(ctl, tgt, intervector=lambda: ctl.flight().velocity(tgt.reference_frame), how=pull, suppress=True)]
-        )
-        ctl.control.throttle = 0.0
-        print('done.')
+        try:
+            print('Burn: burning toward target... ', end='')
+            thrust = twr * ctl.mass * constants.SURFACE_GRAVITY['Kerbin']
+            throttle = thrust / ctl.available_thrust
+            ctl.control.throttle = throttle
+            status = hold_until(
+                cond=lambda: np.linalg.norm(ctl.velocity(tgt.reference_frame)) >= speed,
+                updates=[lambda: point_at_target(ctl, tgt, intervector=lambda: ctl.flight().velocity(tgt.reference_frame), how=pull, suppress=True)]
+            )
+            ctl.control.throttle = 0.0
+            print('done.')
 
-        point_at_target(ctl, tgt, away=True)
+            point_at_target(ctl, tgt, away=True)
 
-        print('Hold: approaching target... ', end='')
-        v_ctl_wrt_tgt_in_tgt = ctl.velocity(tgt.reference_frame)  # relative velocity wrt target
-        s_ctl_wrt_tgt_in_tgt = np.linalg.norm(v_ctl_wrt_tgt_in_tgt)  # relative speed wrt target
-        a = thrust/ctl.mass  # approximately constant deceleration rate
-        dt_burn = s_ctl_wrt_tgt_in_tgt/a  # burn time
-        dr_burn = 0.5 * s_ctl_wrt_tgt_in_tgt * dt_burn  # distance covered during burn
-        status = hold_until(
-            cond=lambda: np.linalg.norm(ctl.position(tgt.reference_frame)) <= dist+dr_burn,
-            updates=[lambda: point_at_target(ctl, tgt, away=True, suppress=True)]
-        )
-        print('done.')
+            print('Hold: approaching target... ', end='')
+            v_ctl_wrt_tgt_in_tgt = ctl.velocity(tgt.reference_frame)  # relative velocity wrt target
+            s_ctl_wrt_tgt_in_tgt = np.linalg.norm(v_ctl_wrt_tgt_in_tgt)  # relative speed wrt target
+            a = thrust/ctl.mass  # approximately constant deceleration rate
+            dt_burn = s_ctl_wrt_tgt_in_tgt/a  # burn time
+            dr_burn = 0.5 * s_ctl_wrt_tgt_in_tgt * dt_burn  # distance covered during burn
+            status = hold_until(
+                cond=lambda: np.linalg.norm(ctl.position(tgt.reference_frame)) <= dist+dr_burn,
+                updates=[lambda: point_at_target(ctl, tgt, away=True, suppress=True)]
+            )
+            print('done.')
 
-        print('Burn: killing relative velocity... ', end='')
-        point_at_target(ctl, tgt, away=True, suppress=True)
-        thrust = twr * ctl.mass * constants.SURFACE_GRAVITY['Kerbin']
-        ctl.control.throttle = thrust / ctl.available_thrust
-        status = hold_until(
-            # the following condition fails if the twr is too high (can't check in time)
-            cond=lambda: -0.1 <= np.linalg.norm(ctl.velocity(tgt.reference_frame)) <= 0.1,
-            updates=[lambda: point_at_target(ctl, tgt, away=True, suppress=True)]
-        )
-        ctl.control.throttle = 0.0
-        print('done.')
+            print('Burn: killing relative velocity... ', end='')
+            point_at_target(ctl, tgt, away=True, suppress=True)
+            thrust = twr * ctl.mass * constants.SURFACE_GRAVITY['Kerbin']
+            ctl.control.throttle = thrust / ctl.available_thrust
+            status = hold_until(
+                # the following condition fails if the twr is too high (can't check in time)
+                cond=lambda: -0.1 <= np.linalg.norm(ctl.velocity(tgt.reference_frame)) <= 0.1,
+                updates=[lambda: point_at_target(ctl, tgt, away=True, suppress=True)]
+            )
+            ctl.control.throttle = 0.0
+            print('done.')
+
+        except:
+            status = constants.ERROR_GENERAL
 
     return status
 
 
-def line_it_up():
+def around_town(vessel_ctl, tgt_port):
+    # TODO: translate around target bounding box until in front of correct face
     pass
 
 
-def touch_the_butt():
+def line_it_up(ctl_port, tgt_port):
+    ''' Line up two docking ports, given two vessels which are already close. '''
+    status = constants.SUCCESS
+
+    vessel_ctl = ctl_port.vessel
+    vessel_tgt = tgt_port.vessel
+
+    # point anti-parallel to direction of target point
+    vessel_ctl.auto_pilot.engage()
+    vessel_ctl.auto_pilot.reference_frame = vessel_tgt.orbit.body.non_rotating_reference_frame
+    vessel_ctl.auto_pilot.target_direction = -1 * np.array(tgt_port.direction(vessel_tgt.orbit.body.non_rotating_reference_frame))
+    vessel_ctl.auto_pilot.wait()
+
+    # TODO: kill off translational error
+
+    return status
+
+
+def touch_the_butt(ctl_port, tgt_port):
+    # TODO: approach and dock to target port
     pass
