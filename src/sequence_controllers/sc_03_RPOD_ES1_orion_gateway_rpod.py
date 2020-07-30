@@ -5,12 +5,8 @@ from time import sleep, time
 
 # internal imports
 from src.util import constants
+from src.util.rpod.util import close_the_gap, line_it_up, touch_the_butt
 from src.param import Param
-
-
-def get_vector(obj1, obj2):
-    ''' Get the vector from obj1 to obj2. '''
-    return obj2.position(obj1.reference_frame)
 
 
 def main(param):
@@ -32,113 +28,7 @@ def main(param):
         conn.space_center.target_vessel = vessel_tgt
         conn.space_center.target_docking_port = target
 
-        # attitude maneuver to point at Gateway
-        vessel_ctl.auto_pilot.target_direction = \
-            np.array(target.position(mun.non_rotating_reference_frame)) \
-            - np.array(vessel_ctl.position(mun.non_rotating_reference_frame))
-
-        vessel_ctl.auto_pilot.reference_frame = mun.non_rotating_reference_frame
-
-        vessel_ctl.auto_pilot.engage()
-
-        time_start = time()
-        timeout = False
-
-        attitude_tolerance = 1.0  # (degrees)
-        attitude_rate_tolerance = 0.01  # (radians/second)
-
-        attitude_pass = vessel_ctl.auto_pilot.error < attitude_tolerance
-        attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
-
-        while not(attitude_pass and attitude_rate_pass) and not timeout:
-            attitude_pass = vessel_ctl.auto_pilot.error < attitude_tolerance
-            attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
-
-            sleep(0.1)  # limit processing rate
-            timeout = time()-time_start > constants.TIME_LIMIT_1_MIN
-
-        if timeout:
-            raise TimeoutError
-
-        vessel_ctl.auto_pilot.sas_mode = conn.space_center.SASMode.target
-
-        # OMS approach burn
-        tgt_twr = 0.1
-        tgt_thrust = tgt_twr * vessel_ctl.mass * kerbin.surface_gravity
-        vessel_ctl.control.throttle = tgt_thrust / vessel_ctl.available_thrust
-
-        time_start = time()
-        timeout = False
-        burn_done = False
-        while not burn_done and not timeout:
-            vessel_ctl.auto_pilot.sas_mode = conn.space_center.SASMode.target
-
-            if vessel_ctl.flight(target.reference_frame).speed >= 10.0:
-                vessel_ctl.control.throttle = 0.0
-                burn_done = True
-            elif time()-time_start > constants.TIME_LIMIT_1_MIN:
-                timeout = True
-
-        if timeout:
-            raise TimeoutError
-
-        # stop at boundary sphere (OMS stop burn)
-        vessel_ctl.auto_pilot.target_direction = -1 * (
-            np.array(target.position(mun.non_rotating_reference_frame))
-            - np.array(vessel_ctl.position(mun.non_rotating_reference_frame))
-        )
-
-        time_start = time()
-        timeout = False
-
-        attitude_pass = vessel_ctl.auto_pilot.error < attitude_tolerance
-        attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
-
-        while not(attitude_pass and attitude_rate_pass) and not timeout:
-            vessel_ctl.auto_pilot.target_direction = -1 * (
-                    np.array(target.position(mun.non_rotating_reference_frame))
-                    - np.array(vessel_ctl.position(mun.non_rotating_reference_frame))
-            )
-
-            attitude_pass = vessel_ctl.auto_pilot.error < attitude_tolerance
-            attitude_rate_pass = np.linalg.norm(vessel_ctl.angular_velocity(mun.non_rotating_reference_frame)) < attitude_rate_tolerance
-
-            sleep(0.1)  # limit processing rate
-            timeout = time()-time_start > constants.TIME_LIMIT_1_MIN
-
-        if timeout:
-            raise TimeoutError
-
-        vessel_ctl.auto_pilot.sas_mode = conn.space_center.SASMode.anti_target
-
-        time_start = time()
-        timeout = False
-        within_boundary_box = False
-        while not within_boundary_box and not timeout:
-            sleep(0.1)
-            within_boundary_box = np.linalg.norm(vessel_ctl.position(target.reference_frame)) < 200.0
-            timeout = time()-time_start > constants.TIME_LIMIT_1_MIN
-
-        if timeout:
-            raise TimeoutError
-
-        tgt_twr = 0.1
-        tgt_thrust = tgt_twr * vessel_ctl.mass * kerbin.surface_gravity
-        vessel_ctl.control.throttle = tgt_thrust / vessel_ctl.available_thrust
-
-        time_start = time()
-        timeout = False
-        burn_done = False
-        while not burn_done and not timeout:
-            if vessel_ctl.flight(target.reference_frame).speed <= 1.0:
-                vessel_ctl.control.throttle = 0.0
-                burn_done = True
-            elif time()-time_start > constants.TIME_LIMIT_1_MIN:
-                timeout = True
-
-        if timeout:
-            print('here')
-            raise TimeoutError
+        util.close_the_gap(vessel_ctl, vessel_tgt, twr=0.1)
 
         # rotate to face anti-parallel to direction of target docking port
         vessel_ctl.auto_pilot.target_direction = -1 * np.array(target.direction(mun.non_rotating_reference_frame))
